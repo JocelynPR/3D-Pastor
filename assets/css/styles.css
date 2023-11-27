@@ -92,3 +92,7 @@ ul {
 #fondo {
   background-color: #ede4ed;
 }
+
+.formularioContacto {
+  max-width: 36em;
+}
