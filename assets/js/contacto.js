@@ -1,7 +1,7 @@
 console.log("Contacto");
 
 // Obtener la referencia del formulario
-const registerForm = document.forms["formulario_contacto"];
+const registerForm = document.forms["formularioContacto"]; //Funciona con Id y no con clase
 
 registerForm.addEventListener("submit", (event) => {
   // Evita el comportamiento predeterminado asociadoa un evento.
@@ -26,19 +26,21 @@ const datosVerificados = (user) => {
   if (user.nombre === "") {
     mensajeError("Falta introducir el nombre");
     response = false;
-  } else if (user.correo) {
+  } else if (user.correo === "") {
     mensajeError("Falta introducir el correo");
     response = false;
-  } else if (user.telefono.length <= 10) {
-    mensajeError("El número debe contener 10 dígitos");
+  } else if (user.correo.includes(".") === false) {
+    mensajeError("El formato del correo electrónico ingresado es incorrecto");
     response = false;
-  } else if (!user.termsandconditions) {
-    mensajeError("Debe aceptar los términos y condiciones");
+  } else if (user.telefono.length < 10) {
+    mensajeError("El teléfono debe contener mínimo 10 dígitos");
+    response = false;
+  } else if (user.mensaje === "") {
+    mensajeError("Falta introducir el mensaje");
     response = false;
   } else {
     mensajeError("");
   }
-
   return response;
 };
 
@@ -59,7 +61,24 @@ const mensajeError = (message) => {
   }
 };
 
+/*
 const enviarDatosAlServidor = (user) => {
   console.table(user);
   // TODO enviar datos a la api del servidor
+  Email.send({
+    Host: "smtp.elasticemail.com",
+    Username: user.nombre,
+    Password: "password",
+    To: "misaeltup@gmail.com",
+    From: user.correo,
+    Subject: "Hola",
+    Body: "And this is the body",
+  }).then((message) => alert(message));
 };
+*/
+
+emailjs.send("service_slrb65b", "template_vml4y7r", {
+  to_name: "Misael",
+  from_name: "Prueba",
+  message: "Prueba apra ver si funciona",
+});
