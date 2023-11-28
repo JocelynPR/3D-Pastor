@@ -76,9 +76,3 @@ const enviarDatosAlServidor = (user) => {
   }).then((message) => alert(message));
 };
 */
-
-emailjs.send("service_slrb65b", "template_vml4y7r", {
-  to_name: "Misael",
-  from_name: "Prueba",
-  message: "Prueba apra ver si funciona",
-});
