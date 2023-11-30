@@ -69,10 +69,41 @@ const enviarDatosAlServidor = (user) => {
     Host: "smtp.elasticemail.com",
     Username: user.nombre,
     Password: "password",
-    To: "misaeltup@gmail.com",
-    From: user.correo,
+    To: user.correo,
+    From: "misaeltup@gmail.com",
     Subject: "Hola",
     Body: "And this is the body",
   }).then((message) => alert(message));
 };
 */
+
+const enviarDatosAlServidor = (user) => {
+  console.table(user);
+  // TODO enviar datos a la api del servidor
+};
+
+////
+
+const btn = document.getElementById("boton");
+
+document
+  .getElementById("formularioContacto")
+  .addEventListener("submit", function (event) {
+    event.preventDefault();
+
+    btn.value = "Sending...";
+
+    const serviceID = "default_service";
+    const templateID = "template_vml4y7r";
+
+    emailjs.sendForm(serviceID, templateID, this).then(
+      () => {
+        btn.value = "Send Email";
+        alert("Sent!");
+      },
+      (err) => {
+        btn.value = "Send Email";
+        alert(JSON.stringify(err));
+      }
+    );
+  });
