@@ -1,0 +1,59 @@
+@font-face {
+  font-family: "Kanit Medium";
+  src: url(../../fonts/Kanit/Kanit-Medium.ttf);
+}
+
+@font-face {
+  font-family: "Kanit Regular";
+  src: url(../../fonts/Kanit/Kanit-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Kanit Light";
+  src: url(../../fonts/Kanit/Kanit-Light.ttf);
+}
+
+:root {
+  --morado-oscuro: #3b1f53;
+  --morado-clarito: #ede4ed;
+  --morado-medio: #b6a9c5;
+  --morado-grisaseo: #847a9c;
+  --blanco: #fefeff;
+}
+
+.custom-navbar {
+  background-color: #3b1f53
+}
+
+.input-group {
+  width: 500px; 
+  height: 35px; 
+}
+
+
+.category-bar {
+  background-color: var(--morado-medio);
+}
+
+.svg-cart-icon {
+  fill: white; /* Cambia el color del icono SVG */
+  width: 80px; /* Ajusta el tamaño según sea necesario */
+  padding-right: 30px;
+}
+.pokemon-icon{
+  width: 12rem;
+  margin-left: 2rem;
+}
+.category-icon{
+  width: 4rem;
+  background-color: none;
+  margin: .5rem;
+}
+.card-text{
+  color: var(--morado-clarito);
+  font-family: "Kanit Regular";
+  padding-bottom: .8rem;
+}
+a{
+  text-decoration: none;
+}

@@ -1,0 +1,86 @@
+import CartIcon from "./cartIcon/CartIcon";
+import shopping_cart from "../../img/logos/shopping_cart.svg";
+import pokemon_place_logo from "../../img/logos/pokemon_place_logo.svg";
+import person_logo from "../../img/logos/person.svg";
+import dices from "../../img/logos/dice.svg";
+import key from "../../img/logos/key.svg";
+import bunny from "../../img/logos/bunny.svg";
+import cake from "../../img/logos/cake.svg";
+import table from "../../img/logos/table.svg";
+import pokeball from "../../img/logos/catching_pokemon.svg";
+import menu from "../../img/logos/menu.svg";
+
+import './navBar.css';
+
+const NavBar = () => {
+  return (
+    <>
+      <nav className="navbar navbar-expand-lg custom-navbar">
+        <div className="navbar-brand">
+          <CartIcon src={pokemon_place_logo} href="https://pokemmo.com/en/" className="pokemon-icon"/>
+        </div>
+        <div className="mx-auto col-lg-4">
+          <form className="form-inline">
+            <div className="input-group">
+              <input className="form-control" type="search" placeholder="Search" aria-label="Search" />
+              <div className="input-group-append">
+                <button className="btn btn-outline-success" type="submit">Search</button>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div className="d-flex justify-content-end align-items-center"> 
+          <CartIcon src={person_logo} href="https://pokemmo.com/en/" className="svg-cart-icon" id="personIcon"/>
+          <CartIcon src={shopping_cart} href="https://pokemmo.com/en/" alt="Carrito de compras" className="svg-cart-icon" id="cartIcon"/>
+        </div>
+      </nav>
+      <div className="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-6 g-3 category-bar">
+        <CartIcon src={dices} href="/sobre-nosotros" className="category-icon" description="Producto Oficial"/>
+        <CartIcon src={key} href="https://pokemmo.com/en/" className="category-icon"description="Accesorios"/>
+        <CartIcon src={bunny} href="https://pokemmo.com/en/" className="category-icon" description="Juguetes"/>
+        <CartIcon src={cake} href="https://pokemmo.com/en/" className="category-icon" description="Postres"/>
+        <CartIcon src={table} href="https://pokemmo.com/en/" className="category-icon" description="Juegos de Mesa"/>
+        <CartIcon src={pokeball} href="https://pokemmo.com/en/" className="category-icon" description="Otros"/>
+      </div>
+    </>
+  );
+};
+
+export default NavBar;
+
+
+
+
+
+/*
+function NavBar() {
+    return (
+        <nav className="navbar">
+          <div className="left-section">
+        <CartIcon
+          src={pokemon_place_logo}
+          href="https://pokemmo.com/en/"
+        />
+      </div>
+      <div className="right-section">
+        <li className="nav-item cart-icon">
+          <CartIcon
+            src={person_logo}
+            href="https://pokemmo.com/en/"
+            className="svg-cart-icon"
+          />
+        </li>
+        <li className="nav-item cart-icon">
+          <CartIcon
+            src={shopping_cart}
+            href="https://pokemmo.com/en/"
+            className="svg-cart-icon"
+          />
+        </li>
+      </div>
+        </nav>
+      );
+}
+
+export default NavBar;
+*/
