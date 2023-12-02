@@ -57,3 +57,11 @@
 a{
   text-decoration: none;
 }
+
+#log-in {
+  position: relative;
+  top: 1.5rem;
+  left: 1.2rem;
+  font-family: "Kanit Medium";
+  color: var(--morado-clarito);
+}
