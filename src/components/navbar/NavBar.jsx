@@ -8,7 +8,9 @@ import bunny from "../../img/logos/bunny.svg";
 import cake from "../../img/logos/cake.svg";
 import table from "../../img/logos/table.svg";
 import pokeball from "../../img/logos/catching_pokemon.svg";
+import search from "../../img/logos/search.svg";
 import menu from "../../img/logos/menu.svg";
+
 
 import '../../styles/navbar/navBar.css';
 
@@ -21,11 +23,11 @@ const NavBar = () => {
         </div>
         <div className="mx-auto col-lg-4">
           <form className="form-inline">
-            <div className="input-group">
-              <input className="form-control" type="search" placeholder="Search" aria-label="Search" />
-              <div className="input-group-append">
-                <button className="btn btn-outline-success" type="submit">Search</button>
-              </div>
+            <div id="search-wrapper">
+              <input type="search" id="search" placeholder="Buscar" />
+              <i className="fa-search">
+                <CartIcon src={search} className="search-icon" id="searchIcon" />
+              </i>
             </div>
           </form>
         </div>
