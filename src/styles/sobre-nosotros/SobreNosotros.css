@@ -1,0 +1,71 @@
+@font-face {
+  font-family: "Kanit Medium";
+  src: url(../../fonts/Kanit/Kanit-Medium.ttf);
+}
+
+@font-face {
+  font-family: "Kanit Regular";
+  src: url(../../fonts/Kanit/Kanit-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Kanit Light";
+  src: url(../../fonts/Kanit/Kanit-Light.ttf);
+}
+
+:root {
+  --morado-oscuro: #3b1f53;
+  --morado-clarito: #ede4ed;
+  --morado-grisaseo: #847a9c;
+  --blanco: #fefeff;
+}
+
+body {
+  background-color: var(--morado-clarito);
+}
+
+#logo-pokemon-place-sobre-nosotros {
+  width: 35%;
+}
+
+.card-sobre-nosotros {
+  background-color: var(--blanco);
+  height: 100%;
+}
+
+#main-sobre-nosotros {
+  margin-bottom: 5rem;
+}
+
+.h1-sobre-nosotros {
+  color: var(--morado-oscuro);
+  font-family: 'Kanit Medium';
+}
+
+.texto-de-tarjeta-sobre-nosotros {
+  color: var(--morado-oscuro);
+  font-family: 'Kanit Regular';
+}
+
+#descripcion-pokemon-place-sobre-nosotros {
+  color: var(--morado-grisaseo);
+  font-family: 'Kanit Light';
+}
+
+#contenedor-rol-de-tarjeta-sobre-nosotros {
+  height: 1.5rem;
+}
+
+.rol-de-tarjeta-sobre-nosotros {
+  color: var(--morado-grisaseo);
+  font-family: 'Kanit Light';
+  position: absolute;
+  bottom: .6rem;
+  right: 1rem;
+}
+
+.col-sobre-nosotros{
+  float: none;
+  margin: 0 auto;
+  padding-top: 2rem;
+}
