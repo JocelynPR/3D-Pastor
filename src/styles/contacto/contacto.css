@@ -1,0 +1,22 @@
+body {
+  background-color: #ede4ed;
+  font-family: "Kanit Regular";
+  src: url(../../fonts/Kanit/Kanit-Medium.ttf);
+}
+
+#formularioContacto {
+  font-family: "Kanit Regular";
+  src: url(../../fonts/Kanit/Kanit-Medium.ttf);
+  max-width: 36em;
+}
+
+h2 {
+  text-align: center;
+}
+
+.form-control {
+  border-radius: 20px; /* Ajusta el valor según tus preferencias */
+  /* Otros estilos para los input, como el tamaño, el margen, etc. */
+  font-family: "Kanit light";
+  src: url(../../fonts/Kanit/Kanit-Medium.ttf);
+}
