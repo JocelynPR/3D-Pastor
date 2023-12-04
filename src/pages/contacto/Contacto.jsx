@@ -86,14 +86,14 @@ const Contacto = () => {
       onSubmit={handleFormSubmit}
     >
       <br />
-      <h2>Contáctanos</h2>
+      <h2 className="h2-contacto">Contáctanos</h2>
       <div className="mb-3">
         <label htmlFor="nombreFormulario" className="form-label">
           Nombre y apellido:
         </label>
         <input
           type="text"
-          className="form-control"
+          className="form-control form-control-contacto"
           name="nombreFormulario"
           placeholder=""
         />
@@ -104,7 +104,7 @@ const Contacto = () => {
         </label>
         <input
           type="email"
-          className="form-control"
+          className="form-control form-control-contacto"
           name="correoFormulario"
           placeholder="nombre@ejemplo.com"
         />
@@ -115,7 +115,7 @@ const Contacto = () => {
         </label>
         <input
           type="tel"
-          className="form-control"
+          className="form-control form-control-contacto"
           name="telefonoFormulario"
           placeholder="+52 01 2345 6789"
         />
@@ -125,7 +125,7 @@ const Contacto = () => {
           Mensaje:
         </label>
         <textarea
-          className="form-control"
+          className="form-control form-control-contacto"
           name="mensajeFormulario"
           rows="3"
         ></textarea>

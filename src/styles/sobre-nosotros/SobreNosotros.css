@@ -24,39 +24,39 @@ body {
   background-color: var(--morado-clarito);
 }
 
-#logo-pokemon-place {
+#logo-pokemon-place-sobre-nosotros {
   width: 35%;
 }
 
-.card {
+.card-sobre-nosotros {
   background-color: var(--blanco);
   height: 100%;
 }
 
-main {
+#main-sobre-nosotros {
   margin-bottom: 5rem;
 }
 
-h1 {
+.h1-sobre-nosotros {
   color: var(--morado-oscuro);
   font-family: 'Kanit Medium';
 }
 
-.texto-de-tarjeta {
+.texto-de-tarjeta-sobre-nosotros {
   color: var(--morado-oscuro);
   font-family: 'Kanit Regular';
 }
 
-#descripcion-pokemon-place {
+#descripcion-pokemon-place-sobre-nosotros {
   color: var(--morado-grisaseo);
   font-family: 'Kanit Light';
 }
 
-#contenedor-rol-de-tarjeta {
+#contenedor-rol-de-tarjeta-sobre-nosotros {
   height: 1.5rem;
 }
 
-.rol-de-tarjeta {
+.rol-de-tarjeta-sobre-nosotros {
   color: var(--morado-grisaseo);
   font-family: 'Kanit Light';
   position: absolute;
@@ -64,7 +64,7 @@ h1 {
   right: 1rem;
 }
 
-.col-centered{
+.col-sobre-nosotros{
   float: none;
   margin: 0 auto;
   padding-top: 2rem;

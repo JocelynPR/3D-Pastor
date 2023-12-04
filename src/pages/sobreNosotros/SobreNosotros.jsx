@@ -11,21 +11,21 @@ import { TarjetaSobreNosotros } from "../../components/sobre-nosotros/TarjetaSob
 export default function SobreNosotros () {
   return (
     <>
-      <main>
+      <main id="main-sobre-nosotros">
 
         {/* Inicio de: Logo y descripción del proyecto */}
         <section className="pt-5 pb-3 text-center container">
           <div>
             <img
-              id="logo-pokemon-place"
+              id="logo-pokemon-place-sobre-nosotros"
               src={require('../../img/logos/pokemon_place_logo.svg').default}
               alt="Logo"
             />
           </div>
           <div className="row pt-lg-5">
-            <div className="col-lg-6 col-md-8 mx-auto">
-              <h1 className="fw-light"><strong>Pokémon Place Gdl</strong></h1>
-              <div id="descripcion-pokemon-place"><p className="lead">
+            <div className="col-lg-8 col-md-8 mx-auto">
+              <h1 className="h1-sobre-nosotros fw-light"><strong>Pokémon Place Gdl</strong></h1>
+              <div id="descripcion-pokemon-place-sobre-nosotros"><p className="lead">
                 Pokémon Place Gdl es una comunidad física y virtual mexicana
                 conformada por seguidores apasionados de la franquicia Pokémon,
                 cuyas actividades constan de la organización de reuniones

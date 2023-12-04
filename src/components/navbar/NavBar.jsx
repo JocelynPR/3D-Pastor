@@ -1,6 +1,6 @@
 import CartIcon from "./cartIcon/CartIcon";
 import shopping_cart from "../../img/logos/shopping_cart.svg";
-import pokemon_place_logo from "../../img/logos/pokemon_place_logo.svg";
+import pokemon_place_logo_with_border from "../../img/logos/pokemon_place_logo_with_border.svg";
 import person_logo from "../../img/logos/person.svg";
 import dices from "../../img/logos/dice.svg";
 import key from "../../img/logos/key.svg";
@@ -19,7 +19,7 @@ const NavBar = () => {
     <>
       <nav className="navbar navbar-expand-lg custom-navbar">
         <div className="navbar-brand">
-          <CartIcon src={pokemon_place_logo} href="/Home" className="pokemon-icon" />
+          <CartIcon src={pokemon_place_logo_with_border} href="/Home" className="pokemon-icon" />
         </div>
         <div className="mx-auto col-lg-4">
           <form className="form-inline">
@@ -41,7 +41,7 @@ const NavBar = () => {
           <CartIcon src={shopping_cart} href="https://pokemmo.com/en/" alt="Carrito de compras" className="svg-cart-icon" id="cartIcon" />
         </div>
       </nav>
-      <div className="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-6 g-3 category-bar">
+      <div id="category-bar-navbar" className="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-6 g-3 category-bar">
         <CartIcon src={dices} href="/Products" className="category-icon" description="Producto Oficial" />
         <CartIcon src={key} href="Products" className="category-icon" description="Accesorios" />
         <CartIcon src={bunny} href="/Products" className="category-icon" description="Juguetes" />

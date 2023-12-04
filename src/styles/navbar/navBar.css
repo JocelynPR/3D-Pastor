@@ -22,39 +22,37 @@
 }
 
 .custom-navbar {
-  background-color: #3b1f53
+  background-color: var(--morado-oscuro);
 }
 
-.input-group {
-  width: 500px; 
-  height: 35px; 
-}
-
-
-.category-bar {
-  background-color: var(--morado-medio);
+#category-bar-navbar {
+  background-color: var(--morado-grisaseo);
 }
 
 .svg-cart-icon {
-  fill: white; /* Cambia el color del icono SVG */
-  width: 80px; /* Ajusta el tamaño según sea necesario */
+  width: 80px;
+  /* Ajusta el tamaño según sea necesario */
   padding-right: 30px;
 }
-.pokemon-icon{
+
+.pokemon-icon {
   width: 12rem;
   margin-left: 2rem;
 }
-.category-icon{
+
+.category-icon {
   width: 4rem;
   background-color: none;
   margin: .5rem;
 }
-.card-text{
+
+.card-text-navbar {
   color: var(--morado-clarito);
   font-family: "Kanit Regular";
   padding-bottom: .8rem;
 }
-a{
+
+a {
   text-decoration: none;
 }
 
@@ -66,34 +64,34 @@ a{
   color: var(--morado-clarito);
 }
 
-.search-icon{
+.search-icon {
   width: 1.5rem;
   background-color: none;
   margin-top: -0.35rem;
   margin-left: 0.3rem;
 }
 
-.fa-search{
+.fa-search {
   height: 2.72rem;
 }
 
 #search-wrapper {
   -webkit-box-align: center;
   -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
   -webkit-flex-flow: row-reverse nowrap;
-      -ms-flex-flow: row-reverse nowrap;
-          flex-flow: row-reverse nowrap;
+  -ms-flex-flow: row-reverse nowrap;
+  flex-flow: row-reverse nowrap;
   width: 450px;
 }
 
 #search-wrapper #search {
-  background-color: #ede4ed;
+  background-color: var(--morado-clarito);
   border: 1px solid #ccc;
   border-left: 0;
   border-radius: 0 25px 25px 0;
@@ -106,8 +104,9 @@ a{
   transition: border-color .2s ease;
   width: 100%;
 }
-#search-wrapper #search +i {
-  background-color: #ede4ed;
+
+#search-wrapper #search+i {
+  background-color: var(--morado-clarito);
   border: 1px solid #ccc;
   border-radius: 25px 0 0 25px;
   border-right: 0;
@@ -116,11 +115,13 @@ a{
   -webkit-transition: border-color .2s ease;
   transition: border-color .2s ease;
 }
+
 #search-wrapper #search:focus {
   border-color: rgb(8, 124, 120);
   outline: none;
 }
-#search-wrapper #search:focus + i {
+
+#search-wrapper #search:focus+i {
   border-color: rgb(8, 124, 120);
 }
 
