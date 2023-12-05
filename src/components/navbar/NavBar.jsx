@@ -9,7 +9,7 @@ import cake from "../../img/logos/cake.svg";
 import table from "../../img/logos/table.svg";
 import pokeball from "../../img/logos/catching_pokemon.svg";
 import search from "../../img/logos/search.svg";
-import menu from "../../img/logos/menu.svg";
+//import menu from "../../img/logos/menu.svg";
 
 
 import '../../styles/navbar/navBar.css';
