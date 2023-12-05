@@ -12,7 +12,7 @@ import Contacto from "./pages/contacto/Contacto";
 function App() {
   return (
     <div className="App">
-      <Router>
+
         <NavBar />
         <Routes>
           <Route path="/" element={<Home />} />
@@ -23,7 +23,7 @@ function App() {
           <Route path="*" element={<Home />} />
         </Routes>
         <Footer />
-      </Router>
+
     </div>
   );
 }
