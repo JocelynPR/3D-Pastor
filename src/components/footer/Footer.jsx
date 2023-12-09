@@ -36,16 +36,16 @@ export default function Footer() {
                 <div className="col">
                   <ul>
                     <a href="/Products" className="text-body"><li className="list-products-footer">Producto Oficial</li></a>
-                    <a href="/Products" className="text-body"><li className="list-products-footer">Accesorios</li></a>
-                    <a href="/Products" className="text-body"><li className="list-products-footer">Juguetes</li></a>
+                    <a href="/ProductsAccesorios" className="text-body"><li className="list-products-footer">Accesorios</li></a>
+                    <a href="/ProductsJuguetes" className="text-body"><li className="list-products-footer">Juguetes</li></a>
                   </ul>
                 </div>
 
                 <div className="col">
                   <ul>
-                    <a href="/Products" className="text-body"><li className="list-products-footer">Postres</li></a>
-                    <a href="/Products" className="text-body"><li className="list-products-footer">Juegos de Mesa</li></a>
-                    <a href="/Products" className="text-body"><li className="list-products-footer">Otros</li></a>
+                    <a href="/ProductsPostres" className="text-body"><li className="list-products-footer">Postres</li></a>
+                    <a href="/ProductsJuegos" className="text-body"><li className="list-products-footer">Juegos de Mesa</li></a>
+                    <a href="/ProductsOtros" className="text-body"><li className="list-products-footer">Otros</li></a>
                   </ul>
                 </div>
               </div>
