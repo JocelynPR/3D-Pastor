@@ -12,14 +12,13 @@ import ProductsJuegos from "./pages/productsJuegos/ProductsJuegos";
 import ProductsOtros from "./pages/productsOtros/ProductsOtros";
 import LogIn from "./pages/logIn/LogIn";
 import Contacto from "./pages/contacto/Contacto";
-import AppButtonCard from "./components/addCardButton/AppButtonCard";
+//import AppButtonCard from "./components/addCardButton/AppButtonCard";
 
 function App() {
   return (
     <div className="App">
       <Router>
         <NavBar />
-        <AppButtonCard />
         {/*<CounterProductButton />*/}
         <Routes>
           <Route path="/" element={<Home />} />

@@ -4,7 +4,7 @@ import SobreNosotros from '../sobreNosotros/SobreNosotros'
 export default function Home() {
   return (
     <div>
-        Home
+        
 
     </div>
   )
