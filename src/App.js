@@ -1,4 +1,3 @@
-
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import "./App.css";
 import SobreNosotros from "./pages/sobreNosotros/SobreNosotros";
@@ -13,7 +12,6 @@ import ProductsJuegos from "./pages/productsJuegos/ProductsJuegos";
 import ProductsOtros from "./pages/productsOtros/ProductsOtros";
 import LogIn from "./pages/logIn/LogIn";
 import Contacto from "./pages/contacto/Contacto";
-import AddCardButton from "./components/addCardButton/AddCardButton";
 import AppButtonCard from "./components/addCardButton/AppButtonCard";
 
 function App() {
