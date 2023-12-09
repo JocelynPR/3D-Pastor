@@ -4,7 +4,7 @@ import itzelJuegos from "../../img/fotosPerfil/imagen_2.jpeg";
 import tonyJuegos from "../../img/fotosPerfil/imagen_3.jpeg";
 import jorgeJuegos from "../../img/fotosPerfil/imagen_4.jpeg";
 
-import { TarjetaProductosJuegos } from "../../components/productos-contenido-juegos/TarjetaProductosJuegos";
+import { TarjetaProductos} from "../../components/productos-contenido/TarjetaProductos";
 
 export default function ProductsJuegos() {
     return (
@@ -19,35 +19,35 @@ export default function ProductsJuegos() {
               <div className="fondo container">
                 <div className="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3 g-3">
                   {/* Juegos 1 */}
-                  <TarjetaProductosJuegos
+                  <TarjetaProductos
                     src={jorgeJuegos}
                     alt={"Jorge"}
-                    nombreProductoJuegos={"Juegos 1"}
-                    precioJuegos={"$25.00"}
+                    nombreProducto={"Juegos 1"}
+                    precio={"$25.00"}
                   />
     
                   {/* Juegos 2 */}
-                  <TarjetaProductosJuegos
+                  <TarjetaProductos
                     src={itzelJuegos}
                     alt={"Itzel"}
-                    nombreProductoJuegos={"Juegos 2"}
-                    precioJuegos={"$20.00"}
+                    nombreProducto={"Juegos 2"}
+                    precio={"$20.00"}
                   />
     
                   {/* Juegos 3 */}
-                  <TarjetaProductosJuegos
+                  <TarjetaProductos
                     src={tonyJuegos}
                     alt={"Tony"}
-                    nombreProductoJuegos={"Juegos 3"}
-                    precioJuegos={"$30.00"}
+                    nombreProducto={"Juegos 3"}
+                    precio={"$30.00"}
                   />
     
                   {/* Juegos 4 */}
-                  <TarjetaProductosJuegos
+                  <TarjetaProductos
                     src={yazJuegos}
                     alt={"Yaz"}
-                    nombreProductoJuegos={"Juegos 4"}
-                    precioPostres={"$20.00"}
+                    nombreProducto={"Juegos 4"}
+                    precio={"$20.00"}
                   />
     
                  
