@@ -1,0 +1,28 @@
+/* Nuevo archivo CSS: AddPokebolaButton.css */
+
+/* Estilo del botón Add Circle */
+.add-pokebola-button {
+  font-family: "Material Icons", sans-serif;
+  font-size: 2em;
+  background: none;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  color: #3b1f53; /* Color del símbolo */
+  font-weight: bold; /* Grosor del símbolo */
+}
+
+/* Clase para ocultar el botón */
+.hidden {
+  display: none;
+}
+
+.add-pokebola-button img {
+  width: 40px;
+  height: 40px;
+}
+
+.add-pokebola-button.hidden {
+  opacity: 0;
+  pointer-events: none;
+}

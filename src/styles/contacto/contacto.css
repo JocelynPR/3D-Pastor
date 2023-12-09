@@ -8,17 +8,6 @@
   src: url(../../fonts/Kanit/Kanit-Regular.ttf);
 }
 
-:root {
-  --morado-oscuro: #3b1f53;
-  --morado-clarito: #ede4ed;
-}
-
-body {
-  background-color: var(--morado-clarito);
-  font-family: "Kanit Regular";
-  color: var(--morado-oscuro);
-}
-
 #formularioContacto {
   font-family: "Kanit Regular";
   max-width: 36em;
@@ -30,7 +19,19 @@ body {
 
 .form-control-contacto {
   border-radius: 20px;
-  /* Ajusta el valor según tus preferencias */
-  /* Otros estilos para los input, como el tamaño, el margen, etc. */
   font-family: "Kanit Light";
 }
+
+/* Al parecer las siguientes líneas se pueden borrar*/
+/*
+:root {
+  --morado-oscuro: #3b1f53;
+  --morado-clarito: #ede4ed;
+}
+
+body {
+  background-color: var(--morado-clarito);
+  font-family: "Kanit Regular";
+  color: var(--morado-oscuro);
+}
+*/

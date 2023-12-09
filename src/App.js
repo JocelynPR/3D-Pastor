@@ -7,12 +7,16 @@ import NavBar from "./components/navbar/NavBar";
 import Products from "./pages/products/Products";
 import LogIn from "./pages/logIn/LogIn";
 import Contacto from "./pages/contacto/Contacto";
+import AddCardButton from "./components/addCardButton/AddCardButton";
+import AppButtonCard from "./components/addCardButton/AppButtonCard";
 
 function App() {
   return (
     <div className="App">
       <Router>
         <NavBar />
+        <AppButtonCard />
+        {/*<CounterProductButton />*/}
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="products" element={<Products />} />

@@ -39,17 +39,17 @@ body {
 
 .h1-sobre-nosotros {
   color: var(--morado-oscuro);
-  font-family: 'Kanit Medium';
+  font-family: "Kanit Medium";
 }
 
 .texto-de-tarjeta-sobre-nosotros {
   color: var(--morado-oscuro);
-  font-family: 'Kanit Regular';
+  font-family: "Kanit Regular";
 }
 
 #descripcion-pokemon-place-sobre-nosotros {
   color: var(--morado-grisaseo);
-  font-family: 'Kanit Light';
+  font-family: "Kanit Light";
 }
 
 #contenedor-rol-de-tarjeta-sobre-nosotros {
@@ -58,13 +58,13 @@ body {
 
 .rol-de-tarjeta-sobre-nosotros {
   color: var(--morado-grisaseo);
-  font-family: 'Kanit Light';
+  font-family: "Kanit Light";
   position: absolute;
-  bottom: .6rem;
+  bottom: 0.6rem;
   right: 1rem;
 }
 
-.col-sobre-nosotros{
+.col-sobre-nosotros {
   float: none;
   margin: 0 auto;
   padding-top: 2rem;
