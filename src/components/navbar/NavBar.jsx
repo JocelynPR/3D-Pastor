@@ -9,8 +9,7 @@ import cake from "../../img/logos/cake.svg";
 import table from "../../img/logos/table.svg";
 import pokeball from "../../img/logos/catching_pokemon.svg";
 import search from "../../img/logos/search.svg";
-import menu from "../../img/logos/menu.svg";
-
+//import menu from "../../img/logos/menu.svg";
 
 import '../../styles/navbar/navBar.css';
 
@@ -43,11 +42,11 @@ const NavBar = () => {
       </nav>
       <div id="category-bar-navbar" className="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-6 g-3 category-bar">
         <CartIcon src={dices} href="/Products" className="category-icon" description="Producto Oficial" />
-        <CartIcon src={key} href="Products" className="category-icon" description="Accesorios" />
-        <CartIcon src={bunny} href="/Products" className="category-icon" description="Juguetes" />
-        <CartIcon src={cake} href="/Products" className="category-icon" description="Postres" />
-        <CartIcon src={table} href="/Products" className="category-icon" description="Juegos de Mesa" />
-        <CartIcon src={pokeball} href="/Products" className="category-icon" description="Otros" />
+        <CartIcon src={key} href="/ProductsAccesorios" className="category-icon" description="Accesorios" />
+        <CartIcon src={bunny} href="/ProductsJuguetes" className="category-icon" description="Juguetes" />
+        <CartIcon src={cake} href="/ProductsPostres" className="category-icon" description="Postres" />
+        <CartIcon src={table} href="/ProductsJuegos" className="category-icon" description="Juegos de Mesa" />
+        <CartIcon src={pokeball} href="/ProductsOtros" className="category-icon" description="Otros" />
       </div>
     </>
   );
