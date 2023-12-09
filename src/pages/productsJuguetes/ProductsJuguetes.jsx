@@ -7,7 +7,7 @@ import jocelynJuguetes from "../../img/fotosPerfil/imagen_5.jpeg";
 import mirtaJuguetes from "../../img/fotosPerfil/imagen_6.jpeg";
 import misaJuguetes from "../../img/fotosPerfil/imagen_7.jpeg";
 
-import { TarjetaProductosJuguetes } from "../../components/productos-contenido-juguetes/TarjetaProductosJuguetes";
+import { TarjetaProductos} from "../../components/productos-contenido/TarjetaProductos";
 
 export default function ProductsJuguetes() {
   return (
@@ -22,75 +22,75 @@ export default function ProductsJuguetes() {
           <div className="fondo container">
             <div className="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3 g-3">
               {/* Juguetes 1 */}
-              <TarjetaProductosJuguetes
+              <TarjetaProductos
                 src={misaJuguetes}
                 alt={"Misa"}
-                nombreProductoJuguetes={"Juguetes 1"}
-                precioJuguetes={"$30.99"}
+                nombreProducto={"Juguetes 1"}
+                precio={"$30.99"}
               />
 
               {/* Juguetes 2 */}
-              <TarjetaProductosJuguetes
+              <TarjetaProductos
                 src={tonyJuguetes}
                 alt={"Tony"}
-                nombreProductoJuguetes={"Juguetes 2"}
-                precioJuguetes={"$30.99"}
+                nombreProducto={"Juguetes 2"}
+                precio={"$30.99"}
               />
 
               {/* Juguetes 3 */}
-              <TarjetaProductosJuguetes
+              <TarjetaProductos
                 src={jorgeJuguetes}
                 alt={"Jorge"}
-                nombreProductoJuguetes={"Juguetes 3"}
-                precioJuguetes={"$30.99"}
+                nombreProducto={"Juguetes 3"}
+                precio={"$30.99"}
               />
 
               {/* Juguetes 4 */}
-              <TarjetaProductosJuguetes
+              <TarjetaProductos
                 src={yazJuguetes}
                 alt={"Yaz"}
-                nombreProductoJuguetes={"Juguetes 4"}
-                precioJuguetes={"$30.99"}
+                nombreProducto={"Juguetes 4"}
+                precio={"$30.99"}
               />
 
               {/* Juguetes 5 */}
-              <TarjetaProductosJuguetes
+              <TarjetaProductos
                 src={yazJuguetes}
                 alt={"Yaz"}
-                nombreProductoJuguetes={"Juguetes 5"}
-                precioJuguetes={"$30.99"}
+                nombreProducto={"Juguetes 5"}
+                precio={"$30.99"}
               />
 
               {/* Juguetes 6 */}
-              <TarjetaProductosJuguetes
+              <TarjetaProductos
                 src={tonyJuguetes}
                 alt={"Tony"}
-                nombreProductoJuguetes={"Juguetes 6"}
-                precioJuguetes={"$30.99"}
+                nombreProducto={"Juguetes 6"}
+                precio={"$30.99"}
               />
 
               {/* Juguetes 7 */}
-              <TarjetaProductosJuguetes
+              <TarjetaProductos
                 src={mirtaJuguetes}
                 alt={"Mirta"}
-                nombreProductoJuguetes={"AJuguetes 7"}
-                precioJuguetes={"$30.99"}
+                nombreProducto={"AJuguetes 7"}
+                precio={"$30.99"}
               />
 
               {/* Juguetes 8 */}
-              <TarjetaProductosJuguetes
+              <TarjetaProductos
                 src={jocelynJuguetes}
                 alt={"Jocelyn"}
-                nombreProductoJuguetes={"Juguetes 8"}
-                precioJuguetes={"$30.99"}
+                nombreProducto={"Juguetes 8"}
+                precio={"$30.99"}
               />
 
               {/* Producto 9 */}
-              <TarjetaProductosJuguetes
+              <TarjetaProductos
                 src={itzelJuguetes}
                 alt={"Itzel"}
-                nombreProductoJuguetes={"Juguetes 9 "}
-                precioJuguetes={"$30.99"}
+                nombreProducto={"Juguetes 9 "}
+                precio={"$30.99"}
               />
 
             </div>

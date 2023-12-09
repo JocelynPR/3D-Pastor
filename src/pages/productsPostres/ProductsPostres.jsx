@@ -7,7 +7,7 @@ import jocelynPostres from "../../img/fotosPerfil/imagen_5.jpeg";
 import mirtaPostres from "../../img/fotosPerfil/imagen_6.jpeg";
 import misaPostres from "../../img/fotosPerfil/imagen_7.jpeg";
 
-import { TarjetaProductosPostres } from "../../components/productos-contenido-postres/TarjetaProductosPostres";
+import { TarjetaProductos} from "../../components/productos-contenido/TarjetaProductos";
 
 export default function ProductsPostres() {
     return (
@@ -21,60 +21,60 @@ export default function ProductsPostres() {
             <section>
               <div className="fondo container">
                 <div className="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3 g-3">
-                  {/* Postres 1 */}
-                  <TarjetaProductosPostres
+                  {/* Producto 1 */}
+                  <TarjetaProductos
                     src={mirtaPostres}
                     alt={"Mirta"}
-                    nombreProductoPostres={"Postres 1"}
-                    precioPostres={"$75.99"}
+                    nombreProducto={"Postres 1"}
+                    precio={"$75.99"}
                   />
     
-                  {/* Postres 2 */}
-                  <TarjetaProductosPostres
+                  {/* Producto 2 */}
+                  <TarjetaProductos
                     src={itzelPostres}
                     alt={"Itzel"}
-                    nombreProductoPostres={"Postres 2"}
-                    precioPostres={"$30.99"}
+                    nombreProducto={"Postres 2"}
+                    precio={"$30.99"}
                   />
     
-                  {/* Postres 3 */}
-                  <TarjetaProductosPostres
+                  {/* Producto 3 */}
+                  <TarjetaProductos
                     src={jorgePostres}
                     alt={"Jorge"}
-                    nombreProductoPostres={"Postres 3"}
-                    precioPostres={"$30.99"}
+                    nombreProducto={"Postres 3"}
+                    precio={"$30.99"}
                   />
     
-                  {/* Postres 4 */}
-                  <TarjetaProductosPostres
+                  {/* Producto 4 */}
+                  <TarjetaProductos
                     src={jocelynPostres}
                     alt={"Jocelyn"}
-                    nombreProductoPostres={"Postres 4"}
-                    precioPostres={"$30.99"}
+                    nombreProducto={"Postres 4"}
+                    precio={"$30.99"}
                   />
     
-                  {/* Postres 5 */}
-                  <TarjetaProductosPostres
+                  {/* Producto 5 */}
+                  <TarjetaProductos
                     src={yazPostres}
                     alt={"Yaz"}
-                    nombreProductoPostres={"Postres 5"}
-                    precioPostres={"$20.99"}
+                    nombreProducto={"Postres 5"}
+                    precio={"$20.99"}
                   />
     
-                  {/* Postres 6 */}
-                  <TarjetaProductosPostres
+                  {/* Producto 6 */}
+                  <TarjetaProductos
                     src={tonyPostres}
                     alt={"Tony"}
-                    nombreProductoPostres={"Postres 6"}
-                    precioPostres={"$40.99"}
+                    nombreProducto={"Postres 6"}
+                    precio={"$40.99"}
                   />
     
-                  {/* Postres 7 */}
-                  <TarjetaProductosPostres
+                  {/* Producto 7 */}
+                  <TarjetaProductos
                     src={misaPostres}
                     alt={"Misa"}
-                    nombreProductoPostres={"Postres 7"}
-                    precioPostres={"$45.99"}
+                    nombreProducto={"Postres 7"}
+                    precio={"$45.99"}
                   />
     
                  

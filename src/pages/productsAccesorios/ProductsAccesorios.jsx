@@ -6,7 +6,8 @@ import jorgeAccesorios from "../../img/fotosPerfil/imagen_4.jpeg";
 import jocelynAccesorios from "../../img/fotosPerfil/imagen_5.jpeg";
 import mirtaAccesorios from "../../img/fotosPerfil/imagen_6.jpeg";
 import misaAccesorios from "../../img/fotosPerfil/imagen_7.jpeg";
-import { TarjetaProductosAccesorios } from "../../components/productos-contenido-accesorios/TarjetaProductosAccesorios";
+
+import { TarjetaProductos} from "../../components/productos-contenido/TarjetaProductos";
 
 export default function ProductsAccesorios() {
   return (
@@ -21,75 +22,75 @@ export default function ProductsAccesorios() {
           <div className="fondo container">
             <div className="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3 g-3">
               {/*Accesorios 1 */}
-              <TarjetaProductosAccesorios
+              <TarjetaProductos
                 src={itzelAccesorios}
                 alt={"Itzel"}
-                nombreProductoAccesorios={"Accesorios 1"}
-                precioAccesorios={"$44.99"}
+                nombreProducto={"Accesorios 1"}
+                precio={"$44.99"}
               />
 
               {/* Accesorios 2 */}
-              <TarjetaProductosAccesorios
+              <TarjetaProductos
                 src={tonyAccesorios}
                 alt={"Tony"}
-                nombreProductoAccesorios={"Accesorios 2"}
-                precioAccesorios={"$44.99"}
+                nombreProducto={"Accesorios 2"}
+                precio={"$44.99"}
               />
 
               {/* Accesorios 3 */}
-              <TarjetaProductosAccesorios
+              <TarjetaProductos
                 src={mirtaAccesorios}
                 alt={"Mirta"}
-                nombreProductoAccesorios={"Accesorios 3"}
-                precioAccesorios={"$44.99"}
+                nombreProducto={"Accesorios 3"}
+                precio={"$44.99"}
               />
 
               {/* Accesorios 4 */}
-              <TarjetaProductosAccesorios
+              <TarjetaProductos
                 src={yazAccesorios}
                 alt={"Yaz"}
-                nombreProductoAccesorios={"Accesorios 4"}
-                precioAccesorios={"$44.99"}
+                nombreProducto={"Accesorios 4"}
+                precio={"$44.99"}
               />
 
               {/* Accesorios 5 */}
-              <TarjetaProductosAccesorios
+              <TarjetaProductos
                 src={misaAccesorios}
                 alt={"Misa"}
-                nombreProductoAccesorios={"Accesorios 5"}
-                precioAccesorios={"$44.99"}
+                nombreProducto={"Accesorios 5"}
+                precio={"$44.99"}
               />
 
               {/* Accesorios 6 */}
-              <TarjetaProductosAccesorios
+              <TarjetaProductos
                 src={jocelynAccesorios}
                 alt={"Jocelyn"}
-                nombreProductoAccesorios={"Accesorios 6"}
-                precioAccesorios={"$44.99"}
+                nombreProducto={"Accesorios 6"}
+                precio={"$44.99"}
               />
 
               {/* Accesorios 7 */}
-              <TarjetaProductosAccesorios
+              <TarjetaProductos
                 src={jorgeAccesorios}
                 alt={"Jorge"}
-                nombreProductoAccesorios={"Accesorios 7"}
-                precioAccesorios={"$44.99"}
+                nombreProducto={"Accesorios 7"}
+                precio={"$44.99"}
               />
 
               {/* Accesorios 8 */}
-              <TarjetaProductosAccesorios
+              <TarjetaProductos
                 src={mirtaAccesorios}
                 alt={"Mirta"}
-                nombreProductoAccesorios={"Accesorios 8"}
-                precioAccesorios={"$44.99"}
+                nombreProducto={"Accesorios 8"}
+                precio={"$44.99"}
               />
 
               {/* Accesorios 9 */}
-              <TarjetaProductosAccesorios
+              <TarjetaProductos
                 src={misaAccesorios}
                 alt={"Misa"}
-                nombreProductoAccesorios={"Accesorios 9 "}
-                precioAccesorios={"$44.99"}
+                nombreProducto={"Accesorios 9 "}
+                precio={"$44.99"}
               />
 
             </div>
