@@ -9,6 +9,7 @@ import cake from "../../img/logos/cake.svg";
 import table from "../../img/logos/table.svg";
 import pokeball from "../../img/logos/catching_pokemon.svg";
 import search from "../../img/logos/search.svg";
+
 //import menu from "../../img/logos/menu.svg";
 
 import '../../styles/navbar/navBar.css';
@@ -37,7 +38,7 @@ const NavBar = () => {
               <CartIcon src={person_logo} className="svg-cart-icon" id="personIcon" />
             </a>
           </div>
-          <CartIcon src={shopping_cart} href="https://pokemmo.com/en/" alt="Carrito de compras" className="svg-cart-icon" id="cartIcon" />
+          <CartIcon src={shopping_cart} href="/Carrito" alt="Carrito de compras" className="svg-cart-icon" id="cartIcon" />
         </div>
       </nav>
       <div id="category-bar-navbar" className="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-6 g-3 category-bar">

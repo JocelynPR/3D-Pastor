@@ -1,0 +1,18 @@
+/* BuyButton.css */
+.buy-button {
+  font-family: "Kanit Light";
+  font-size: 1em;
+  background-color: #3b1f53;
+  color: #feffff;
+  border: none;
+  padding: 2px 8px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 10px;
+  transition: background-color 0.3s;
+  margin-top: auto;
+
+  &:hover {
+    background-color: #847a9c;
+  }
+}

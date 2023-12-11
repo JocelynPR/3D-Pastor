@@ -45,4 +45,3 @@ const AppButtonCard = () => {
 
 // Exporta el componente AppButtonCard para que pueda ser utilizado en otros archivos
 export default AppButtonCard;
-

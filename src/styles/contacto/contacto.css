@@ -11,6 +11,7 @@
 #formularioContacto {
   font-family: "Kanit Regular";
   max-width: 36em;
+  color: var(--morado-oscuro);
 }
 
 .h2-contacto {

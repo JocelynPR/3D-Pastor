@@ -91,6 +91,9 @@
   }
 }
 
+.carrito-button.carrito-add:hover {
+  background-color: #847a9c;
+}
 /* Estilo del mensaje para pantallas más pequeñas */
 @media (max-width: 600px) {
   .mensaje-maximo {

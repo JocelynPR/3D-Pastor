@@ -12,6 +12,7 @@ import ProductsJuegos from "./pages/productsJuegos/ProductsJuegos";
 import ProductsOtros from "./pages/productsOtros/ProductsOtros";
 import LogIn from "./pages/logIn/LogIn";
 import Contacto from "./pages/contacto/Contacto";
+import Carrito from "./pages/carrito/Carrito";
 //import AppButtonCard from "./components/addCardButton/AppButtonCard";
 
 function App() {
@@ -30,6 +31,7 @@ function App() {
           <Route path="productsOtros" element={<ProductsOtros />} />
           <Route path="sobreNosotros" element={<SobreNosotros />} />
           <Route path="logIn" element={<LogIn />} />
+          <Route path="Carrito" element={<Carrito />} />
           <Route path="contacto" element={<Contacto />} />
           <Route path="*" element={<Home />} />
         </Routes>
