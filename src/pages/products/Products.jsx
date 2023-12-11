@@ -3,7 +3,7 @@ import "../../styles/productos-contenido/Productos.css";
 import { TarjetaProductos } from "../../components/productos-contenido/TarjetaProductos";
 
 // Importa directamente el archivo JSON
-import pokemonesData from "./pokemones.json";
+import pokemonesData from "../../json/productos.json";
 
 export default function Products() {
   const [products, setProducts] = useState([]);
