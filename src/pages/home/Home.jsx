@@ -31,7 +31,7 @@ export default function Products() {
                   src={require("../../img/productos/" + product.image)}
                   alt={product.title}
                   nombreProducto={product.title}
-                  precio={"$" + product.price}
+                  precio={"$" + (product.price).toFixed(2) + " MXN"}
                 />
               ))}
             </div>
