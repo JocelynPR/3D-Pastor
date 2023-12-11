@@ -1,0 +1,201 @@
+[
+  {
+    "id": 1,
+    "title": "Pokémon Fluxx",
+    "price": 350,
+    "category": "Juegos de Mesa",
+    "image": "../img/productos/20231204_173606.png"
+  },
+
+  {
+    "id": 2,
+    "title": "Pokémon Coup",
+    "price": 250,
+    "category": "Juegos de Mesa",
+    "image": "../img/productos/20231204_173950.png"
+  },
+
+  {
+    "id": 3,
+    "title": "Pokélate",
+    "price": 100,
+    "category": "Postres",
+    "image": "../img/productos/20231205_094116.png"
+  },
+
+  {
+    "id": 4,
+    "title": "Pokélate Master Ball",
+    "price": 150,
+    "category": "Postres",
+    "image": "../img/productos/20231205_094117.png"
+  },
+
+  {
+    "id": 5,
+    "title": "Pokélate Love Ball",
+    "price": 150,
+    "category": "Postres",
+    "image": "../img/productos/20231205_094118.png"
+  },
+
+  {
+    "id": 6,
+    "title": "Peluche de Kyogre",
+    "price": 300,
+    "category": "Juguetes",
+    "image": "../img/productos/20231205_160259.png"
+  },
+
+  {
+    "id": 7,
+    "title": "Peluche de Psyduck",
+    "price": 300,
+    "category": "Juguetes",
+    "image": "../img/productos/20231205_160400.png"
+  },
+
+  {
+    "id": 8,
+    "title": "Sticker de Vinil Transparente de Wooloo",
+    "price": 15,
+    "category": "Otros",
+    "image": "../img/productos/20231205_160548.png"
+  },
+
+  {
+    "id": 9,
+    "title": "Sticker de Vinil Transparente de Charizard",
+    "price": 15,
+    "category": "Otros",
+    "image": "../img/productos/20231205_160556.png"
+  },
+
+  {
+    "id": 10,
+    "title": "Sticker de Vinil Holográfico de Gardevoir",
+    "price": 15,
+    "category": "Otros",
+    "image": "../img/productos/20231205_160604.png"
+  },
+
+  {
+    "id": 11,
+    "title": "Sticker de Vinil Transparente de Chandelure",
+    "price": 15,
+    "category": "Otros",
+    "image": "../img/productos/20231205_160611.png"
+  },
+
+  {
+    "id": 12,
+    "title": "Sticker de Vinil Transparente de Rowlet",
+    "price": 15,
+    "category": "Otros",
+    "image": "../img/productos/20231205_160619.png"
+  },
+
+  {
+    "id": 13,
+    "title": "Sticker de Vinil Transparente de 9° Aniversario (Chandelure, Dedenne, Sobble, Tyranitar, Lilligant y Gardevoir)",
+    "price": 15,
+    "category": "Otros",
+    "image": "../img/productos/20231205_160625.png"
+  },
+
+  {
+    "id": 14,
+    "title": "Sobre de 3 League Cards Series 3 - Starters de Hoenn",
+    "price": 20,
+    "category": "Otros",
+    "image": "../img/productos/20231205_160714.png"
+  },
+
+  {
+    "id": 15,
+    "title": "Sobre de 3 League Cards Series 2 - Pikachu Clones",
+    "price": 20,
+    "category": "Otros",
+    "image": "../img/productos/20231205_160753.png"
+  },
+
+  {
+    "id": 16,
+    "title": "Sobre de 3 League Cards Series 1 - Starters de Galar",
+    "price": 20,
+    "category": "Otros",
+    "image": "../img/productos/20231205_160822.png"
+  },
+
+  {
+    "id": 17,
+    "title": "Sobre de 3 League Cards Series 4 - 2020 Top 30 Pokémon de Kanto",
+    "price": 20,
+    "category": "Otros",
+    "image": "../img/productos/20231205_160906.png"
+  },
+
+  {
+    "id": 18,
+    "title": "Squishy Chillón de Charmander",
+    "price": 40,
+    "category": "Juguetes",
+    "image": "../img/productos/20231205_160932.png"
+  },
+
+  {
+    "id": 19,
+    "title": "Squishy Chillón de Snorlax",
+    "price": 40,
+    "category": "Juguetes",
+    "image": "../img/productos/20231205_160944.png"
+  },
+
+  {
+    "id": 20,
+    "title": "Squishy Chillón de Bulbasaur",
+    "price": 40,
+    "category": "Juguetes",
+    "image": "../img/productos/20231205_161003.png"
+  },
+
+  {
+    "id": 21,
+    "title": "Sticker de Vinil Transparente de Detective Pikachu",
+    "price": 15,
+    "category": "Otros",
+    "image": "../img/productos/20231205_161023.png"
+  },
+
+  {
+    "id": 22,
+    "title": "Sticker de Vinil Transparente de Gengar",
+    "price": 15,
+    "category": "Otros",
+    "image": "../img/productos/20231205_161031.png"
+  },
+
+  {
+    "id": 23,
+    "title": "Llavero de Psyduck",
+    "price": 30,
+    "category": "Accesorios",
+    "image": "../img/productos/20231205_161054.png"
+  },
+
+  {
+    "id": 24,
+    "title": "Collar de Eevee Gigantamax",
+    "price": 40,
+    "category": "Accesorios",
+    "image": "../img/productos/20231205_161110.png"
+  },
+  
+  {
+    "id": 25,
+    "title": "Paquete de Energías",
+    "price": 40,
+    "category": "Producto Oficial",
+    "image": "../img/productos/20231205_162702.png"
+  }
+]
