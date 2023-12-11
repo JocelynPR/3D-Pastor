@@ -28,7 +28,7 @@ export default function Products() {
               {products.map((product, index) => (
                 <TarjetaProductos
                   key={index}
-                  src={product.image}
+                  src={require("../../img/productos/" + product.image)}
                   alt={product.title}
                   nombreProducto={product.title}
                   precio={product.price}
