@@ -1,6 +1,5 @@
 [
   {
-    "id": 1,
     "title": "Pokémon Fluxx",
     "price": 350,
     "category": "Juegos de Mesa",
@@ -8,7 +7,6 @@
   },
 
   {
-    "id": 2,
     "title": "Pokémon Coup",
     "price": 250,
     "category": "Juegos de Mesa",
@@ -16,7 +14,6 @@
   },
 
   {
-    "id": 3,
     "title": "Pokélate",
     "price": 100,
     "category": "Postres",
@@ -24,7 +21,6 @@
   },
 
   {
-    "id": 4,
     "title": "Pokélate Master Ball",
     "price": 150,
     "category": "Postres",
@@ -32,7 +28,6 @@
   },
 
   {
-    "id": 5,
     "title": "Pokélate Love Ball",
     "price": 150,
     "category": "Postres",
@@ -40,7 +35,6 @@
   },
 
   {
-    "id": 6,
     "title": "Peluche de Kyogre",
     "price": 300,
     "category": "Juguetes",
@@ -48,7 +42,6 @@
   },
 
   {
-    "id": 7,
     "title": "Peluche de Psyduck",
     "price": 300,
     "category": "Juguetes",
@@ -56,7 +49,6 @@
   },
 
   {
-    "id": 8,
     "title": "Sticker de Vinil Transparente de Wooloo",
     "price": 15,
     "category": "Otros",
@@ -64,7 +56,6 @@
   },
 
   {
-    "id": 9,
     "title": "Sticker de Vinil Transparente de Charizard",
     "price": 15,
     "category": "Otros",
@@ -72,7 +63,6 @@
   },
 
   {
-    "id": 10,
     "title": "Sticker de Vinil Holográfico de Gardevoir",
     "price": 15,
     "category": "Otros",
@@ -80,7 +70,6 @@
   },
 
   {
-    "id": 11,
     "title": "Sticker de Vinil Transparente de Chandelure",
     "price": 15,
     "category": "Otros",
@@ -88,7 +77,6 @@
   },
 
   {
-    "id": 12,
     "title": "Sticker de Vinil Transparente de Rowlet",
     "price": 15,
     "category": "Otros",
@@ -96,7 +84,6 @@
   },
 
   {
-    "id": 13,
     "title": "Sticker de Vinil Transparente de 9° Aniversario (Chandelure, Dedenne, Sobble, Tyranitar, Lilligant y Gardevoir)",
     "price": 15,
     "category": "Otros",
@@ -104,7 +91,6 @@
   },
 
   {
-    "id": 14,
     "title": "Sobre de 3 League Cards Series 3 - Starters de Hoenn",
     "price": 20,
     "category": "Otros",
@@ -112,7 +98,6 @@
   },
 
   {
-    "id": 15,
     "title": "Sobre de 3 League Cards Series 2 - Pikachu Clones",
     "price": 20,
     "category": "Otros",
@@ -120,7 +105,6 @@
   },
 
   {
-    "id": 16,
     "title": "Sobre de 3 League Cards Series 1 - Starters de Galar",
     "price": 20,
     "category": "Otros",
@@ -128,7 +112,6 @@
   },
 
   {
-    "id": 17,
     "title": "Sobre de 3 League Cards Series 4 - 2020 Top 30 Pokémon de Kanto",
     "price": 20,
     "category": "Otros",
@@ -136,7 +119,6 @@
   },
 
   {
-    "id": 18,
     "title": "Squishy Chillón de Charmander",
     "price": 40,
     "category": "Juguetes",
@@ -144,7 +126,6 @@
   },
 
   {
-    "id": 19,
     "title": "Squishy Chillón de Snorlax",
     "price": 40,
     "category": "Juguetes",
@@ -152,7 +133,6 @@
   },
 
   {
-    "id": 20,
     "title": "Squishy Chillón de Bulbasaur",
     "price": 40,
     "category": "Juguetes",
@@ -160,7 +140,6 @@
   },
 
   {
-    "id": 21,
     "title": "Sticker de Vinil Transparente de Detective Pikachu",
     "price": 15,
     "category": "Otros",
@@ -168,7 +147,6 @@
   },
 
   {
-    "id": 22,
     "title": "Sticker de Vinil Transparente de Gengar",
     "price": 15,
     "category": "Otros",
@@ -176,7 +154,6 @@
   },
 
   {
-    "id": 23,
     "title": "Llavero de Psyduck",
     "price": 30,
     "category": "Accesorios",
@@ -184,7 +161,6 @@
   },
 
   {
-    "id": 24,
     "title": "Collar de Eevee Gigantamax",
     "price": 40,
     "category": "Accesorios",
@@ -192,7 +168,6 @@
   },
   
   {
-    "id": 25,
     "title": "Paquete de Energías",
     "price": 40,
     "category": "Producto Oficial",

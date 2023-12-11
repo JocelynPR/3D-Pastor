@@ -42,7 +42,7 @@ const NavBar = () => {
         </div>
       </nav>
       <div id="category-bar-navbar" className="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-6 g-3 category-bar">
-        <CartIcon src={dices} href="/Products" className="category-icon" description="Producto Oficial" />
+        <CartIcon src={dices} href="/ProductsOficial" className="category-icon" description="Producto Oficial" />
         <CartIcon src={key} href="/ProductsAccesorios" className="category-icon" description="Accesorios" />
         <CartIcon src={bunny} href="/ProductsJuguetes" className="category-icon" description="Juguetes" />
         <CartIcon src={cake} href="/ProductsPostres" className="category-icon" description="Postres" />

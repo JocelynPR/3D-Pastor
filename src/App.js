@@ -4,7 +4,7 @@ import SobreNosotros from "./pages/sobreNosotros/SobreNosotros";
 import Footer from "./components/footer/Footer";
 import Home from "./pages/home/Home";
 import NavBar from "./components/navbar/NavBar";
-import Products from "./pages/products/Products";
+import ProductsOficial from "./pages/productsOficial/ProductsOficial";
 import ProductsAccesorios from "./pages/productsAccesorios/ProductsAccesorios";
 import ProductsJuguetes from "./pages/productsJuguetes/ProductsJuguetes";
 import ProductsPostres from "./pages/productsPostres/ProductsPostres";
@@ -29,7 +29,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="Sidebar" element={<Sidebar />} />
-          <Route path="products" element={<Products />} />
+          <Route path="productsOficial" element={<ProductsOficial />} />
           <Route path="productsAccesorios" element={<ProductsAccesorios />} />
           <Route path="productsJuguetes" element={<ProductsJuguetes />} />
           <Route path="productsPostres" element={<ProductsPostres />} />
