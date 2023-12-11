@@ -28,6 +28,9 @@ a {
 
 footer {
   background-color: var(--morado-grisaseo);
+  display: grid;
+  /* grid-template-rows: 1fr auto;
+  min-height: 100vh;  */
 }
 
 #pokemon-place-10-aniversario-footer {
