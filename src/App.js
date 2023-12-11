@@ -10,9 +10,19 @@ import ProductsJuguetes from "./pages/productsJuguetes/ProductsJuguetes";
 import ProductsPostres from "./pages/productsPostres/ProductsPostres";
 import ProductsJuegos from "./pages/productsJuegos/ProductsJuegos";
 import ProductsOtros from "./pages/productsOtros/ProductsOtros";
+import ProductRegistration from "./pages/productRegistration/productRegistration";
+import LoginAdmin from "./pages/admin/LoginAdmin";
+import Sidebar from './components/narvarLateral/sidebar'; 
+
+
+
 import LogIn from "./pages/logIn/LogIn";
 import Contacto from "./pages/contacto/Contacto";
+<<<<<<< HEAD
 import Carrito from "./pages/carrito/Carrito";
+=======
+import registroProduct from "./pages/Registro/Registro";
+>>>>>>> 8ed444550dc7d728c5a1ff58efa6b9dc3c18ffc3
 //import AppButtonCard from "./components/addCardButton/AppButtonCard";
 
 function App() {
@@ -23,6 +33,7 @@ function App() {
         {/*<CounterProductButton />*/}
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="Sidebar" element={<Sidebar />} />
           <Route path="products" element={<Products />} />
           <Route path="productsAccesorios" element={<ProductsAccesorios />} />
           <Route path="productsJuguetes" element={<ProductsJuguetes />} />
@@ -30,9 +41,12 @@ function App() {
           <Route path="productsJuegos" element={<ProductsJuegos />} />
           <Route path="productsOtros" element={<ProductsOtros />} />
           <Route path="sobreNosotros" element={<SobreNosotros />} />
+          <Route path="productRegistration" element={<ProductRegistration />} />
+          <Route path="LoginAdmin" element={<LoginAdmin />} />
           <Route path="logIn" element={<LogIn />} />
           <Route path="Carrito" element={<Carrito />} />
           <Route path="contacto" element={<Contacto />} />
+          <Route path="Registro" element={< registroProduct/>}/>
           <Route path="*" element={<Home />} />
         </Routes>
         <Footer />
