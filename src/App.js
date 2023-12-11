@@ -12,6 +12,7 @@ import ProductsJuegos from "./pages/productsJuegos/ProductsJuegos";
 import ProductsOtros from "./pages/productsOtros/ProductsOtros";
 import LogIn from "./pages/logIn/LogIn";
 import Contacto from "./pages/contacto/Contacto";
+import registroProduct from "./pages/Registro/Registro";
 //import AppButtonCard from "./components/addCardButton/AppButtonCard";
 
 function App() {
@@ -31,6 +32,7 @@ function App() {
           <Route path="sobreNosotros" element={<SobreNosotros />} />
           <Route path="logIn" element={<LogIn />} />
           <Route path="contacto" element={<Contacto />} />
+          <Route path="Registro" element={< registroProduct/>}/>
           <Route path="*" element={<Home />} />
         </Routes>
         <Footer />
