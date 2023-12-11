@@ -12,17 +12,12 @@ import ProductsJuegos from "./pages/productsJuegos/ProductsJuegos";
 import ProductsOtros from "./pages/productsOtros/ProductsOtros";
 import ProductRegistration from "./pages/productRegistration/productRegistration";
 import LoginAdmin from "./pages/admin/LoginAdmin";
-import Sidebar from './components/narvarLateral/sidebar'; 
-
-
+import Sidebar from "./components/narvarLateral/sidebar";
 
 import LogIn from "./pages/logIn/LogIn";
 import Contacto from "./pages/contacto/Contacto";
-<<<<<<< HEAD
-import Carrito from "./pages/carrito/Carrito";
-=======
 import registroProduct from "./pages/Registro/Registro";
->>>>>>> 8ed444550dc7d728c5a1ff58efa6b9dc3c18ffc3
+import Carrito from "./pages/carrito/Carrito";
 //import AppButtonCard from "./components/addCardButton/AppButtonCard";
 
 function App() {
@@ -44,9 +39,9 @@ function App() {
           <Route path="productRegistration" element={<ProductRegistration />} />
           <Route path="LoginAdmin" element={<LoginAdmin />} />
           <Route path="logIn" element={<LogIn />} />
-          <Route path="Carrito" element={<Carrito />} />
+          <Route path="carrito" element={<Carrito />} />
           <Route path="contacto" element={<Contacto />} />
-          <Route path="Registro" element={< registroProduct/>}/>
+          <Route path="Registro" element={<registroProduct />} />
           <Route path="*" element={<Home />} />
         </Routes>
         <Footer />
