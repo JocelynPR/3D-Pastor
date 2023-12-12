@@ -4,8 +4,8 @@ import instagramLogo from "../../img/logos/instagram.svg";
 import whatsappLogo from "../../img/logos/whatsapp.svg";
 import twitterLogo from "../../img/logos/twitter.svg";
 import discordLogo from "../../img/logos/discord.svg";
-import CartIcon from "../navbar/cartIcon/CartIcon";
-import {Link} from "react-router-dom";
+import { LogoIcon } from "./logoIcon/LogoIcon";
+import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
@@ -56,24 +56,12 @@ export default function Footer() {
             {/* Start of: Fourth column for Social Media Links */}
             <div className="col-4" id="fourth-column-footer">
               <div className="row justify-content-md-center">
-                <div class="col-1 logo-container-footer">
-                  <CartIcon src={facebookLogo} to="https://www.facebook.com/groups/PokemonPlaceGDL" alt="Logotipo de Facebook" className="logotipos-de-redes-footer" description="Facebook Grupo" />
-                </div>
-                <div class="col-1 logo-container-footer">
-                  <CartIcon src={facebookLogo} to="https://www.facebook.com/PkmnPlaceGDL" alt="Logotipo de Facebook" className="logotipos-de-redes-footer" description="Facebook Página" />
-                </div>
-                <div class="col-1 logo-container-footer">
-                  <CartIcon src={instagramLogo} to="https://www.instagram.com/pkmnplacegdl/" alt="Logotipo de Instagram" className="logotipos-de-redes-footer" description="Instagram" />
-                </div>
-                <div class="col-1 logo-container-footer">
-                  <CartIcon src={whatsappLogo} to="https://docs.google.com/forms/d/e/1FAIpQLSdasOXMYAvTSakwkFa3PT9oh5rfQJ5_WPAy08vS0lKzUDfWPw/viewform" alt="Logotipo de Whatsapp" className="logotipos-de-redes-footer" description="Whatsapp" />
-                </div>
-                <div class="col-1 logo-container-footer">
-                  <CartIcon src={twitterLogo} to="https://twitter.com/PkmnPlaceGdl" alt="Logotipo de X, conocido anteriormente como Twitter" className="logotipos-de-redes-footer" description="X (Twitter)" />
-                </div>
-                <div class="col-1 logo-container-footer">
-                  <CartIcon src={discordLogo} to="https://discord.gg/vRrxyD9a" alt="Logotipo de Discord" className="logotipos-de-redes-footer" description="Discord" />
-                </div>
+                <LogoIcon src={facebookLogo} to="https://www.facebook.com/groups/PokemonPlaceGDL" alt="Logotipo de Facebook" className="logotipos-de-redes-footer" description="Facebook Grupo" />
+                <LogoIcon src={facebookLogo} to="https://www.facebook.com/PkmnPlaceGDL" alt="Logotipo de Facebook" className="logotipos-de-redes-footer" description="Facebook Página" />
+                <LogoIcon src={instagramLogo} to="https://www.instagram.com/pkmnplacegdl/" alt="Logotipo de Instagram" className="logotipos-de-redes-footer" description="Instagram" />
+                <LogoIcon src={whatsappLogo} to="https://docs.google.com/forms/d/e/1FAIpQLSdasOXMYAvTSakwkFa3PT9oh5rfQJ5_WPAy08vS0lKzUDfWPw/viewform" alt="Logotipo de Whatsapp" className="logotipos-de-redes-footer" description="Whatsapp" />
+                <LogoIcon src={twitterLogo} to="https://twitter.com/PkmnPlaceGdl" alt="Logotipo de X, conocido anteriormente como Twitter" className="logotipos-de-redes-footer" description="X (Twitter)" />
+                <LogoIcon src={discordLogo} to="https://discord.gg/vRrxyD9a" alt="Logotipo de Discord" className="logotipos-de-redes-footer" description="Discord" />
               </div>
             </div>
             {/* End of: Fourth column for Social Media Links */}

@@ -64,6 +64,12 @@ footer {
 }
 
 .logo-container-footer {
-  margin: 1rem;
+  margin-top: 1rem;
   padding: .5rem;
+}
+
+.card-text-footer {
+  color: var(--morado-clarito);
+  font-family: "Kanit Regular";
+  padding-bottom: .8rem;
 }
