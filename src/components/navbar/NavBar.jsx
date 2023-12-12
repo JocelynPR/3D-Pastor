@@ -24,7 +24,7 @@ const NavBar = () => {
         <div className="mx-auto col-lg-4">
           <form className="form-inline">
             <div id="search-wrapper">
-              <input type="search" id="search" placeholder="Buscar" />
+              <input type="search" id="search" placeholder="Buscar..." />
               <i className="fa-search">
                 <CartIcon src={search} className="search-icon" id="searchIcon" />
               </i>
@@ -38,7 +38,7 @@ const NavBar = () => {
               <CartIcon src={person_logo} className="svg-cart-icon" id="personIcon" />
             </Link>
           </div>
-          <CartIcon src={shopping_cart} to="https://pokemmo.com/en/" alt="Carrito de compras" className="svg-cart-icon" id="cartIcon" />
+          <CartIcon src={shopping_cart} to="/Carrito" alt="Carrito de compras" className="svg-cart-icon" id="cartIcon" />
         </div>
       </nav>
       <div id="category-bar-navbar" className="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-6 g-3 category-bar">
