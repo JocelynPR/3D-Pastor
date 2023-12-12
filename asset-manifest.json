@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/3D-Pastor/static/css/main.5fc88996.css",
-    "main.js": "/3D-Pastor/static/js/main.58134e05.js",
+    "main.js": "/3D-Pastor/static/js/main.557ba9c5.js",
     "static/media/20231205_160604.png": "/3D-Pastor/static/media/20231205_160604.76d566aff11124162793.png",
     "static/media/20231205_160619.png": "/3D-Pastor/static/media/20231205_160619.31be85ed7660662e695a.png",
     "static/media/20231204_173637.png": "/3D-Pastor/static/media/20231204_173637.3c05ebe78d915510b4c4.png",
@@ -153,10 +153,10 @@
     "static/media/key.svg": "/3D-Pastor/static/media/key.9f6ea95a0460f39bba7aa74ed630f250.svg",
     "static/media/add.svg": "/3D-Pastor/static/media/add.1c59174103fba0f44c904eab57a71b17.svg",
     "main.5fc88996.css.map": "/3D-Pastor/static/css/main.5fc88996.css.map",
-    "main.58134e05.js.map": "/3D-Pastor/static/js/main.58134e05.js.map"
+    "main.557ba9c5.js.map": "/3D-Pastor/static/js/main.557ba9c5.js.map"
   },
   "entrypoints": [
     "static/css/main.5fc88996.css",
-    "static/js/main.58134e05.js"
+    "static/js/main.557ba9c5.js"
   ]
 }
