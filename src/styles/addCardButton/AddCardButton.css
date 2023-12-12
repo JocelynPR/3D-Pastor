@@ -1,0 +1,104 @@
+/* Estilo del contenedor principal del carrito */
+
+.add-card-container {
+  position: relative;
+  display: flex;
+  align-items: baseline; /* Alinea los elementos a la misma altura */
+  justify-content: center; /* Agregado para centrar los elementos horizontalmente */
+}
+
+/* Estilo de los botones de incremento y decremento */
+.carrito-button {
+  font-family: "Material Icons Outlined", sans-serif;
+  font-size: 2em;
+  background: none;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+/* Estilo específico para los botones de incremento y decremento */
+.carrito-decrement,
+.carrito-increment {
+  color: #3b1f53; /* Color del símbolo */
+  font-weight: bold; /* Grosor del símbolo */
+  width: 25px; /* Establece un ancho fijo para ambos botones */
+  text-align: center; /* Centra el contenido horizontalmente */
+}
+
+/* Paleta de colores
+/* #ede4ed
+/* #3b1f53
+/* #b6a9c5
+/* #847a9c
+/* #FEFEFF
+/* #E01F24
+/* #1D1C18
+
+
+/* Estilo para la cantidad de productos */
+.cantidad {
+  font-size: 2em;
+  width: 1em; /* Ancho fijo para la cantidad */
+  text-align: center; /* Centra el texto dentro del espacio fijo */
+  margin: 0 5px;
+  color: #847a9c;
+}
+
+/* Estilo del contenedor de cantidad */
+.cantidad-container {
+  position: relative;
+  display: flex; /* Agregado: establece el contenedor de cantidad como un contenedor flex */
+  align-items: center; /* Agregado: alinea verticalmente los elementos dentro del contenedor de cantidad */
+}
+
+/* Estilo para el mensaje de cantidad máxima */
+.mensaje-maximo {
+  font-family: "Kanit Medium";
+  src: url(../../fonts/Kanit/Kanit-Medium.ttf);
+  font-size: 1em;
+  position: absolute;
+  bottom: -13px;
+  /*right: calc(
+    15% + 100px
+  ); /* Posiciona el mensaje al lado del botón de incremento */
+  /*transform: translateY(-50%);*/
+  background-color: red;
+  color: white;
+  padding: 7px;
+  border-radius: 10px;
+  max-width: 200px; /* Ajusta el ancho máximo según tus necesidades */
+  /*white-space: normal; /* Permite que el texto fluya en varias líneas si es necesario */
+  /*overflow: visible; /* Muestra completamente el texto que excede el ancho máximo */
+  margin: 3px;
+}
+
+.carrito-button.carrito-add {
+  font-family: "Kanit Light"; /* Utiliza la fuente específica del proyecto */
+  font-size: 1em; /* Tamaño de fuente ajustado */
+  background-color: #3b1f53; /* Color de fondo ajustado */
+  color: #feffff; /* Color del texto ajustado */
+  border: none;
+  padding: 2px 8px; /* Ajusta el relleno según el diseño deseado */
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 10px; /* Ajusta el margen superior según sea necesario */
+  transition: background-color 0.3s; /* Agregado: transición suave en el cambio de color de fondo */
+  margin-top: auto; /* Auto para centrar verticalmente */
+  /* Estilo hover */
+  &:hover {
+    background-color: #847a9c; /* Ajusta el color de fondo al pasar el mouse */
+  }
+}
+
+.carrito-button.carrito-add:hover {
+  background-color: #847a9c;
+}
+/* Estilo del mensaje para pantallas más pequeñas */
+@media (max-width: 600px) {
+  .mensaje-maximo {
+    font-size: 0.8em;
+    padding: 5px;
+    max-width: 150px;
+  }
+}

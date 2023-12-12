@@ -1,0 +1,33 @@
+/* Estilo del contenedor principal del botón de limpiar carrito */
+.clean-card-button-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Estilo del botón de limpiar carrito */
+.clean-card-button {
+  font-family: "Material Icons Outlined", sans-serif;
+  font-size: 2em;
+  background: none;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  color: #3b1f53; /* Color del icono */
+  margin-top: 10px; /* Ajusta el margen superior según sea necesario */
+  transition: color 0.3s; /* Agregado: transición suave en el cambio de color del icono */
+}
+
+.clean-card-button:hover {
+  color: #847a9c; /* Ajusta el color del icono al pasar el mouse */
+}
+
+/* Estilo del mensaje para pantallas más pequeñas */
+@media (max-width: 600px) {
+  .mensaje-limpiar {
+    font-size: 0.8em;
+    padding: 5px;
+    max-width: 150px;
+  }
+}

@@ -1,0 +1,39 @@
+@font-face {
+  font-family: "Kanit Medium";
+  src: url(../../fonts/Kanit/Kanit-Medium.ttf);
+}
+
+@font-face {
+  font-family: "Kanit Regular";
+  src: url(../../fonts/Kanit/Kanit-Regular.ttf);
+}
+
+.login-container-admin {
+  font-family: "Kanit Regular";
+  max-width: 36em;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  margin: 30%;
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 10%;
+}
+
+.form-control-contacto {
+  border-radius: 20px;
+  font-family: "Kanit Light";
+  margin-bottom: 5%;
+  margin-top: 5%;
+}
+
+#boton-verificador-password {
+  margin-top: 50px;
+}
+

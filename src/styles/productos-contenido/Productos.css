@@ -1,0 +1,70 @@
+@font-face {
+    font-family: "Kanit Medium";
+    src: url(../../fonts/Kanit/Kanit-Medium.ttf);
+  }
+  
+  @font-face {
+    font-family: "Kanit Regular";
+    src: url(../../fonts/Kanit/Kanit-Regular.ttf);
+  }
+  
+  @font-face {
+    font-family: "Kanit Light";
+    src: url(../../fonts/Kanit/Kanit-Light.ttf);
+  }
+  
+  :root {
+    --morado-oscuro: #3b1f53;
+    --morado-clarito: #ede4ed;
+    --morado-grisaseo: #847a9c;
+    --blanco: #fefeff;
+  }
+  
+  
+  .card-productos-contenido {
+    background-color: var(--blanco);
+    height: 100%;
+    margin: auto 6rem;
+    margin-bottom: 2rem;
+  }
+  
+  #main-productos-contenido {
+    margin-bottom: 8rem;
+  }
+  
+  .h1-productos-contenido {
+    color: var(--morado-oscuro);
+    font-family: 'Kanit Medium';
+  }
+  
+  .texto-de-tarjeta-productos-contenido {
+    color: var(--morado-oscuro);
+    font-family: 'Kanit Regular';
+    height: 5rem;
+  }
+  
+  #contenedor-rol-de-tarjeta-productos-contenido {
+    font-family: 'Kanit Regular';
+    height: 4rem;
+  }
+  
+  .rol-de-tarjeta-productos-contenido {
+    color: var(--morado-grisaseo);
+    font-family: 'Kanit Light';
+    position: absolute;
+    bottom: .6rem;
+    right: 1rem;
+  }
+  
+  .col-productos-contenido{
+    margin: 0 auto;
+    padding-top: 4rem; 
+  }
+
+
+  .contenido-img{
+    width: 100%;
+    height: 15rem;
+  }
+  
+ 

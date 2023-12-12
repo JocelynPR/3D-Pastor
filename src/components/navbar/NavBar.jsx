@@ -12,7 +12,6 @@ import search from "../../img/logos/search.svg";
 import {Link} from "react-router-dom";
 //import menu from "../../img/logos/menu.svg";
 
-
 import '../../styles/navbar/navBar.css';
 
 const NavBar = () => {
@@ -43,12 +42,12 @@ const NavBar = () => {
         </div>
       </nav>
       <div id="category-bar-navbar" className="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-6 g-3 category-bar">
-        <CartIcon src={dices} to="/Products" className="category-icon" description="Producto Oficial" />
-        <CartIcon src={key} to="Products" className="category-icon" description="Accesorios" />
-        <CartIcon src={bunny} to="/Products" className="category-icon" description="Juguetes" />
-        <CartIcon src={cake} to="/Products" className="category-icon" description="Postres" />
-        <CartIcon src={table} to="/Products" className="category-icon" description="Juegos de Mesa" />
-        <CartIcon src={pokeball} to="/Products" className="category-icon" description="Otros" />
+        <CartIcon src={dices} to="/ProductsOficial" className="category-icon" description="Producto Oficial" />
+        <CartIcon src={key} to="ProductsAccesorios" className="category-icon" description="Accesorios" />
+        <CartIcon src={bunny} to="/ProductsJuguetes" className="category-icon" description="Juguetes" />
+        <CartIcon src={cake} to="/ProductsPostres" className="category-icon" description="Postres" />
+        <CartIcon src={table} to="/ProductsJuegos" className="category-icon" description="Juegos de Mesa" />
+        <CartIcon src={pokeball} to="/ProductsOtros" className="category-icon" description="Otros" />
       </div>
     </>
   );

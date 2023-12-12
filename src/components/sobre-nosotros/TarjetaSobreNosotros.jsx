@@ -5,6 +5,7 @@ export const TarjetaSobreNosotros = ({ src, alt, nombre, residencia, rol }) => {
         <img
           src={src}
           alt={alt}
+          
         />
         <div className="card-body">
           <p className="texto-de-tarjeta-sobre-nosotros card-text align-items-center my-auto">

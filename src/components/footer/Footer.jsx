@@ -36,17 +36,17 @@ export default function Footer() {
               <div className="row">
                 <div className="col">
                   <ul>
-                    <Link to="/Products" className="text-body"><li className="list-products-footer">Producto Oficial</li></Link>
-                    <Link to="/Products" className="text-body"><li className="list-products-footer">Accesorios</li></Link>
-                    <Link to="/Products" className="text-body"><li className="list-products-footer">Juguetes</li></Link>
+                    <Link to="/ProductsOficial" className="text-body"><li className="list-products-footer">Producto Oficial</li></Link>
+                    <Link to="/ProductsAccesorios" className="text-body"><li className="list-products-footer">Accesorios</li></Link>
+                    <Link to="/ProductsJuguetes" className="text-body"><li className="list-products-footer">Juguetes</li></Link>
                   </ul>
                 </div>
 
                 <div className="col">
                   <ul>
-                    <Link to="/Products" className="text-body"><li className="list-products-footer">Postres</li></Link>
-                    <Link to="/Products" className="text-body"><li className="list-products-footer">Juegos de Mesa</li></Link>
-                    <Link to="/Products" className="text-body"><li className="list-products-footer">Otros</li></Link>
+                    <Link to="/ProductsPostres" className="text-body"><li className="list-products-footer">Postres</li></Link>
+                    <Link to="/ProductsJuegos" className="text-body"><li className="list-products-footer">Juegos de Mesa</li></Link>
+                    <Link to="/ProductsOtros" className="text-body"><li className="list-products-footer">Otros</li></Link>
                   </ul>
                 </div>
               </div>
