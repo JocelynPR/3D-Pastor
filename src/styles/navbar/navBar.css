@@ -21,6 +21,31 @@
   --blanco: #fefeff;
 }
 
+/* xs */
+.pokemon-icon {
+  width: 100px;
+  height: auto;
+}
+/* sm */
+@media (min-width: 768px) {
+  .pokemon-icon {
+      width: 150px;
+  }
+}
+/* md */
+@media (min-width: 992px) {
+  .pokemon-icon {
+      width: 200px;
+  }
+}
+/* lg */
+@media (min-width: 1200px) {
+  .pokemon-icon {
+      width: 250px;
+  }
+}
+
+
 .custom-navbar {
   background-color: var(--morado-oscuro);
 }
@@ -36,14 +61,16 @@
 }
 
 .pokemon-icon {
-  width: 12rem;
   margin-left: 2rem;
+
 }
+
+
 
 .category-icon {
   width: 4rem;
   background-color: none;
-  margin: .5rem;
+  margin: 0.5rem 2rem 0.5rem 2rem;
 }
 
 .card-text-navbar {
@@ -75,12 +102,24 @@ a {
   height: 2.72rem;
 }
 
+.navbar{
+  padding: 0rem;
+}
+
+#basic-addon1{
+  border-radius: 1.5rem 0 0 1.5rem;
+}
+.form-control{
+  border-radius: 1.5rem;
+}
+
+/*
 #search-wrapper {
   -webkit-box-align: center;
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  display: -webkit-inline-box;
+  /*display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -88,6 +127,16 @@ a {
   -ms-flex-flow: row-reverse nowrap;
   flex-flow: row-reverse nowrap;
   width: 450px;
+}
+#search-wrapper #search+i {
+  background-color: var(--morado-clarito);
+  border: 1px solid #ccc;
+  border-radius: 25px 0 0 25px;
+  border-right: 0;
+  color: #777;
+  padding: .67rem .65rem;
+  -webkit-transition: border-color .2s ease;
+  transition: border-color .2s ease;
 }
 
 #search-wrapper #search {
@@ -105,16 +154,6 @@ a {
   width: 100%;
 }
 
-#search-wrapper #search+i {
-  background-color: var(--morado-clarito);
-  border: 1px solid #ccc;
-  border-radius: 25px 0 0 25px;
-  border-right: 0;
-  color: #777;
-  padding: .67rem .65rem;
-  -webkit-transition: border-color .2s ease;
-  transition: border-color .2s ease;
-}
 
 #search-wrapper #search:focus {
   border-color: rgb(8, 124, 120);
@@ -124,7 +163,7 @@ a {
 #search-wrapper #search:focus+i {
   border-color: rgb(8, 124, 120);
 }
-
+*/
 
 
 
