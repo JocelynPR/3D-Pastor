@@ -80,87 +80,94 @@ const Contacto = () => {
     );
   };
   return (
-    <form
-      className="container-md"
-      id="formularioContacto"
-      onSubmit={handleFormSubmit}
-    >
-      <br />
-      <h2 className="h2-contacto">Contáctanos</h2>
-      <div className="mb-3">
-        <label htmlFor="nombreFormulario" className="form-label">
-          Nombre y apellido:
-        </label>
-        <input
-          type="text"
-          className="form-control form-control-contacto"
-          name="nombreFormulario"
-          placeholder=""
-        />
-      </div>
-      <div className="mb-3">
-        <label htmlFor="correoFormulario" className="form-label">
-          Correo electrónico:
-        </label>
-        <input
-          type="email"
-          className="form-control form-control-contacto"
-          name="correoFormulario"
-          placeholder="nombre@ejemplo.com"
-        />
-      </div>
-      <div className="mb-3">
-        <label htmlFor="telefonoFormulario" className="form-label">
-          Teléfono:
-        </label>
-        <input
-          type="tel"
-          className="form-control form-control-contacto"
-          name="telefonoFormulario"
-          placeholder="+52 01 2345 6789"
-        />
-      </div>
-      <div className="mb-3">
-        <label htmlFor="mensajeFormulario" className="form-label">
-          Mensaje:
-        </label>
-        <textarea
-          className="form-control form-control-contacto"
-          name="mensajeFormulario"
-          rows="3"
-        ></textarea>
-      </div>
-      <div className="bg-warning mt-3 rounded" id="error-message-container">
-        {errorMessage && <p id="error-message">{errorMessage}</p>}
-      </div>
-      <button type="submit" className="btn btn-outline-dark" id="boton">
-        Enviar
-      </button>
+    <>
+      <main id="main-contacto-contenido">
+        <form
+          className="container-md"
+          id="formularioContacto"
+          onSubmit={handleFormSubmit}
+        >
+          <section className="pt-5 pb-3 text-center container">
+            <h1 className="h1-productos-contenido fw-light"><strong>Contáctanos</strong></h1>
+          </section>
+          {/* <h1 className="h2-contacto"><strong>Contáctanos</strong></h1> */}
+          <div className="mb-3">
+            <label htmlFor="nombreFormulario" className="form-label">
+              Nombre y apellido:
+            </label>
+            <input
+              type="text"
+              className="form-control form-control-contacto"
+              name="nombreFormulario"
+              placeholder=""
+            />
+          </div>
+          <div className="mb-3">
+            <label htmlFor="correoFormulario" className="form-label">
+              Correo electrónico:
+            </label>
+            <input
+              type="email"
+              className="form-control form-control-contacto"
+              name="correoFormulario"
+              placeholder="nombre@ejemplo.com"
+            />
+          </div>
+          <div className="mb-3">
+            <label htmlFor="telefonoFormulario" className="form-label">
+              Teléfono:
+            </label>
+            <input
+              type="tel"
+              className="form-control form-control-contacto"
+              name="telefonoFormulario"
+              placeholder="+52 01 2345 6789"
+            />
+          </div>
+          <div className="mb-3">
+            <label htmlFor="mensajeFormulario" className="form-label">
+              Mensaje:
+            </label>
+            <textarea
+              className="form-control form-control-contacto"
+              name="mensajeFormulario"
+              rows="3"
+            ></textarea>
+          </div>
+          <div className="bg-warning mt-3 rounded" id="error-message-container">
+            {errorMessage && <p id="error-message">{errorMessage}</p>}
+          </div>
+          <button type="submit" className="btn btn-outline-dark" id="boton">
+            Enviar
+          </button>
 
-      {/* Información adicional */}
-      <div>
-        <br />
-        <p>
-          <strong>Teléfono</strong>: <br /> (+52) 33 1308 9656
-        </p>
-        <p>
-          <strong>E-mail</strong>: <br />
-          pokemonplacegdl@gmail.com
-        </p>
-        <p>
-          <strong>Redes sociales</strong>: <br />
-          ¡Conéctate con nosotros en nuestras redes sociales para conocer las
-          últimas novedades y ofertas! <br />
-          <a
-            href="https://my.bio/pkmnplacegdl"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Visita nuestras redes sociales
-          </a>
-        </p>
-      </div>
-    </form>
+          {/* Información adicional */}
+          <div>
+            <br />
+            <p>
+              <strong>Teléfono</strong>: <br /> (+52) 33 1308 9656
+            </p>
+            <p>
+              <strong>E-mail</strong>: <br />
+              pokemonplacegdl@gmail.com
+            </p>
+            <p>
+              <strong>Redes sociales</strong>: <br />
+              ¡Conéctate con nosotros en nuestras redes sociales para conocer las
+              últimas novedades y ofertas! <br />
+              <br />
+              <a
+                href="https://my.bio/pkmnplacegdl"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <strong>Visita nuestras redes sociales</strong>
+              </a>
+            </p>
+          </div>
+        </form>
+      </main>
+    </>
   );
 };
 

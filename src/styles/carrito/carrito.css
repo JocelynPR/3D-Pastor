@@ -32,3 +32,11 @@
 .carrito-de-compras p:nth-last-child(2) {
   font-family: "Kanit Regular";
 }
+
+.total-carrito {
+  font-family: "Kanit Regular";
+}
+
+#main-carrito-contenido {
+  margin-bottom: 8rem;
+}

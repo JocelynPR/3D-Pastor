@@ -3,27 +3,50 @@ import React from "react";
 import "../../styles/buyButton/buyButton.css";
 import "../../styles/carrito/carrito.css";
 import BuyButton from "../../components/buyButton/BuyButton.jsx";
+import TablaCarrito from "./TablaCarrito.jsx"
 
-const Carrito = ({ nombreProducto, cantidadProductos, precio }) => {
-    // Calcula el total multiplicando la cantidad por el precio
-    const total = cantidadProductos * precio;
+const Carrito = () => {
 
-    // Función que maneja la lógica de compra
-    const handleCompra = () => {
-        // Aquí puedes agregar la lógica de compra, por ejemplo, enviar una solicitud al servidor, etc.
-        console.log("Compra realizada");
+    const productos = [
+        { nombre: 'Pokémon Coup', precio: 250.00, cantidad: 2, subtotal: 500.00 },
+        { nombre: 'Pokélate', precio: 100.00, cantidad: 1, subtotal: 100.00 },
+        // Agrega más productos según sea necesario
+    ];
+
+
+    const calcularTotalPorProducto = (producto) => {
+        return (producto.precio * producto.cantidad);
+    };
+
+    const calcularTotalGeneral = () => {
+        let totalGeneral = 0;
+        productos.forEach((producto) => {
+            totalGeneral += calcularTotalPorProducto(producto);
+        });
+        return totalGeneral.toFixed(2);
     };
 
     return (
-        <div className="carrito-de-compras">
-            <h2>Carrito de Compras</h2>
-            <div>
-                <p>Nombre del Producto: {nombreProducto}</p>
-                <p>Cantidad de Productos: {cantidadProductos}</p>
-                <p>Total: ${total}</p>
-                <BuyButton onClick={handleCompra} />
-            </div>
-        </div>
+        <>
+            <main id="main-carrito-contenido">
+                <section className="pt-5 pb-3 text-center container">
+                    <h1 className="h1-productos-contenido fw-light"><strong>Mi carrito</strong></h1>
+                </section>
+                <section>
+                    <div className="container">
+                        <div className="fondo container">
+                            <TablaCarrito productos={productos} />
+                        </div>
+                        <br />
+                        <div className="total-carrito">Total:</div>
+                        <div className="total-carrito"><strong>${calcularTotalGeneral()}</strong></div>
+                        <br />
+                        <BuyButton />
+                    </div>
+                </section>
+            </main>
+        </>
+
     );
 };
 

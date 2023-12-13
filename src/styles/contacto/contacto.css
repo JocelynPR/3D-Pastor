@@ -14,13 +14,18 @@
   color: var(--morado-oscuro);
 }
 
-.h2-contacto {
-  text-align: center;
+.h1-productos-contenido {
+  color: var(--morado-oscuro);
+  font-family: "Kanit Medium";
 }
 
 .form-control-contacto {
   border-radius: 20px;
   font-family: "Kanit Light";
+}
+
+#main-contacto-contenido {
+  margin-bottom: 8rem;
 }
 
 /* Al parecer las siguientes líneas se pueden borrar*/
