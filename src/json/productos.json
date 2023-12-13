@@ -1,5 +1,61 @@
 [
   {
+    "title": "Sticker de Vinil Transparente de Wooloo",
+    "price": 15,
+    "category": "Otros",
+    "image": "20231205_160548.png"
+  },
+
+  {
+    "title": "Sticker de Vinil Transparente de Charizard",
+    "price": 15,
+    "category": "Otros",
+    "image": "20231205_160556.png"
+  },
+
+  {
+    "title": "Sticker de Vinil Holográfico de Gardevoir",
+    "price": 15,
+    "category": "Otros",
+    "image": "20231205_160604.png"
+  },
+
+  {
+    "title": "Sticker de Vinil Transparente de Chandelure",
+    "price": 15,
+    "category": "Otros",
+    "image": "20231205_160611.png"
+  },
+
+  {
+    "title": "Squishy Chillón de Charmander",
+    "price": 40,
+    "category": "Juguetes",
+    "image": "20231205_160932.png"
+  },
+
+  {
+    "title": "Squishy Chillón de Snorlax",
+    "price": 40,
+    "category": "Juguetes",
+    "image": "20231205_160944.png"
+  },
+
+  {
+    "title": "Sticker de Vinil Transparente de Detective Pikachu",
+    "price": 15,
+    "category": "Otros",
+    "image": "20231205_161023.png"
+  },
+
+  {
+    "title": "Sticker de Vinil Transparente de Gengar",
+    "price": 15,
+    "category": "Otros",
+    "image": "20231205_161031.png"
+  },
+
+  {
     "title": "Pokémon Fluxx",
     "price": 350,
     "category": "Juegos de Mesa",
@@ -48,33 +104,7 @@
     "image": "20231205_160400.png"
   },
 
-  {
-    "title": "Sticker de Vinil Transparente de Wooloo",
-    "price": 15,
-    "category": "Otros",
-    "image": "20231205_160548.png"
-  },
-
-  {
-    "title": "Sticker de Vinil Transparente de Charizard",
-    "price": 15,
-    "category": "Otros",
-    "image": "20231205_160556.png"
-  },
-
-  {
-    "title": "Sticker de Vinil Holográfico de Gardevoir",
-    "price": 15,
-    "category": "Otros",
-    "image": "20231205_160604.png"
-  },
-
-  {
-    "title": "Sticker de Vinil Transparente de Chandelure",
-    "price": 15,
-    "category": "Otros",
-    "image": "20231205_160611.png"
-  },
+  
 
   {
     "title": "Sticker de Vinil Transparente de Rowlet",
@@ -119,39 +149,13 @@
   },
 
   {
-    "title": "Squishy Chillón de Charmander",
-    "price": 40,
-    "category": "Juguetes",
-    "image": "20231205_160932.png"
-  },
-
-  {
-    "title": "Squishy Chillón de Snorlax",
-    "price": 40,
-    "category": "Juguetes",
-    "image": "20231205_160944.png"
-  },
-
-  {
     "title": "Squishy Chillón de Bulbasaur",
     "price": 40,
     "category": "Juguetes",
     "image": "20231205_161003.png"
   },
 
-  {
-    "title": "Sticker de Vinil Transparente de Detective Pikachu",
-    "price": 15,
-    "category": "Otros",
-    "image": "20231205_161023.png"
-  },
-
-  {
-    "title": "Sticker de Vinil Transparente de Gengar",
-    "price": 15,
-    "category": "Otros",
-    "image": "20231205_161031.png"
-  },
+  
 
   {
     "title": "Llavero de Psyduck",

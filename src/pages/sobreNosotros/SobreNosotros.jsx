@@ -1,6 +1,5 @@
 import "../../styles/sobre-nosotros/SobreNosotros.css";
 import yaz from "../../img/fotosPerfil/imagen_1.jpeg";
-import itzel from "../../img/fotosPerfil/imagen_2.jpeg";
 import tony from "../../img/fotosPerfil/imagen_3.jpeg";
 import jorge from "../../img/fotosPerfil/imagen_4.jpeg";
 import jocelyn from "../../img/fotosPerfil/imagen_5.jpeg";
