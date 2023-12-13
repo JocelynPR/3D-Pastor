@@ -1,6 +1,5 @@
 import "../../styles/carrito/carrito.css";
 
-
 const TablaCarrito = ({ productos }) => {
     return (
         <div className="table-responsive">

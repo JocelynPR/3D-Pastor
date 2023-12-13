@@ -4,6 +4,7 @@ import "../../styles/buyButton/buyButton.css";
 import "../../styles/carrito/carrito.css";
 import BuyButton from "../../components/buyButton/BuyButton.jsx";
 import TablaCarrito from "./TablaCarrito.jsx"
+import CleanCardButton from "../../components/clearCardButton/ClearCardButton.jsx";
 
 const Carrito = () => {
 
@@ -40,8 +41,10 @@ const Carrito = () => {
                         <br />
                         <div className="total-carrito">Total:</div>
                         <div className="total-carrito"><strong>${calcularTotalGeneral()}</strong></div>
+
                         <br />
                         <BuyButton />
+                        <CleanCardButton />
                     </div>
                 </section>
             </main>

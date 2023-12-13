@@ -12,13 +12,11 @@ const CleanCardButton = ({ onCleanCardClick }) => {
 
   return (
     <div>
-      {/* Botón con una imagen (add) que ejecuta la función handleCleanCardClick cuando se hace clic */}
       <button
         type="button"
         className="clean-card-button"
         onClick={handleCleanCardClick}
       >
-        {/* Imagen del icono proporcionado (add) */}
         <img src={deleteIcon} alt="Clean Card" />
       </button>
     </div>
