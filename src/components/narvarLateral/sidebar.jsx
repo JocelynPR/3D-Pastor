@@ -45,7 +45,6 @@ const Sidebar = () => {
           </a>
           <span className="tooltip">User</span>
         </li>
-        {/* Agrega más elementos de lista según tus necesidades */}
         <li className="profile">
           <div className="profile-details">
             <img src="profile.jpg" alt="profileImg" />

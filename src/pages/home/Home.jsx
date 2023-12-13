@@ -53,7 +53,6 @@ export default function Products() {
       <div className="slide" onClick={() => sliderRef.current.slickNext()}>
         <img src={imagen4} alt="Imagen del Carrusel" />
       </div>
-      {/* Agrega más diapositivas según sea necesario */}
     </Slider>
 
       <main id="main-productos-contenido">
