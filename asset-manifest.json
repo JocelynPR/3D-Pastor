@@ -1,7 +1,9 @@
 {
   "files": {
-    "main.css": "/3D-Pastor/static/css/main.5fc88996.css",
-    "main.js": "/3D-Pastor/static/js/main.557ba9c5.js",
+    "main.css": "/3D-Pastor/static/css/main.3199f86f.css",
+    "main.js": "/3D-Pastor/static/js/main.79d5488d.js",
+    "static/media/img2.png": "/3D-Pastor/static/media/img2.b8291551213734bd1fbf.png",
+    "static/media/img4.png": "/3D-Pastor/static/media/img4.a8b306d87711ed97b8be.png",
     "static/media/20231205_160604.png": "/3D-Pastor/static/media/20231205_160604.76d566aff11124162793.png",
     "static/media/20231205_160619.png": "/3D-Pastor/static/media/20231205_160619.31be85ed7660662e695a.png",
     "static/media/20231204_173637.png": "/3D-Pastor/static/media/20231204_173637.3c05ebe78d915510b4c4.png",
@@ -91,6 +93,7 @@
     "static/media/Kanit-SemiBold.ttf": "/3D-Pastor/static/media/Kanit-SemiBold.cf86a473ecf932fb0053.ttf",
     "static/media/Kanit-Medium.ttf": "/3D-Pastor/static/media/Kanit-Medium.786fd6bb96ce0cf5c5b2.ttf",
     "static/media/Kanit-Regular.ttf": "/3D-Pastor/static/media/Kanit-Regular.f3bae13d78ced30b6ea3.ttf",
+    "static/media/img_Eq.img.png": "/3D-Pastor/static/media/img_Eq.img.484ba85c39bd7f0cd39b.png",
     "static/media/Kanit-Light.ttf": "/3D-Pastor/static/media/Kanit-Light.7b6b95563f4c5697d973.ttf",
     "static/media/20231205_162020.png": "/3D-Pastor/static/media/20231205_162020.30ead8a67da9fddf68b6.png",
     "static/media/20231205_161139.png": "/3D-Pastor/static/media/20231205_161139.a182d971083934ba1f53.png",
@@ -130,6 +133,7 @@
     "static/media/20231205_162125.png": "/3D-Pastor/static/media/20231205_162125.4553fd3d054f7c1f2a5b.png",
     "static/media/20231205_161752.png": "/3D-Pastor/static/media/20231205_161752.dd750c57d1758166d76e.png",
     "static/media/20231205_161936.png": "/3D-Pastor/static/media/20231205_161936.a1c29f6c3cac0aee9368.png",
+    "static/media/IMG-20231212-WA0025.jpg": "/3D-Pastor/static/media/IMG-20231212-WA0025.7a99487c71ee12c7afd1.jpg",
     "static/media/20231205_161449.png": "/3D-Pastor/static/media/20231205_161449.73aa9657f19298ef8b2c.png",
     "static/media/20231205_161250.png": "/3D-Pastor/static/media/20231205_161250.1fcac7776d0f755c3856.png",
     "static/media/20231205_161758.png": "/3D-Pastor/static/media/20231205_161758.1e2bcc13339f9e6658d5.png",
@@ -137,10 +141,15 @@
     "static/media/pokemon_place_logo.svg": "/3D-Pastor/static/media/pokemon_place_logo.406f2aa72ad613fff05a5301a0d02e1a.svg",
     "static/media/pokemon_place_10_aniversario.svg": "/3D-Pastor/static/media/pokemon_place_10_aniversario.e7570ed1368f97e618c48a379d6b8361.svg",
     "static/media/instagram.svg": "/3D-Pastor/static/media/instagram.3d7dfbbfb8154b63d1b030218e905020.svg",
+    "static/media/slick.svg": "/3D-Pastor/static/media/slick.2630a3e3eab21c607e21.svg",
     "static/media/whatsapp.svg": "/3D-Pastor/static/media/whatsapp.4009fa02d2bfb21834d46be8a6fbf7a8.svg",
+    "static/media/slick.eot": "/3D-Pastor/static/media/slick.a4e97f5a2a64f0ab1323.eot",
     "static/media/bunny.svg": "/3D-Pastor/static/media/bunny.ca0f2ca6d6f09a4f63af4669c1fd49f2.svg",
+    "static/media/slick.ttf": "/3D-Pastor/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/discord.svg": "/3D-Pastor/static/media/discord.3a0c41b14ccb916fd47d41ee5879d8dc.svg",
     "static/media/dice.svg": "/3D-Pastor/static/media/dice.7edf2d5a2f431a23e491190967b6408c.svg",
+    "static/media/add.svg": "/3D-Pastor/static/media/add.10f3fd201938dc07c052fdca95fdb134.svg",
+    "static/media/slick.woff": "/3D-Pastor/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/3D-Pastor/index.html",
     "static/media/cake.svg": "/3D-Pastor/static/media/cake.6b295df903c230c08eff9c5c79843a55.svg",
     "static/media/facebook.svg": "/3D-Pastor/static/media/facebook.0ccec8e3ab79d6faec489a5e334dd0b4.svg",
@@ -151,12 +160,13 @@
     "static/media/catching_pokemon.svg": "/3D-Pastor/static/media/catching_pokemon.89077e293fa264bb81211475a9da28e2.svg",
     "static/media/person.svg": "/3D-Pastor/static/media/person.3543f1e6c57e60e505f8db3d2edf9201.svg",
     "static/media/key.svg": "/3D-Pastor/static/media/key.9f6ea95a0460f39bba7aa74ed630f250.svg",
-    "static/media/add.svg": "/3D-Pastor/static/media/add.1c59174103fba0f44c904eab57a71b17.svg",
-    "main.5fc88996.css.map": "/3D-Pastor/static/css/main.5fc88996.css.map",
-    "main.557ba9c5.js.map": "/3D-Pastor/static/js/main.557ba9c5.js.map"
+    "static/media/deleteIcon.svg": "/3D-Pastor/static/media/deleteIcon.642da2f9203fed7e99a03988591b154e.svg",
+    "static/media/menu.svg": "/3D-Pastor/static/media/menu.442c7e13b8a9b05814f57cda657f91aa.svg",
+    "main.3199f86f.css.map": "/3D-Pastor/static/css/main.3199f86f.css.map",
+    "main.79d5488d.js.map": "/3D-Pastor/static/js/main.79d5488d.js.map"
   },
   "entrypoints": [
-    "static/css/main.5fc88996.css",
-    "static/js/main.557ba9c5.js"
+    "static/css/main.3199f86f.css",
+    "static/js/main.79d5488d.js"
   ]
 }
