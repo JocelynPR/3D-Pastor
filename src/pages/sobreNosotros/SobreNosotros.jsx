@@ -1,10 +1,10 @@
 import "../../styles/sobre-nosotros/SobreNosotros.css";
-import yaz from "../../img/fotosPerfil/imagen_1.jpeg";
-import tony from "../../img/fotosPerfil/imagen_3.jpeg";
-import jorge from "../../img/fotosPerfil/imagen_4.jpeg";
-import jocelyn from "../../img/fotosPerfil/imagen_5.jpeg";
-import mirta from "../../img/fotosPerfil/imagen_6.jpeg";
-import misa from "../../img/fotosPerfil/imagen_7.jpeg";
+import yaz from "../../img/fotosPerfil/imagen_1.jpg";
+import tony from "../../img/fotosPerfil/imagen_3.jpg";
+import jorge from "../../img/fotosPerfil/imagen_4.jpg";
+import jocelyn from "../../img/fotosPerfil/imagen_5.jpg";
+import mirta from "../../img/fotosPerfil/imagen_6.jpg";
+import misa from "../../img/fotosPerfil/imagen_7.jpg";
 import { TarjetaSobreNosotros } from "../../components/sobre-nosotros/TarjetaSobreNosotros";
 import { Link } from "react-router-dom";
 
@@ -47,6 +47,16 @@ export default function SobreNosotros() {
         <section>
           <div className="fondo container">
             <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-3">
+
+              {/* ---Jorge--- */}
+              <TarjetaSobreNosotros
+                src={jorge}
+                alt={"Jorge"}
+                nombre={"Jorge Alberto Ramírez Casillas"}
+                residencia={"Jalisco"}
+                rol={"Scrum Master"}
+              />
+
               {/* ---Mirta--- */}
               <TarjetaSobreNosotros
                 src={mirta}
@@ -62,7 +72,7 @@ export default function SobreNosotros() {
                 alt={"Yaz"}
                 nombre={"Yazmín Valeria Morales Martínez"}
                 residencia={"CDMX"}
-                rol={"Scrum Master"}
+                rol={"Desarrollo"}
               />
 
               {/* ---Tony--- */}
@@ -70,15 +80,6 @@ export default function SobreNosotros() {
                 src={tony}
                 alt={"Tony"}
                 nombre={"Antonio González Navarrete"}
-                residencia={"Jalisco"}
-                rol={"Desarrollo"}
-              />
-
-              {/* ---Jorge--- */}
-              <TarjetaSobreNosotros
-                src={jorge}
-                alt={"Jorge"}
-                nombre={"Jorge Alberto Ramírez Casillas"}
                 residencia={"Jalisco"}
                 rol={"Desarrollo"}
               />
@@ -100,6 +101,7 @@ export default function SobreNosotros() {
                 residencia={"CDMX"}
                 rol={"Desarrollo"}
               />
+
             </div>
             {/* Boton de redireccionamiento a login de Adminstrador */}
             <Link to="/LoginAdmin">
