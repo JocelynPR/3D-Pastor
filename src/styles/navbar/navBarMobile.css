@@ -1,0 +1,148 @@
+@font-face {
+  font-family: "Kanit Medium";
+  src: url(../../fonts/Kanit/Kanit-Medium.ttf);
+}
+
+@font-face {
+  font-family: "Kanit Regular";
+  src: url(../../fonts/Kanit/Kanit-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Kanit Light";
+  src: url(../../fonts/Kanit/Kanit-Light.ttf);
+}
+
+:root {
+  --morado-oscuro: #3b1f53;
+  --morado-clarito: #ede4ed;
+  --morado-medio: #b6a9c5;
+  --morado-grisaseo: #847a9c;
+  --blanco: #fefeff;
+}
+
+.custom-navbar-mobile {
+  background-color: var(--morado-oscuro);
+}
+
+.category-bar-navbar-mobile {
+  background-color: var(--morado-grisaseo);
+}
+
+.svg-cart-icon-mobile {
+  width: 4.5rem;
+  padding-right: 1.7rem;
+}
+
+#cart-icon-container-navbar-mobile {
+  margin-left: 1.3rem;
+}
+
+.pokemon-icon-mobile {
+  width: 9rem;
+  margin-top: 1rem;
+}
+
+.category-icon-mobile {
+  width: 2.5rem;
+  background-color: none;
+  margin: .5rem;
+}
+
+.card-text-navbar-mobile {
+  color: var(--morado-clarito);
+  font-family: "Kanit Regular";
+  padding-bottom: .5rem;
+  font-size: .85rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+#log-in-mobile {
+  font-family: "Kanit Regular";
+  color: var(--morado-clarito);
+  font-size: .9rem;
+}
+
+#log-in-text-container-mobile {
+  width: 4rem;
+  position: relative;
+  top: 1.3rem;
+  left: 1.2rem;
+}
+
+.log-in-cart-container-navbar-mobile {
+  margin-top: 1.5rem;
+}
+
+.search-icon-mobile {
+  width: 1.5rem;
+  background-color: none;
+  margin-top: -0.35rem;
+  margin-left: 0.3rem;
+}
+
+.fa-search-mobile {
+  height: 2.72rem;
+}
+
+#search-wrapper-mobile {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-flow: row-reverse nowrap;
+  -ms-flex-flow: row-reverse nowrap;
+  flex-flow: row-reverse nowrap;
+  width: 19rem;
+  margin-top: 2.5rem;
+  position: relative;
+  right: 10rem;
+  bottom: 1.3rem;
+}
+
+#search-wrapper-mobile #search-mobile {
+  background-color: var(--morado-clarito);
+  border: 1px solid #ccc;
+  border-left: 0;
+  border-radius: 0 25px 25px 0;
+  color: #444;
+  padding: .6rem .5rem;
+  font-family: "Kanit Light";
+  font-size: 15px;
+  font-weight: lighter;
+  -webkit-transition: border-color .2s ease;
+  transition: border-color .2s ease;
+  width: 100%;
+}
+
+#search-wrapper-mobile #search-mobile+i {
+  background-color: var(--morado-clarito);
+  border: 1px solid #ccc;
+  border-radius: 25px 0 0 25px;
+  border-right: 0;
+  color: #777;
+  padding: .67rem .65rem;
+  -webkit-transition: border-color .2s ease;
+  transition: border-color .2s ease;
+}
+
+#search-wrapper-mobile #search-mobile:focus {
+  border-color: rgb(8, 124, 120);
+  outline: none;
+}
+
+#search-wrapper-mobile #search-mobile:focus+i {
+  border-color: rgb(8, 124, 120);
+}
+
+#main-container {
+  display: flex;
+  justify-content: center;
+}
