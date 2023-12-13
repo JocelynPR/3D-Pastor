@@ -78,68 +78,55 @@ const NavBarMobile = () => {
           {/* Parte inferior de la navbar */}
 
           <div className="container-fluid p-0 category-bar-navbar-mobile">
+  <div className="row category-bar-navbar-mobile">
+    <div className="col">
+      <nav className="navbar">
+        <div className="container-fluid">
+          <div className="d-flex align-items-center">
+            <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span><img className="category-icon-mobile" src={menu} alt="Menu Icon" /></span>
+            </button>
+            <span className="navbar-text ms-2" id="text-category">Categorías</span>
+          </div>
+        </div>
+      </nav>
+      <div className="collapse" id="navbarToggleExternalContent">
+        <div className="p-4">
+          <div className="container-fluid p-0 category-bar-navbar-mobile">
             <div className="row category-bar-navbar-mobile">
-
-              <div className="col">
+              <div className="col-4">
                 <CartIcon src={dices} to="/ProductsOficial" className="category-icon-mobile" description="Producto Oficial" />
               </div>
-              <div className="col">
+              <div className="col-4">
                 <CartIcon src={key} to="ProductsAccesorios" className="category-icon-mobile" description="Accesorios" />
               </div>
-              <div className="col">
-
-
-          <div className="collapse" id="navbarToggleExternalContent">
-            <div className="p-4">
-
-
-              {/* Collaped Content */}
-              <div className="container-fluid p-0 category-bar-navbar-mobile">
-                <div className="row category-bar-navbar-mobile">
-
-
-                  <div className="col">
-                    <CartIcon src={bunny} to="/ProductsJuguetes" className="category-icon-mobile" description="Juguetes" />
-                  </div>
-                  <div className="col">
-                    <CartIcon src={cake} to="/ProductsPostres" className="category-icon-mobile" description="Postres" />
-                  </div>
-                  <div className="col">
-                    <CartIcon src={table} to="/ProductsJuegos" className="category-icon-mobile" description="Juegos de Mesa" />
-                  </div>
-                  <div className="col">
-                    <CartIcon src={pokeball} to="/ProductsOtros" className="category-icon-mobile" description="Otros" />
-                  </div>
-
-                </div>
+              <div className="col-4">
+                <CartIcon src={bunny} to="/ProductsJuguetes" className="category-icon-mobile" description="Juguetes" />
               </div>
-
-
+              <div className="col-4">
+                <CartIcon src={cake} to="/ProductsPostres" className="category-icon-mobile" description="Postres" />
+              </div>
+              <div className="col-4">
+                <CartIcon src={table} to="/ProductsJuegos" className="category-icon-mobile" description="Juegos de Mesa" />
+              </div>
+              <div className="col-4">
+                <CartIcon src={pokeball} to="/ProductsOtros" className="category-icon-mobile" description="Otros" />
+              </div>
             </div>
           </div>
-          <nav className="navbar">
-            <div className="container-fluid">
-              <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span><img className="category-icon-mobile" src={menu} alt="Menu Icon" /></span>
-              </button>
-            </div>
-          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
 
 
-              </div>
-
-
-            </div>
-          </div>
 
 
 
         </div>
       </nav>
-
-
-
     </>
   );
 };

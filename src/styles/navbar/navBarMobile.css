@@ -66,6 +66,12 @@ a {
   font-size: .9rem;
 }
 
+#text-category{
+  font-family: "Kanit Regular";
+  color: var(--morado-clarito);
+  font-size: .9rem;
+}
+
 #log-in-text-container-mobile {
   width: 4rem;
   position: relative;
