@@ -5,7 +5,6 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "../../styles/productos-contenido/Productos.css";
 import pokemonesData from "../../json/productos.json";
-import imagen1 from "../../img/carousel/IMG-20231212-WA0025.jpg";
 import imagen2 from "../../img/carousel/img2.png";
 import imagen3 from "../../img/carousel/img_Eq.img.png";
 import imagen4 from "../../img/carousel/img4.png";
