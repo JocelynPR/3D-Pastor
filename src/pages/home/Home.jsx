@@ -8,6 +8,7 @@ import pokemonesData from "../../json/productos.json";
 import imagen1 from "../../img/carousel/IMG-20231212-WA0025.jpg";
 import imagen2 from "../../img/carousel/img2.png";
 import imagen3 from "../../img/carousel/img_Eq.img.png";
+import imagen4 from "../../img/carousel/img4.png";
 
 // Importa directamente el archivo JSON
 
@@ -48,6 +49,9 @@ export default function Products() {
       </div>
       <div className="slide" onClick={() => sliderRef.current.slickNext()}>
         <img src={imagen3} alt="Imagen del Carrusel" />
+      </div>
+      <div className="slide" onClick={() => sliderRef.current.slickNext()}>
+        <img src={imagen4} alt="Imagen del Carrusel" />
       </div>
       {/* Agrega más diapositivas según sea necesario */}
     </Slider>
