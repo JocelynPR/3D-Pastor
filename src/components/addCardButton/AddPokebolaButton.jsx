@@ -24,7 +24,7 @@ const AddPokebolaButton = ({ onAddPokebolaClick }) => {
       {/* Botón con una imagen (add) que ejecuta la función handleButtonClick cuando se hace clic */}
       <button
         type="button"
-        className={`add-pokebola-button ${isVisible ? "" : "hidden"}`} // Agrega o quita la clase "hidden" dependiendo del estado de visibilidad
+        className={`add-pokebola-button ${isVisible ? "" : "hidden"}` } // Agrega o quita la clase "hidden" dependiendo del estado de visibilidad
         onClick={handleButtonClick}
       >
         {/* Imagen del símbolo de suma (add) */}

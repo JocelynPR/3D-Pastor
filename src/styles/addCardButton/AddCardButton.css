@@ -4,7 +4,8 @@
   position: relative;
   display: flex;
   align-items: baseline; /* Alinea los elementos a la misma altura */
-  justify-content: center; /* Agregado para centrar los elementos horizontalmente */
+  justify-content: left; /* Agregado para centrar los elementos horizontalmente */
+   
 }
 
 /* Estilo de los botones de incremento y decremento */
@@ -15,6 +16,7 @@
   border: none;
   cursor: pointer;
   outline: none;
+  
 }
 
 /* Estilo específico para los botones de incremento y decremento */
@@ -22,8 +24,10 @@
 .carrito-increment {
   color: #3b1f53; /* Color del símbolo */
   font-weight: bold; /* Grosor del símbolo */
-  width: 25px; /* Establece un ancho fijo para ambos botones */
+  width: 0.5rem; /* Establece un ancho fijo para ambos botones */
   text-align: center; /* Centra el contenido horizontalmente */
+  padding-left: 0.005px;
+  
 }
 
 /* Paleta de colores
@@ -38,18 +42,22 @@
 
 /* Estilo para la cantidad de productos */
 .cantidad {
-  font-size: 2em;
-  width: 1em; /* Ancho fijo para la cantidad */
-  text-align: center; /* Centra el texto dentro del espacio fijo */
-  margin: 0 5px;
+  font-size: 2rem;
+  width: 2rem; /* Ancho fijo para la cantidad */
+  text-align: left; /* Centra el texto dentro del espacio fijo */
+  margin-left:  0.5rem; 
   color: #847a9c;
+  padding-right: 0.05px;
+  
 }
 
 /* Estilo del contenedor de cantidad */
 .cantidad-container {
-  position: relative;
+  position:center;
   display: flex; /* Agregado: establece el contenedor de cantidad como un contenedor flex */
-  align-items: center; /* Agregado: alinea verticalmente los elementos dentro del contenedor de cantidad */
+   /* Agregado: alinea verticalmente los elementos dentro del contenedor de cantidad */
+  margin:  0.05rem; 
+  padding-left: 0.55px;
 }
 
 /* Estilo para el mensaje de cantidad máxima */
@@ -66,8 +74,8 @@
   background-color: red;
   color: white;
   padding: 7px;
-  border-radius: 10px;
-  max-width: 200px; /* Ajusta el ancho máximo según tus necesidades */
+  border-radius: 1px;
+  max-width: 20px; /* Ajusta el ancho máximo según tus necesidades */
   /*white-space: normal; /* Permite que el texto fluya en varias líneas si es necesario */
   /*overflow: visible; /* Muestra completamente el texto que excede el ancho máximo */
   margin: 3px;
@@ -79,13 +87,14 @@
   background-color: #3b1f53; /* Color de fondo ajustado */
   color: #feffff; /* Color del texto ajustado */
   border: none;
-  padding: 2px 8px; /* Ajusta el relleno según el diseño deseado */
+  padding: 2px 9px; /* Ajusta el relleno según el diseño deseado */
   cursor: pointer;
   border-radius: 5px;
-  margin-top: 10px; /* Ajusta el margen superior según sea necesario */
+  margin-top: 1px; /* Ajusta el margen superior según sea necesario */
   transition: background-color 0.3s; /* Agregado: transición suave en el cambio de color de fondo */
   margin-top: auto; /* Auto para centrar verticalmente */
   /* Estilo hover */
+  position: left;
   &:hover {
     background-color: #847a9c; /* Ajusta el color de fondo al pasar el mouse */
   }

@@ -23,13 +23,12 @@
   
   .card-productos-contenido {
     background-color: var(--blanco);
-    height: 100%;
-    margin: auto 6rem;
+    margin: auto 4rem;
     margin-bottom: 2rem;
   }
   
   #main-productos-contenido {
-    margin-bottom: 8rem;
+    margin-bottom: 6rem;
   }
   
   .h1-productos-contenido {
@@ -40,33 +39,48 @@
   .texto-de-tarjeta-productos-contenido {
     color: var(--morado-oscuro);
     font-family: 'Kanit Regular';
-    height: 5rem;
+    margin: .5rem;
+    height: 6rem;
   }
   
   #contenedor-rol-de-tarjeta-productos-contenido {
     font-family: 'Kanit Regular';
-    height: 4rem;
+    height: 8rem;
   }
   
   .rol-de-tarjeta-productos-contenido {
     color: var(--morado-grisaseo);
     font-family: 'Kanit Light';
     position: absolute;
-    bottom: .6rem;
-    right: 1rem;
+    
   }
   
   .col-productos-contenido{
     margin: 0 auto;
-    padding-top: 4rem; 
+    padding-top: 3rem; 
+    float: none;
   }
+
+  
+  
 
 
   .contenido-img{
-    width: 100%;
-    height: 15rem;
+    max-width: 100%;
+    height: 150px;
+    object-fit: contain;
+    object-position: bottom;
   }
   
+
+
+  .contenedor
+{
+  margin: 1rem;
+  padding-left: -10px;
+}
+
+
 /* En tu archivo CSS */
 .full-screen-slider img {
   width: 100%;
