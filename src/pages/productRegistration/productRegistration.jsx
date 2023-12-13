@@ -134,7 +134,7 @@ const initialProductState = {
         <br />
 
         <label>
-          Precio en NMX: <br />
+          Precio en MXN: <br />
           <input
             type="number"
             name="price"
