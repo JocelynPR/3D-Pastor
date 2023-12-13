@@ -29,28 +29,29 @@ a {
 footer {
   background-color: var(--morado-grisaseo);
   display: grid;
-  /* grid-template-rows: 1fr auto;
-  min-height: 100vh;  */
 }
 
 #pokemon-place-10-aniversario-footer {
-  margin-top: -2.4rem;
-  left: 0px;
+  margin-top: -2.25rem;
+  width: 9.5rem;
 }
 
 .logotipos-de-redes-footer {
-  width: 3.5rem;
+  width: 3.2rem;
 }
 
-#second-column-footer,
-#h5-footer {
-  color: var(--morado-clarito);
-  font-family: "Kanit SemiBold";
+.h5-footer-container {
   margin-top: 1rem;
 }
 
+.h5-footer {
+  color: var(--morado-clarito);
+  font-family: "Kanit SemiBold";
+  font-size: 1rem;
+}
+
 .list-products-footer {
-  font-size: 1.1rem;
+  font-size: .9rem;
   color: var(--morado-clarito);
   text-align: start;
   font-family: "Kanit Regular";
@@ -59,17 +60,19 @@ footer {
 #fourth-column-footer {
   color: var(--morado-clarito);
   font-family: "Kanit Light";
-  font-size: .8rem;
+  font-size: .75rem;
   text-align: center;
+  padding: 0;
 }
 
 .logo-container-footer {
   margin-top: 1rem;
   padding: .5rem;
+  width: 4.35rem;
 }
 
 .card-text-footer {
   color: var(--morado-clarito);
-  font-family: "Kanit Regular";
-  padding-bottom: .8rem;
+  font-family: "Kanit Light";
+  padding-bottom: .1rem;
 }
