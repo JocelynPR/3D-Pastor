@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "../../styles/addCardButton/AddCardButton.css";
+import { Link } from "react-router-dom";
 
 const AddCardButton = ({ onCantidadChange }) => {
   const [cantidadProductos, setCantidadProductos] = useState(1);
@@ -55,13 +56,15 @@ const AddCardButton = ({ onCantidadChange }) => {
         </div>
       </div>
       {/* Botón principal para añadir al carrito */}
-      <button
-        type="button"
-        className="carrito-button carrito-add"
-        onClick={handleCarAddClick}
-      >
-        Añadir
-      </button>
+      <Link to="/Carrito">
+        <button
+          type="button"
+          className="carrito-button carrito-add"
+          onClick={handleCarAddClick}
+        >
+          Añadir
+        </button>
+      </Link>
     </div>
   );
 };

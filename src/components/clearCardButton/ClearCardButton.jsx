@@ -7,7 +7,7 @@ const CleanCardButton = ({ onCleanCardClick }) => {
     // Lógica para limpiar el carrito (a implementar en el futuro)
     console.log("Limpiar carrito");
     // Llama a la función proporcionada como prop (onCleanCardClick)
-    onCleanCardClick();
+    //onCleanCardClick(); //se comento para que no marcara error
   };
 
   return (
