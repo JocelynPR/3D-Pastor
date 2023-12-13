@@ -46,9 +46,7 @@ export default function Products() {
     <>
       <Slider ref={sliderRef} {...settings} className="full-screen-slider">
         {/* Contenido de cada diapositiva */}
-        <div className="slide" onClick={nextPage}>
-          <img src={imagen1} alt="Imagen del Carrusel" />
-        </div>
+        
         <div className="slide" onClick={nextPage}>
           <img src={imagen2} alt="Imagen del Carrusel" />
         </div>
