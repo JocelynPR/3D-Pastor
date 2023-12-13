@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/3D-Pastor/static/css/main.3199f86f.css",
-    "main.js": "/3D-Pastor/static/js/main.79d5488d.js",
+    "main.js": "/3D-Pastor/static/js/main.85ed9836.js",
     "static/media/img2.png": "/3D-Pastor/static/media/img2.b8291551213734bd1fbf.png",
     "static/media/img4.png": "/3D-Pastor/static/media/img4.a8b306d87711ed97b8be.png",
     "static/media/20231205_160604.png": "/3D-Pastor/static/media/20231205_160604.76d566aff11124162793.png",
@@ -100,7 +100,6 @@
     "static/media/20231205_162221.png": "/3D-Pastor/static/media/20231205_162221.630f9d71482216fdd201.png",
     "static/media/20231205_161541.png": "/3D-Pastor/static/media/20231205_161541.07fa713dc2024db7ca32.png",
     "static/media/20231205_161958.png": "/3D-Pastor/static/media/20231205_161958.77165703b5b57bad547d.png",
-    "static/media/imagen_2.jpeg": "/3D-Pastor/static/media/imagen_2.4764949f4a36122c0b20.jpeg",
     "static/media/20231205_161744.png": "/3D-Pastor/static/media/20231205_161744.848ce94763f76fc89528.png",
     "static/media/20231205_161512.png": "/3D-Pastor/static/media/20231205_161512.b6ffe4172c44e0e2c8d6.png",
     "static/media/20231205_162023.png": "/3D-Pastor/static/media/20231205_162023.b8f372b72e0a871439d4.png",
@@ -163,10 +162,10 @@
     "static/media/deleteIcon.svg": "/3D-Pastor/static/media/deleteIcon.642da2f9203fed7e99a03988591b154e.svg",
     "static/media/menu.svg": "/3D-Pastor/static/media/menu.442c7e13b8a9b05814f57cda657f91aa.svg",
     "main.3199f86f.css.map": "/3D-Pastor/static/css/main.3199f86f.css.map",
-    "main.79d5488d.js.map": "/3D-Pastor/static/js/main.79d5488d.js.map"
+    "main.85ed9836.js.map": "/3D-Pastor/static/js/main.85ed9836.js.map"
   },
   "entrypoints": [
     "static/css/main.3199f86f.css",
-    "static/js/main.79d5488d.js"
+    "static/js/main.85ed9836.js"
   ]
 }
