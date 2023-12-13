@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/3D-Pastor/static/css/main.3199f86f.css",
-    "main.js": "/3D-Pastor/static/js/main.85ed9836.js",
+    "main.css": "/3D-Pastor/static/css/main.20228fba.css",
+    "main.js": "/3D-Pastor/static/js/main.4e7db0da.js",
     "static/media/img2.png": "/3D-Pastor/static/media/img2.b8291551213734bd1fbf.png",
     "static/media/img4.png": "/3D-Pastor/static/media/img4.a8b306d87711ed97b8be.png",
     "static/media/20231205_160604.png": "/3D-Pastor/static/media/20231205_160604.76d566aff11124162793.png",
@@ -161,11 +161,11 @@
     "static/media/key.svg": "/3D-Pastor/static/media/key.9f6ea95a0460f39bba7aa74ed630f250.svg",
     "static/media/deleteIcon.svg": "/3D-Pastor/static/media/deleteIcon.642da2f9203fed7e99a03988591b154e.svg",
     "static/media/menu.svg": "/3D-Pastor/static/media/menu.442c7e13b8a9b05814f57cda657f91aa.svg",
-    "main.3199f86f.css.map": "/3D-Pastor/static/css/main.3199f86f.css.map",
-    "main.85ed9836.js.map": "/3D-Pastor/static/js/main.85ed9836.js.map"
+    "main.20228fba.css.map": "/3D-Pastor/static/css/main.20228fba.css.map",
+    "main.4e7db0da.js.map": "/3D-Pastor/static/js/main.4e7db0da.js.map"
   },
   "entrypoints": [
-    "static/css/main.3199f86f.css",
-    "static/js/main.85ed9836.js"
+    "static/css/main.20228fba.css",
+    "static/js/main.4e7db0da.js"
   ]
 }
