@@ -1,30 +1,36 @@
-import React, { useEffect, useState, useRef } from "react";
+import React, { useEffect, useState } from "react";
 import { TarjetaProductos } from './TarjetaProductos'
-// Importa directamente el archivo JSON
-import pokemonesData from "../../json/productos.json";
+import AddCardButton from "../addCardButton/AddCardButton";
 
+import pokemonesData from "../../json/productos.json";
 
 export default function FiltroTarjetaProducto({ nombreDelFiltro }) {
   const [products, setProducts] = useState([]);
+  const [carrito, setCarrito] = useState([]);
 
   useEffect(() => {
-    // Utiliza los datos importados directamente
     setProducts(pokemonesData);
   }, []);
 
   function filtrarPorCategoria(nombreDelFiltro) {
-    products.map((product, index) => {
-      if (product.category == nombreDelFiltro) {
+    return products
+      .filter(product => product.category === nombreDelFiltro)
+      .map((product, index) => (
         <TarjetaProductos
           key={index}
           src={require("../../img/productos/" + product.image)}
           alt={product.title}
           nombreProducto={product.title}
           precio={"$" + (product.price).toFixed(2) + " MXN"}
+          onAddToCartClick={(infoProducto) => handleCarAddClick({ ...infoProducto, ...product })}
+
         />
-      }
-    })
+      ));
   }
+  const handleCarAddClick = (producto) => {
+    // Añade el producto al carrito
+    setCarrito([...carrito, producto]);
+  };
 
   return (
     <>

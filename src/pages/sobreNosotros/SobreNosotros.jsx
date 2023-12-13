@@ -66,15 +66,6 @@ export default function SobreNosotros() {
                 rol={"Scrum Master"}
               />
 
-              {/* ---Itzel--- */}
-              <TarjetaSobreNosotros
-                src={itzel}
-                alt={"Itzel"}
-                nombre={"Itzel Secundino Segundo"}
-                residencia={"CDMX"}
-                rol={"Desarrollo"}
-              />
-
               {/* ---Tony--- */}
               <TarjetaSobreNosotros
                 src={tony}
