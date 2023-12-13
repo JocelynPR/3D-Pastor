@@ -25,23 +25,26 @@
   background-color: var(--morado-oscuro);
 }
 
-#category-bar-navbar {
+.category-bar-navbar {
   background-color: var(--morado-grisaseo);
 }
 
 .svg-cart-icon {
-  width: 80px;
-  /* Ajusta el tamaño según sea necesario */
-  padding-right: 30px;
+  width: 5rem;
+  padding-right: 1.7rem;
+}
+
+#cart-icon-container-navbar {
+margin-left: 1.3rem;
 }
 
 .pokemon-icon {
   width: 12rem;
-  margin-left: 2rem;
+  margin-top: 1rem;
 }
 
 .category-icon {
-  width: 4rem;
+  width: 3.4rem;
   background-color: none;
   margin: .5rem;
 }
@@ -62,6 +65,10 @@ a {
   left: 1.2rem;
   font-family: "Kanit Medium";
   color: var(--morado-clarito);
+}
+
+#log-in-cart-container-navbar {
+  margin-top: 2rem;
 }
 
 .search-icon {
@@ -88,6 +95,7 @@ a {
   -ms-flex-flow: row-reverse nowrap;
   flex-flow: row-reverse nowrap;
   width: 450px;
+  margin-top: 2.5rem;
 }
 
 #search-wrapper #search {
@@ -125,39 +133,7 @@ a {
   border-color: rgb(8, 124, 120);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-/*
-
-#custom-search-input .search-query {
-  border-radius: 0px 50px 50px 0px;
-  font-family: "Kanit Light";
-  margin-bottom: 0;
-  background-color: #ede4ed ;
-  box-shadow: #ede4ed;
-    -webkit-box-shadow: #ede4ed;
-    -moz-box-shadow: #ede4ed;
-  
+#main-container {
+  display: flex;
+  justify-content: center;
 }
-
-#custom-search-input button {
-  left: -496px;
-  border-radius: 50px 0px 0px 50px;
-  background: #ede4ed;
-  margin-bottom: 0;
-  box-shadow: none;
-    -webkit-box-shadow: none;
-    -moz-box-shadow: none;
-  color:#D9230F;
-  
-}
-*/

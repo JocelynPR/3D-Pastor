@@ -1,6 +1,6 @@
 import {Link} from 'react-router-dom';
 
-function CardApp(prop) {
+function CartIcon(prop) {
   const myCard = (
       <div className="card-container my-card">
         <Link to={prop.to}>
@@ -12,4 +12,4 @@ function CardApp(prop) {
   return myCard;
 }
 
-export default CardApp;
+export default CartIcon;
