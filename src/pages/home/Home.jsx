@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useRef } from "react";
+import React, { useEffect, useState } from "react";
 import { TarjetaProductos } from "../../components/productos-contenido/TarjetaProductos";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -11,9 +11,8 @@ import imagen4 from "../../img/carousel/img4.png";
 
 export default function Products() {
   const [products, setProducts] = useState([]);
-  const [currentPage, setCurrentPage] = useState(1);
+  const [currentPage, setCurrentPage] = useState(0); // Cambiado a 0 para que el primer clic sea la primera página
   const productsPerPage = 12; // Cantidad de productos por página
-  const sliderRef = useRef(null); // Declarar sliderRef aquí
 
   useEffect(() => {
     setProducts(pokemonesData);
@@ -35,25 +34,23 @@ export default function Products() {
     ],
   };
 
-  const indexOfLastProduct = currentPage * productsPerPage;
-  const indexOfFirstProduct = indexOfLastProduct - productsPerPage;
-  const currentProducts = products.slice(indexOfFirstProduct, indexOfLastProduct);
+  const totalPages = Math.ceil(products.length / productsPerPage);
 
-  const nextPage = () => sliderRef.current.slickNext();
-  const prevPage = () => sliderRef.current.slickPrev();
+  const handleChangePage = (newPage) => {
+    setCurrentPage(newPage);
+  };
 
   return (
     <>
-      <Slider ref={sliderRef} {...settings} className="full-screen-slider">
+      <Slider {...settings} className="full-screen-slider">
         {/* Contenido de cada diapositiva */}
-        
-        <div className="slide" onClick={nextPage}>
+        <div className="slide">
           <img src={imagen2} alt="Imagen del Carrusel" />
         </div>
-        <div className="slide" onClick={nextPage}>
+        <div className="slide">
           <img src={imagen3} alt="Imagen del Carrusel" />
         </div>
-        <div className="slide" onClick={nextPage}>
+        <div className="slide">
           <img src={imagen4} alt="Imagen del Carrusel" />
         </div>
       </Slider>
@@ -67,21 +64,23 @@ export default function Products() {
         <section>
           <div className="fondo container">
             <div className="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3 g-3">
-              {currentProducts.map((product, index) => (
-                <TarjetaProductos
-                  key={index}
-                  src={require("../../img/productos/" + product.image)}
-                  alt={product.title}
-                  nombreProducto={product.title}
-                  precio={"$" + (product.price).toFixed(2) + " MXN"}
-                />
-              ))}
+              {products
+                .slice(currentPage * productsPerPage, (currentPage + 1) * productsPerPage)
+                .map((product, index) => (
+                  <TarjetaProductos
+                    key={index}
+                    src={require("../../img/productos/" + product.image)}
+                    alt={product.title}
+                    nombreProducto={product.title}
+                    precio={"$" + (product.price).toFixed(2) + " MXN"}
+                  />
+                ))}
             </div>
             <div>
-              <button onClick={prevPage} disabled={currentPage === 1}>
+              <button onClick={() => handleChangePage(currentPage - 1)} disabled={currentPage === 0}>
                 Anterior
               </button>
-              <button onClick={nextPage} disabled={indexOfLastProduct >= products.length}>
+              <button onClick={() => handleChangePage(currentPage + 1)} disabled={currentPage === totalPages - 1}>
                 Siguiente
               </button>
             </div>
@@ -91,3 +90,4 @@ export default function Products() {
     </>
   );
 }
+
