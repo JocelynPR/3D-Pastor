@@ -1,4 +1,4 @@
-
+import React, { useEffect, useState, useRef } from "react";
 import "../../styles/productos-contenido/Productos.css";
 import FiltroTarjetaProducto from "../../components/productos-contenido/FiltroTarjetaProducto";
 

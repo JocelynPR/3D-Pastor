@@ -1,9 +1,12 @@
 import React, { useEffect, useState } from "react";
 import { TarjetaProductos } from './TarjetaProductos'
+import AddCardButton from "../addCardButton/AddCardButton";
+
 import pokemonesData from "../../json/productos.json";
 
 export default function FiltroTarjetaProducto({ nombreDelFiltro }) {
   const [products, setProducts] = useState([]);
+  const [carrito, setCarrito] = useState([]);
 
   useEffect(() => {
     setProducts(pokemonesData);
@@ -19,9 +22,15 @@ export default function FiltroTarjetaProducto({ nombreDelFiltro }) {
           alt={product.title}
           nombreProducto={product.title}
           precio={"$" + (product.price).toFixed(2) + " MXN"}
+          onAddToCartClick={(infoProducto) => handleCarAddClick({ ...infoProducto, ...product })}
+
         />
       ));
   }
+  const handleCarAddClick = (producto) => {
+    // Añade el producto al carrito
+    setCarrito([...carrito, producto]);
+  };
 
   return (
     <>

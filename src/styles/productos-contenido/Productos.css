@@ -26,6 +26,18 @@
     height: 100%;
     margin: auto 6rem;
     margin-bottom: 2rem;
+    border-radius: 2rem;
+  }
+  .card-productos-contenido::after {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: -1;
+    border-radius: 2rem;
   }
   
   #main-productos-contenido {
@@ -66,20 +78,19 @@
     width: 100%;
     height: 15rem;
   }
-  
-/* En tu archivo CSS */
+
 .full-screen-slider img {
   width: 100%;
-  height: 100%; /* O '100%' según tus necesidades */
-  object-fit: contain; /* Ajusta según prefieras 'cover' o 'contain' */
+  height: 100%; 
+  object-fit: contain; 
 }
 
 .full-screen-slider .slide {
   width: 100%;
-  height: auto; /* Ajusta la altura según necesites */
+  height: auto; 
 }
 
 .slider-container {
-  max-width: 30%; /* Ajusta esto según tus necesidades */
-  margin: auto; /* Centra el carrusel */
+  max-width: 30%; 
+  margin: auto; 
 }
