@@ -1,20 +1,57 @@
-import React, { useEffect, useState } from "react";
-import "../../styles/productos-contenido/Productos.css";
+import React, { useEffect, useState, useRef } from "react";
 import { TarjetaProductos } from "../../components/productos-contenido/TarjetaProductos";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import "../../styles/productos-contenido/Productos.css";
+import pokemonesData from "../../json/productos.json";
+import imagen1 from "../../img/carousel/IMG-20231212-WA0025.jpg";
+import imagen2 from "../../img/carousel/img2.png";
+import imagen3 from "../../img/carousel/img_Eq.img.png";
 
 // Importa directamente el archivo JSON
-import pokemonesData from "../../json/productos.json";
+
 
 export default function Products() {
   const [products, setProducts] = useState([]);
+  const sliderRef = useRef(null); // Definir la referencia aquí
+
 
   useEffect(() => {
-    // Utiliza los datos importados directamente
     setProducts(pokemonesData);
   }, []);
 
+  const settings = { 
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 800,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
+  };
   return (
     <>
+     <Slider ref={sliderRef} {...settings} className="full-screen-slider">
+      {/* Contenido de cada diapositiva */}
+      <div className="slide" onClick={() => sliderRef.current.slickNext()}>
+        <img src={imagen1} alt="Imagen del Carrusel" />
+      </div>
+      <div className="slide" onClick={() => sliderRef.current.slickNext()}>
+        <img src={imagen2} alt="Imagen del Carrusel" />
+      </div>
+      <div className="slide" onClick={() => sliderRef.current.slickNext()}>
+        <img src={imagen3} alt="Imagen del Carrusel" />
+      </div>
+      {/* Agrega más diapositivas según sea necesario */}
+    </Slider>
+
       <main id="main-productos-contenido">
         <section className="pt-5 pb-3 text-center container">
           <h1 className="h1-productos-contenido fw-light">

@@ -67,4 +67,19 @@
     height: 15rem;
   }
   
- 
+/* En tu archivo CSS */
+.full-screen-slider img {
+  width: 100%;
+  height: 100%; /* O '100%' según tus necesidades */
+  object-fit: contain; /* Ajusta según prefieras 'cover' o 'contain' */
+}
+
+.full-screen-slider .slide {
+  width: 100%;
+  height: auto; /* Ajusta la altura según necesites */
+}
+
+.slider-container {
+  max-width: 30%; /* Ajusta esto según tus necesidades */
+  margin: auto; /* Centra el carrusel */
+}

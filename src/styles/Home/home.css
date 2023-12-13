@@ -1,0 +1,10 @@
+.full-screen-slider img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Esto hará que la imagen cubra todo el contenedor */
+  }
+  
+  .full-screen-slider .slide {
+    width: 100vw;
+    height: 100vh;
+  }

@@ -16,7 +16,7 @@ import Sidebar from "./components/narvarLateral/sidebar";
 
 import LogIn from "./pages/logIn/LogIn";
 import Contacto from "./pages/contacto/Contacto";
-import registroProduct from "./pages/Registro/Registro";
+// import registroProduct from "./pages/Registro/Registro";
 import Carrito from "./pages/carrito/Carrito";
 //import AppButtonCard from "./components/addCardButton/AppButtonCard";
 
