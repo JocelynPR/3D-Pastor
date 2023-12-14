@@ -1,9 +1,10 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import { TarjetaProductos } from "../../components/productos-contenido/TarjetaProductos";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "../../styles/productos-contenido/Productos.css";
+import "../../styles/Home/home.css";
 import pokemonesData from "../../json/productos.json";
 import imagen2 from "../../img/carousel/img2.png";
 import imagen3 from "../../img/carousel/img_Eq.img.png";
@@ -11,6 +12,7 @@ import imagen4 from "../../img/carousel/img4.png";
 
 export default function Products() {
   const [products, setProducts] = useState([]);
+  const sliderRef = useRef(null); // Definir la referencia aquí
   const [currentPage, setCurrentPage] = useState(0); // Cambiado a 0 para que el primer clic sea la primera página
   const productsPerPage = 12; // Cantidad de productos por página
 
@@ -26,7 +28,7 @@ export default function Products() {
     slidesToScroll: 1,
     responsive: [
       {
-        breakpoint: 800,
+        breakpoint: 100,
         settings: {
           slidesToShow: 1,
         },
@@ -35,26 +37,25 @@ export default function Products() {
   };
 
   const totalPages = Math.ceil(products.length / productsPerPage);
-
   const handleChangePage = (newPage) => {
     setCurrentPage(newPage);
   };
 
   return (
     <>
-      <Slider {...settings} className="full-screen-slider">
+      <Slider ref={sliderRef} {...settings} className="full-screen-slider">
         {/* Contenido de cada diapositiva */}
-        <div className="slide">
+        <div className="slide" onClick={() => sliderRef.current.slickNext()}>
           <img src={imagen2} alt="Imagen del Carrusel" />
         </div>
-        <div className="slide">
+        <div className="slide" onClick={() => sliderRef.current.slickNext()}>
           <img src={imagen3} alt="Imagen del Carrusel" />
         </div>
-        <div className="slide">
+        <div className="slide" onClick={() => sliderRef.current.slickNext()}>
           <img src={imagen4} alt="Imagen del Carrusel" />
         </div>
       </Slider>
-
+<br />
       <main id="main-productos-contenido">
         <section className="pt-5 pb-3 text-center container">
           <h1 className="h1-productos-contenido fw-light">
@@ -76,11 +77,12 @@ export default function Products() {
                   />
                 ))}
             </div>
+            <br />
             <div>
-              <button onClick={() => handleChangePage(currentPage - 1)} disabled={currentPage === 0}>
+              <button className="button-previous" onClick={() => handleChangePage(currentPage - 1)} disabled={currentPage === 0}>
                 Anterior
               </button>
-              <button onClick={() => handleChangePage(currentPage + 1)} disabled={currentPage === totalPages - 1}>
+              <button className="button-next" onClick={() => handleChangePage(currentPage + 1)} disabled={currentPage === totalPages - 1}>
                 Siguiente
               </button>
             </div>
