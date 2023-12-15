@@ -4,17 +4,20 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "../../styles/productos-contenido/Productos.css";
-import "../../styles/Home/home.css";
 import pokemonesData from "../../json/productos.json";
+import imagen1 from "../../img/carousel/IMG-20231212-WA0025.jpg";
 import imagen2 from "../../img/carousel/img2.png";
 import imagen3 from "../../img/carousel/img_Eq.img.png";
 import imagen4 from "../../img/carousel/img4.png";
+import FiltroTarjetaProducto from "../../components/productos-contenido/FiltroTarjetaProducto";
+
+// Importa directamente el archivo JSON
+
 
 export default function Products() {
   const [products, setProducts] = useState([]);
   const sliderRef = useRef(null); // Definir la referencia aquí
-  const [currentPage, setCurrentPage] = useState(0); // Cambiado a 0 para que el primer clic sea la primera página
-  const productsPerPage = 12; // Cantidad de productos por página
+
 
   useEffect(() => {
     setProducts(pokemonesData);
@@ -28,19 +31,13 @@ export default function Products() {
     slidesToScroll: 1,
     responsive: [
       {
-        breakpoint: 100,
+        breakpoint: 800,
         settings: {
           slidesToShow: 1,
         },
       },
     ],
   };
-
-  const totalPages = Math.ceil(products.length / productsPerPage);
-  const handleChangePage = (newPage) => {
-    setCurrentPage(newPage);
-  };
-
   return (
     <>
       <Slider ref={sliderRef} {...settings} className="full-screen-slider">
@@ -54,42 +51,17 @@ export default function Products() {
         <div className="slide" onClick={() => sliderRef.current.slickNext()}>
           <img src={imagen4} alt="Imagen del Carrusel" />
         </div>
+        {/* Agrega más diapositivas según sea necesario */}
       </Slider>
-      <br />
+
       <main id="main-productos-contenido">
         <section className="pt-5 pb-3 text-center container">
           <h1 className="h1-productos-contenido fw-light">
             <strong>Productos</strong>
           </h1>
         </section>
-        <section>
-          <div className="fondo container">
-            <div className="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3 g-3">
-              {products
-                .slice(currentPage * productsPerPage, (currentPage + 1) * productsPerPage)
-                .map((product, index) => (
-                  <TarjetaProductos
-                    id={product.id}
-                    src={require("../../img/productos/" + product.image)}
-                    alt={product.title}
-                    nombreProducto={product.title}
-                    precio={"$" + (product.price).toFixed(2) + " MXN"}
-                  />
-                ))}
-            </div>
-            <br />
-            <div>
-              <button className="button-previous" onClick={() => handleChangePage(currentPage - 1)} disabled={currentPage === 0}>
-                Anterior
-              </button>
-              <button className="button-next" onClick={() => handleChangePage(currentPage + 1)} disabled={currentPage === totalPages - 1}>
-                Siguiente
-              </button>
-            </div>
-          </div>
-        </section>
+        <FiltroTarjetaProducto nombreDelFiltro={"Todo"} />
       </main>
     </>
   );
 }
-
