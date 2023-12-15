@@ -15,9 +15,10 @@ export default function FiltroTarjetaProducto({ nombreDelFiltro }) {
   function filtrarPorCategoria(nombreDelFiltro) {
     return products
       .filter(product => product.category === nombreDelFiltro)
-      .map((product, index) => (
+      .map((product) => (
         <TarjetaProductos
-          key={product.id}
+          //key={product.id}
+          id={product.id}
           src={require("../../img/productos/" + product.image)}
           alt={product.title}
           nombreProducto={product.title}

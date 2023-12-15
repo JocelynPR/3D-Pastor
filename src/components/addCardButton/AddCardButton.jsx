@@ -2,7 +2,23 @@ import React, { useState } from "react";
 import "../../styles/addCardButton/AddCardButton.css";
 import { Link } from "react-router-dom";
 
-const AddCardButton = ({ onCantidadChange }) => {
+
+/* const [productos, setProducts] = useState([]);
+
+useEffect(() => {
+  setProducts(pokemonesData);
+}, []); */
+
+
+const guardadoEnElCarrito = [];
+
+const sendFetchedDataToLocalStorage = (productos) => {
+  const data = (productos);
+  localStorage.setItem("data", JSON.stringify(data));
+}
+
+
+const AddCardButton = ({ onCantidadChange, buttonIdAnadir }) => {
   const [cantidadProductos, setCantidadProductos] = useState(1);
   const maxProductos = 9;
 
@@ -62,7 +78,7 @@ const AddCardButton = ({ onCantidadChange }) => {
           className="carrito-button carrito-add"
           onClick={handleCarAddClick}
         >
-          Añadir
+          Añadir({buttonIdAnadir})
         </button>
       </Link>
     </div>

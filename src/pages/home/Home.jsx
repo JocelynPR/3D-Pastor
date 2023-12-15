@@ -55,7 +55,7 @@ export default function Products() {
           <img src={imagen4} alt="Imagen del Carrusel" />
         </div>
       </Slider>
-<br />
+      <br />
       <main id="main-productos-contenido">
         <section className="pt-5 pb-3 text-center container">
           <h1 className="h1-productos-contenido fw-light">
@@ -69,7 +69,7 @@ export default function Products() {
                 .slice(currentPage * productsPerPage, (currentPage + 1) * productsPerPage)
                 .map((product, index) => (
                   <TarjetaProductos
-                    key={index}
+                    id={product.id}
                     src={require("../../img/productos/" + product.image)}
                     alt={product.title}
                     nombreProducto={product.title}

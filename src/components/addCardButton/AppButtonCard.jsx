@@ -5,7 +5,7 @@ import AddPokebolaButton from "./AddPokebolaButton";
 // Aplicación que enlaza los dos botones
 
 // Define el componente funcional AppButtonCard
-const AppButtonCard = () => {
+const AppButtonCard = ({ buttonIdAnadir }) => {
   // Estado para controlar la visibilidad del componente AddCardButton
   const [mostrarAddCardButton, setMostrarAddCardButton] = useState(false);
 
@@ -35,7 +35,7 @@ const AppButtonCard = () => {
   return (
     <div>
       {mostrarAddCardButton ? ( // Condicional para mostrar AddCardButton o AddPokebolaButton
-        <AddCardButton onCantidadChange={handleCantidadProductosChange} /> // Pasa la función de manejo del contador como prop
+        <AddCardButton onCantidadChange={handleCantidadProductosChange} buttonIdAnadir={buttonIdAnadir} /> // Pasa la función de manejo del contador como prop
       ) : (
         <AddPokebolaButton onAddPokebolaClick={handleAddPokebolaClick} />
       )}
