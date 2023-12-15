@@ -6,7 +6,7 @@ import pokemonesData from "../../json/productos.json";
 const ReadFromLocalStorage = () => {
 
     const [productos, setProducts] = useState([]);
-    const [carrito, setCarrito] = useState([]);
+    //const [carrito, setCarrito] = useState([]);
 
     useEffect(() => {
         setProducts(pokemonesData);
@@ -26,7 +26,7 @@ const ReadFromLocalStorage = () => {
         return carritoStorage;
     }
 
-    const organizeDataIntoHTML = (data) => {
+    /* const organizeDataIntoHTML = (data) => {
         const organizedData = data.map((producto, index, array) => `
             <tr key="${producto.id}">
                 <td>${producto.title}</td>
@@ -35,13 +35,28 @@ const ReadFromLocalStorage = () => {
         ` );
         const joined = organizedData.join("");
         //console.log(joined);
-        return joined;
-    }
-    organizeDataIntoHTML(readLocalStorage("data"));
+        return joined; */
 
+    const data = readLocalStorage("data");
     return (
         <>
-            {organizeDataIntoHTML(readLocalStorage("data"))}
+            {/* {data.map((producto, index, array) => `
+            <tr key="${producto.id}">
+                <td>${producto.title}</td>
+                <td>${producto.price}</td>
+            </tr>
+        ` )} */}
+            <tbody>
+                {data.map((producto, index) => (
+                    <tr key={producto.id}>
+                        <td>{producto.title}</td>
+                        <td>{producto.price.toFixed(2)}</td>
+                        <td>2</td>
+                        <td>{(producto.price * 2).toFixed(2)}</td>
+                    </tr>
+                ))}
+            </tbody>
+
         </>
 
     );

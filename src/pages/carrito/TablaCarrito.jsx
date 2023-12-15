@@ -13,9 +13,9 @@ const TablaCarrito = ({ productos }) => {
                         <th>Subtotal</th>
                     </tr>
                 </thead>
-                <tbody>
-                    <ReadFromLocalStorage />
-                </tbody>
+                {/* <tbody> */}
+                <ReadFromLocalStorage />
+                {/* </tbody> */}
             </table>
         </div>
     );
