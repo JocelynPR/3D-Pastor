@@ -1,4 +1,5 @@
 import "../../styles/carrito/carrito.css";
+import ReadFromLocalStorage from "./ReadFromLocalStorage";
 
 const TablaCarrito = ({ productos }) => {
     return (
@@ -13,18 +14,12 @@ const TablaCarrito = ({ productos }) => {
                     </tr>
                 </thead>
                 <tbody>
-                    {productos.map((producto, index) => (
-                        <tr key={index}>
-                            <td>{producto.nombre}</td>
-                            <td>{producto.precio.toFixed(2)}</td>
-                            <td>{producto.cantidad}</td>
-                            <td>{producto.subtotal.toFixed(2)}</td>
-                        </tr>
-                    ))}
+                    <ReadFromLocalStorage />
                 </tbody>
             </table>
         </div>
     );
+
 };
 
 export default TablaCarrito;

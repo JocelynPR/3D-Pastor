@@ -17,7 +17,7 @@ export default function FiltroTarjetaProducto({ nombreDelFiltro }) {
       .filter(product => product.category === nombreDelFiltro)
       .map((product, index) => (
         <TarjetaProductos
-          key={index}
+          key={product.id}
           src={require("../../img/productos/" + product.image)}
           alt={product.title}
           nombreProducto={product.title}
