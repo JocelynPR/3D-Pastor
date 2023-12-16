@@ -3,7 +3,7 @@ import AppButtonCard from "../addCardButton/AppButtonCard";
 //import ClearCardButton from "../clearCardButton/ClearCardButton";
 
 export const TarjetaProductos = (prop) => {
-  console.log(prop.id);
+
   return (
     <div className="col-productos-contenido col col-centered">
       <div className="card-productos-contenido card shadow-sm">
@@ -20,7 +20,7 @@ export const TarjetaProductos = (prop) => {
           </p>
         </div>
         <div className="row row-cols-1 row-cols-sm-1 row-cols-md-1 row-cols-lg-1 g-1  align-items-center contenedor">
-          <AppButtonCard buttonIdAnadir={4} />
+          <AppButtonCard buttonIdAnadir={prop.id} />
         </div>
       </div>
     </div>

@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import { TarjetaProductos } from './TarjetaProductos'
-import AddCardButton from "../addCardButton/AddCardButton";
 
 import pokemonesData from "../../json/productos.json";
 
@@ -19,13 +18,13 @@ export default function FiltroTarjetaProducto({ nombreDelFiltro }) {
   let filteredProducts = products;
   if (nombreDelFiltro !== "Todo") { filteredProducts = products.filter(product => product.category === nombreDelFiltro); }
 
-  function filtrarPorCategoria(nombreDelFiltro) {
+  function filtrarPorCategoria() {
     return (
       filteredProducts
         .slice(currentPage * productsPerPage, (currentPage + 1) * productsPerPage)
         .map((product) => (
           <TarjetaProductos
-            //key={product.id}
+            key={product.id}
             id={product.id}
             src={require("../../img/productos/" + product.image)}
             alt={product.title}

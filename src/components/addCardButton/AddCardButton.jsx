@@ -1,24 +1,39 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "../../styles/addCardButton/AddCardButton.css";
 import { Link } from "react-router-dom";
-
-
-/* const [productos, setProducts] = useState([]);
-
-useEffect(() => {
-  setProducts(pokemonesData);
-}, []); */
-
-
-const guardadoEnElCarrito = [];
-
-const sendFetchedDataToLocalStorage = (productos) => {
-  const data = (productos);
-  localStorage.setItem("data", JSON.stringify(data));
-}
+import pokemonesData from "../../json/productos.json";
 
 
 const AddCardButton = ({ onCantidadChange, buttonIdAnadir }) => {
+  const [products, setProducts] = useState([]);
+  useEffect(() => {
+    setProducts(pokemonesData);
+  }, []);
+
+
+
+  let guardadoEnElCarrito = [];
+
+  const anadirAlCarrito = (id, products) => {
+    // dado el id, buscar el id correspondiente en el json y jalar la info del producto
+    // agregar la info al array
+    const productoEncontrado = products.find((producto) => producto.id === id);
+    console.log(productoEncontrado); // Pero imprime undefined
+    guardadoEnElCarrito.push(productoEncontrado);
+  };
+
+  // Pruebas ///////////////////////////////
+  anadirAlCarrito(buttonIdAnadir, products);
+  console.log(guardadoEnElCarrito);
+  /////////////////////////////////////////
+
+
+  const sendDataToLocalStorage = (productos) => {
+    const data = (productos);
+    localStorage.setItem("data", JSON.stringify(data));
+  }
+
+
   const [cantidadProductos, setCantidadProductos] = useState(1);
   const maxProductos = 9;
 
@@ -79,6 +94,7 @@ const AddCardButton = ({ onCantidadChange, buttonIdAnadir }) => {
           onClick={handleCarAddClick}
         >
           Añadir({buttonIdAnadir})
+
         </button>
       </Link>
     </div>
@@ -86,3 +102,105 @@ const AddCardButton = ({ onCantidadChange, buttonIdAnadir }) => {
 };
 
 export default AddCardButton;
+
+
+
+
+/**
+ * import React, { useEffect, useState } from "react";
+import "../../styles/addCardButton/AddCardButton.css";
+import { Link } from "react-router-dom";
+import pokemonesData from "../../json/productos.json";
+
+const AddCardButton = ({ onCantidadChange, buttonIdAnadir }) => {
+  const [products, setProducts] = useState([]);
+  const [guardadoEnElCarrito, setGuardadoEnElCarrito] = useState([]);
+  const [cantidadProductos, setCantidadProductos] = useState(1);
+  const maxProductos = 9;
+
+  useEffect(() => {
+    const fetchData = async () => {
+      const data = await new Promise((resolve) => setTimeout(() => resolve(pokemonesData), 1000));
+      setProducts(data);
+    };
+
+    fetchData();
+  }, []);
+
+  useEffect(() => {
+    if (products.length > 0) {
+      anadirAlCarrito(buttonIdAnadir, products);
+    }
+  }, [buttonIdAnadir, products]);
+
+  const anadirAlCarrito = (id, products) => {
+    const productoEncontrado = products.find((producto) => producto.id === id);
+    setGuardadoEnElCarrito([...guardadoEnElCarrito, productoEncontrado]);
+  };
+
+  const sendDataToLocalStorage = (productos) => {
+    localStorage.setItem("data", JSON.stringify(productos));
+  };
+
+  const incrementarCantidad = () => {
+    if (cantidadProductos < maxProductos) {
+      setCantidadProductos(cantidadProductos + 1);
+    }
+    onCantidadChange(cantidadProductos + 1);
+  };
+
+  const decrementarCantidad = () => {
+    if (cantidadProductos > 0) {
+      setCantidadProductos(cantidadProductos - 1);
+      onCantidadChange(cantidadProductos - 1);
+    }
+  };
+
+  const handleCarAddClick = () => {
+    console.log("Añadir al carrito:", cantidadProductos);
+  };
+
+  return (
+    <div className="d-grid gap-2 col-2 mx-auto">
+      <div className="add-card-container">
+        <button
+          type="button"
+          className="carrito-button carrito-decrement"
+          onClick={decrementarCantidad}
+        >
+          {" "}
+          -{" "}
+        </button>
+        <div
+          className="cantidad-container"
+          style={{ width: "40px", textAlign: "center" }}
+        >
+          <span className="cantidad">{cantidadProductos}</span>
+          {cantidadProductos < maxProductos && (
+            <button
+              type="button"
+              className="carrito-button carrito-increment"
+              onClick={incrementarCantidad}
+            >
+              {" "}
+              +{" "}
+            </button>
+          )}
+        </div>
+      </div>
+      <Link to="/Carrito">
+        <button
+          type="button"
+          className="carrito-button carrito-add"
+          onClick={handleCarAddClick}
+        >
+          Añadir({buttonIdAnadir})
+        </button>
+      </Link>
+    </div>
+  );
+};
+
+export default AddCardButton;
+
+ */
