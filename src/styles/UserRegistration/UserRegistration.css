@@ -1,0 +1,43 @@
+input.form-control {
+    border-radius: 20px;
+    margin-bottom: 30px;
+} 
+
+.custom-background {
+    background-color: #ede4ed; /* Cambia el color a tu preferencia */
+    width: 100%;
+    height: 100vh; /* 100% de la altura de la ventana */
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+  }
+@font-face {
+    font-family: "Kanit Regular";
+    src: url(../../fonts/Kanit/Kanit-Regular.ttf);
+}
+  
+@font-face {
+    font-family: "Kanit Regular";
+    src: url(../../fonts/Kanit/Kanit-Regular.ttf);
+}
+  
+  .login-container-admin {
+    font-family: "Kanit Regular";
+    max-width: 36em;
+    padding: 20px;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    margin-top: 30%;
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 10%;
+  }
+  
+  
+  #boton-verificador{
+    margin: 50px;
+
+  }

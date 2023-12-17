@@ -11,6 +11,7 @@ import ProductsPostres from "./pages/productsPostres/ProductsPostres";
 import ProductsJuegos from "./pages/productsJuegos/ProductsJuegos";
 import ProductsOtros from "./pages/productsOtros/ProductsOtros";
 import ProductRegistration from "./pages/productRegistration/productRegistration";
+import UserRegistration from "./pages/UserRegistration/UserRegistration";
 import LoginAdmin from "./pages/admin/LoginAdmin";
 import Sidebar from "./components/narvarLateral/sidebar";
 
@@ -37,6 +38,7 @@ function App() {
           <Route path="productsOtros" element={<ProductsOtros />} />
           <Route path="sobreNosotros" element={<SobreNosotros />} />
           <Route path="productRegistration" element={<ProductRegistration />} />
+          <Route path="userRegistration" element={<UserRegistration />} />
           <Route path="LoginAdmin" element={<LoginAdmin />} />
           <Route path="logIn" element={<LogIn />} />
           <Route path="carrito" element={<Carrito />} />
