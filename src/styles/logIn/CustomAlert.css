@@ -1,0 +1,28 @@
+.custom-alert {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 15px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+    border-radius: 1rem;
+  }
+  
+  .custom-alert button {
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5rem;
+  }
+  
+  .custom-alert button:hover {
+    background-color: #0056b3;
+    border-radius: 5rem;
+  }
+  

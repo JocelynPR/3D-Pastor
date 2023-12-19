@@ -1,0 +1,66 @@
+@font-face {
+    font-family: "Kanit Medium";
+    src: url(../../fonts/Kanit/Kanit-Medium.ttf);
+}
+  
+@font-face {
+    font-family: "Kanit Regular";
+    src: url(../../fonts/Kanit/Kanit-Regular.ttf);
+}
+
+#formularioLogIn {
+    font-family: "Kanit Regular";
+    max-width: 30em;
+    color: var(--morado-oscuro);
+  }
+
+#LogInForm{
+    margin: 2rem;
+}
+
+#logoPokemon{
+    width: 30rem;
+    margin: .5rem 0rem;
+}
+
+
+.form-logIn {
+    border-radius: 20px;
+    font-family: "Kanit Light";
+    margin: .5rem;
+}
+
+.bottonLogIn{
+    border: none;
+    background-color: #ede4ed;
+}
+
+.logoPokebola{
+    width: 5rem;
+    margin: 1.2rem 0 2rem 0;
+    
+}
+.containerPokebola{
+    position: relative;
+    top: .01rem;
+    left: .01rem;
+    display: inline;
+}
+
+#pikachuParado{
+    position:absolute;
+    left:-85%;
+    top:-170%;
+    max-width: 100%;
+}
+
+.error-message {
+    color: red;
+    font-size: 0.8rem;
+    margin-top: 5px;
+  }
+  
+  /* Resalta el borde del campo de entrada en caso de error */
+  .form-control.error {
+    border-color: red;
+  }
