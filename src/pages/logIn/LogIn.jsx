@@ -4,11 +4,14 @@ import logo from "../../img/decoradores/logo_pikachu.png";
 import "../../styles/logIn/LogIn.css";
 import pokebolaLogIn from "../../img/decoradores/pokebolaLogIn.png";
 import pikachuParado from "../../img/decoradores/pikachu-parao.png";
+import CustomAlert from "./CustomAlert";
 
 export default function LogIn() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [errors, setErrors] = useState({ email: "", password: "" });
+  const[showAlert, setshowAlert] = useState(false);
+  const[alertMessage, setAlertMessage] = useState("");
 
   const handleEmailChange = (e) => {
     setEmail(e.target.value);
@@ -39,7 +42,25 @@ export default function LogIn() {
       password.trim() === "" ? "Por favor, ingresa tu contraseña." : "";
 
     setErrors({ email: emailError, password: passwordError });
+
+    //verificacion en localStorage
+    const storedUser = localStorage.getItem('user');
+    if (storedUser){
+      const parsedUser = JSON.parse(storedUser);
+      if (parsedUser.email === email && parsedUser.password === password){
+        setAlertMessage("Autenticacion exitos ")
+        setshowAlert(true);
+      }else{
+        setAlertMessage("Verifica tus datos");
+        setshowAlert(true);
+      }
+    }else{
+      setAlertMessage("Usuario no encontrado");
+      setshowAlert(true);
+    }
   };
+  const closeAlert = () => setshowAlert(false);
+
 
   return (
     <div>
@@ -66,6 +87,7 @@ export default function LogIn() {
               <img src={pokebolaLogIn} alt="" className="logoPokebola" />
             </button>
           </div>
+          {showAlert && (<CustomAlert message={alertMessage} onClose={closeAlert}/>)}
           <Link to="/Registro">
             <p>Registrarse</p>
           </Link>
