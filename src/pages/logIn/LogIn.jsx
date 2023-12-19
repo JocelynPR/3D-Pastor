@@ -6,6 +6,7 @@ import pokebolaLogIn from "../../img/decoradores/pokebolaLogIn.png";
 import pikachuParado from "../../img/decoradores/pikachu-parao.png";
 import CustomAlert from "./CustomAlert";
 
+
 export default function LogIn() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -88,7 +89,7 @@ export default function LogIn() {
             </button>
           </div>
           {showAlert && (<CustomAlert message={alertMessage} onClose={closeAlert}/>)}
-          <Link to="/Registro">
+          <Link to="/UserRegistration ">
             <p>Registrarse</p>
           </Link>
           <Link to="/Registro">
