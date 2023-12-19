@@ -77,7 +77,7 @@ const limpiarCampos = () => {
   return (
     <div class="custom-background">
 
-      <div className="login-container-admin">
+      <div className="login-container-registration">
         <img
           src={miImagen}
           alt="Descripción"
@@ -89,7 +89,7 @@ const limpiarCampos = () => {
             <label>Nombre completo</label>
             <input
               type="text"
-              className="form-control"
+              className="form-control input-registro"
               value={nombre}
               onChange={(e) => setNombre(e.target.value)}
               required
@@ -99,7 +99,7 @@ const limpiarCampos = () => {
     <label>Número de teléfono</label>
     <input
         type="text"
-        className="form-control"
+        className="form-control input-registro"
         value={telefono}
         onChange={(e) => {
             // Permite solo números y limita la longitud a 10 dígitos
@@ -115,7 +115,7 @@ const limpiarCampos = () => {
             <label>Email</label>
             <input
               type="email"
-              className="rounded-input form-control"
+              className="input-registro form-control"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               required
@@ -126,7 +126,7 @@ const limpiarCampos = () => {
             <div className="input-group">
               <input
                 type={mostrarContrasena ? "text" : "password"}
-                className="form-control"
+                className="form-control input-registro"
                 value={contrasena}
                 onChange={(e) => setContrasena(e.target.value)}
                 required
@@ -147,7 +147,7 @@ const limpiarCampos = () => {
             <div className="input-group">
               <input
                 type={mostrarContrasenaVerificar ? "text" : "password"}
-                className="form-control"
+                className="form-control input-registro"
                 value={contrasenaVerificar}
                 onChange={(e) => setContrasenaVerificar(e.target.value)}
                 required
