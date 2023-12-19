@@ -3,6 +3,7 @@ import { TarjetaProductos } from './TarjetaProductos'
 
 import pokemonesData from "../../json/productos.json";
 
+import "../../styles/productos-contenido/Productos.css";
 export default function FiltroTarjetaProducto({ nombreDelFiltro }) {
 
   const [currentPage, setCurrentPage] = useState(0); // Cambiado a 0 para que el primer clic sea la primera página

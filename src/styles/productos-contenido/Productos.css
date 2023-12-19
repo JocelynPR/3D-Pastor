@@ -110,3 +110,26 @@
   max-width: 30%; 
   margin: auto; 
 }
+
+.button-previous{
+  border-radius: 10px 0px 0px 10px;
+  border: #3b1f53 1.5px solid;
+  padding: 5px 10px;
+  font-family: "Kanit Light";
+}
+
+.button-next{
+  border-radius: 0px 10px 10px 0px;
+  border: #3b1f53 1.5px solid;
+  font-family: "Kanit Light";
+  padding: 5px 10px;
+}
+
+.button-previous:hover {
+  background-color: #ede4ed;
+}
+
+.button-next:hover {
+  background-color: #ede4ed;
+}
+
