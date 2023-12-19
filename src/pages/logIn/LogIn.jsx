@@ -36,28 +36,25 @@ export default function LogIn() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
-    const emailError =
-      email.trim() === "" ? "Por favor, ingresa tu correo electrónico." : "";
-    const passwordError =
-      password.trim() === "" ? "Por favor, ingresa tu contraseña." : "";
-
+  
+    const emailError = email.trim() === "" ? "Por favor, ingresa tu correo electrónico." : "";
+    const passwordError = password.trim() === "" ? "Por favor, ingresa tu contraseña." : "";
+  
     setErrors({ email: emailError, password: passwordError });
-
-    //verificacion en localStorage
-    const storedUser = localStorage.getItem('user');
-    if (storedUser){
-      const parsedUser = JSON.parse(storedUser);
-      if (parsedUser.email === email && parsedUser.password === password){
-        setAlertMessage("Autenticacion exitos ")
+  
+    // Verificación en localStorage
+    const storedUsers = localStorage.getItem('usuarios');
+    if (storedUsers) {
+      const parsedUsers = JSON.parse(storedUsers);
+      const foundUser = parsedUsers.find(user => user.email === email && user.contrasena === password);
+  
+      if (foundUser) {
+        setAlertMessage("Autenticación exitosa");
         setshowAlert(true);
-      }else{
+      } else {
         setAlertMessage("Verifica tus datos");
         setshowAlert(true);
       }
-    }else{
-      setAlertMessage("Usuario no encontrado");
-      setshowAlert(true);
     }
   };
   const closeAlert = () => setshowAlert(false);
