@@ -12,20 +12,29 @@ const AddCardButton = ({ onCantidadChange, buttonIdAnadir }) => {
 
 
 
-  let guardadoEnElCarrito = [];
+
+
+  const readLocalStorage = (localStorageKey) => {
+    const data = JSON.parse(localStorage.getItem(localStorageKey));
+    const carritoStorage = [];
+    const map = data.map((element, index, array) => carritoStorage.push(element));
+    return carritoStorage;
+  }
 
   const anadirAlCarrito = (id, products) => {
-    // dado el id, buscar el id correspondiente en el json y jalar la info del producto
-    // agregar la info al array
-    const productoEncontrado = products.find((producto) => producto.id === id);
-    console.log(productoEncontrado); // Pero imprime undefined
-    guardadoEnElCarrito.push(productoEncontrado);
-  };
 
-  // Pruebas ///////////////////////////////
-  anadirAlCarrito(buttonIdAnadir, products);
-  console.log(guardadoEnElCarrito);
-  /////////////////////////////////////////
+    let guardadoEnElCarrito = [];
+    guardadoEnElCarrito = readLocalStorage("data");
+
+    const productoEncontrado = products.find((producto) => producto.id === id);
+    productoEncontrado.qty = cantidadProductos;
+
+    guardadoEnElCarrito.push(productoEncontrado);
+    if (guardadoEnElCarrito[0].id == 0) {
+      guardadoEnElCarrito.splice(0, 1);
+    }
+    sendDataToLocalStorage(guardadoEnElCarrito);
+  };
 
 
   const sendDataToLocalStorage = (productos) => {
@@ -52,7 +61,10 @@ const AddCardButton = ({ onCantidadChange, buttonIdAnadir }) => {
   };
 
   const handleCarAddClick = () => {
-    console.log("Añadir al carrito:", cantidadProductos);
+    //console.log("Añadir al carrito:", cantidadProductos);
+    // Pruebas ///////////////////////////////
+    anadirAlCarrito(buttonIdAnadir, products);
+    //console.log(guardadoEnElCarrito);
   };
 
   return (
@@ -93,7 +105,7 @@ const AddCardButton = ({ onCantidadChange, buttonIdAnadir }) => {
           className="carrito-button carrito-add"
           onClick={handleCarAddClick}
         >
-          Añadir({buttonIdAnadir})
+          Añadir
 
         </button>
       </Link>

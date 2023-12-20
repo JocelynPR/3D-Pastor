@@ -11,6 +11,7 @@ const TablaCarrito = ({ productos }) => {
                         <th>Precio</th>
                         <th>Cantidad</th>
                         <th>Subtotal</th>
+                        <th>Eliminar</th>
                     </tr>
                 </thead>
                 {/* <tbody> */}

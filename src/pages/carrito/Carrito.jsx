@@ -51,7 +51,6 @@ const Carrito = () => {
 
                         <br />
                         <BuyButton />
-                        <CleanCardButton />
                     </div>
                 </section>
             </main>}
