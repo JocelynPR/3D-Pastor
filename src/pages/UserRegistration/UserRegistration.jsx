@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { EyeFill, EyeSlashFill } from "react-bootstrap-icons";
-import "bootstrap/dist/css/bootstrap.min.css";
 import "../../styles/UserRegistration/UserRegistration.css";
 import miImagen from "../../img/registro/img2.png";
 
