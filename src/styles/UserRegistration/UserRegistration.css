@@ -1,0 +1,75 @@
+/* Estilos Generales */
+.input-registro {
+  border-radius: 20px;
+  margin-bottom: 30px;
+} 
+
+.custom-background {
+  display: flex;
+  flex-wrap: wrap; 
+  background-color: #ede4ed; /* Cambia el color a tu preferencia */
+  width: 100%;
+  height: auto; /* Cambiado a auto para ajustar la altura según el contenido */
+  justify-content: center; /* Centrar horizontalmente */
+  align-items: center; /* Centrar verticalmente */
+}
+
+@font-face {
+  font-family: "Kanit Regular";
+  src: url(../../fonts/Kanit/Kanit-Regular.ttf);
+}
+
+.login-container-registration {
+  font-family: "Kanit Regular";
+  max-width: 40em;
+  border-radius: 15px;
+  max-height: 80%;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(121, 22, 22, 0.1);
+  background-color: #fff;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  overflow-y: auto; /* Permite desplazamiento si el contenido excede la altura máxima */
+  padding: 20px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 10%;
+}
+
+#boton-verificador {
+  margin: 50px;
+}
+
+/* Media Queries para Responsividad */
+@media screen and (max-width: 768px) {
+  .login-container-registration {
+      max-width: 90%;
+      margin-top: 5%;
+      margin-bottom: 5%;
+  }
+
+  h2 {
+      font-size: 1.5rem; /* Tamaño de fuente más pequeño */
+  }
+
+  #boton-verificador {
+      margin: 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .login-container-registration {
+      max-width: 100%;
+      padding: 10px;
+  }
+
+  h2 {
+      font-size: 1.2rem; /* Tamaño de fuente aún más pequeño */
+  }
+
+  #boton-verificador {
+      margin: 10px;
+  }
+}
