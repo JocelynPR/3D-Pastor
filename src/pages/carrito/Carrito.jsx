@@ -48,7 +48,6 @@ const Carrito = () => {
                         <br />
                         {/* <div className="total-carrito">Total:</div>
                         <div className="total-carrito"><strong>${calcularTotalGeneral()}</strong></div> */}
-
                         <br />
                         <BuyButton />
                     </div>

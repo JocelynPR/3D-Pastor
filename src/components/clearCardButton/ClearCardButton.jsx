@@ -1,13 +1,12 @@
 import deleteIcon from "../../img/logos/deleteIcon.svg";
 import React from "react";
 import "../../styles/clearCardButton/clearCardButton.css";
+import { Link } from "react-router-dom";
 
 const CleanCardButton = ({ productId }) => {
   const handleCleanCardClick = () => {
-    // Lógica para limpiar el carrito (a implementar en el futuro)
     borrarProductoCarrito(productId);
-    // Llama a la función proporcionada como prop (onCleanCardClick)
-    //onCleanCardClick(); //se comento para que no marcara error
+    window.location.reload();
   };
 
 
@@ -23,8 +22,7 @@ const CleanCardButton = ({ productId }) => {
     guardadoEnElCarrito = readLocalStorage("data");
     console.log(id);
 
-    // Corregir y recargar pagina carrito al dar click
-    guardadoEnElCarrito = guardadoEnElCarrito.filter((producto) => producto.id === id);
+    guardadoEnElCarrito = guardadoEnElCarrito.filter((producto) => producto.id !== id);
     console.log(guardadoEnElCarrito);
 
     if (localStorage.getItem("data") == null) {
@@ -32,6 +30,7 @@ const CleanCardButton = ({ productId }) => {
       localStorage.setItem("data", JSON.stringify(emptyArray));
     }
     sendDataToLocalStorage(guardadoEnElCarrito);
+
   };
 
   const sendDataToLocalStorage = (productos) => {
