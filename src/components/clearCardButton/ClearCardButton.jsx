@@ -1,14 +1,12 @@
 import deleteIcon from "../../img/logos/deleteIcon.svg";
 import React from "react";
 import "../../styles/clearCardButton/clearCardButton.css";
-import { Link } from "react-router-dom";
 
 const CleanCardButton = ({ productId }) => {
   const handleCleanCardClick = () => {
     borrarProductoCarrito(productId);
     window.location.reload();
   };
-
 
   const readLocalStorage = (localStorageKey) => {
     const data = JSON.parse(localStorage.getItem(localStorageKey));

@@ -3,16 +3,11 @@ import "../../styles/addCardButton/AddCardButton.css";
 import { Link } from "react-router-dom";
 import pokemonesData from "../../json/productos.json";
 
-
 const AddCardButton = ({ onCantidadChange, buttonIdAnadir }) => {
   const [products, setProducts] = useState([]);
   useEffect(() => {
     setProducts(pokemonesData);
   }, []);
-
-
-
-
 
   const readLocalStorage = (localStorageKey) => {
     const data = JSON.parse(localStorage.getItem(localStorageKey));
@@ -36,12 +31,10 @@ const AddCardButton = ({ onCantidadChange, buttonIdAnadir }) => {
     sendDataToLocalStorage(guardadoEnElCarrito);
   };
 
-
   const sendDataToLocalStorage = (productos) => {
     const data = (productos);
     localStorage.setItem("data", JSON.stringify(data));
   }
-
 
   const [cantidadProductos, setCantidadProductos] = useState(1);
   const maxProductos = 9;
@@ -61,10 +54,7 @@ const AddCardButton = ({ onCantidadChange, buttonIdAnadir }) => {
   };
 
   const handleCarAddClick = () => {
-    //console.log("Añadir al carrito:", cantidadProductos);
-    // Pruebas ///////////////////////////////
     anadirAlCarrito(buttonIdAnadir, products);
-    //console.log(guardadoEnElCarrito);
   };
 
   return (
@@ -106,7 +96,6 @@ const AddCardButton = ({ onCantidadChange, buttonIdAnadir }) => {
           onClick={handleCarAddClick}
         >
           Añadir
-
         </button>
       </Link>
     </div>

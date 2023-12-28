@@ -55,10 +55,10 @@ export default function FiltroTarjetaProducto({ nombreDelFiltro }) {
           </div>
           <br />
           <div>
-            <button className="button-previous" onClick={() => handleChangePage(currentPage - 1)} disabled={currentPage === 0}>
+            <button className="button-previous btn btn-outline-dark" onClick={() => handleChangePage(currentPage - 1)} disabled={currentPage === 0}>
               Anterior
             </button>
-            <button className="button-next" onClick={() => handleChangePage(currentPage + 1)} disabled={currentPage === totalPages - 1}>
+            <button className="button-next btn btn-outline-dark" onClick={() => handleChangePage(currentPage + 1)} disabled={currentPage === totalPages - 1}>
               Siguiente
             </button>
           </div>

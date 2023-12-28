@@ -4,7 +4,7 @@ import ReadFromLocalStorage from "./ReadFromLocalStorage";
 const TablaCarrito = ({ productos }) => {
     return (
         <div className="table-responsive">
-            <table className="table table-bordered">
+            <table className="table table-bordered table-carrito">
                 <thead>
                     <tr>
                         <th>Producto</th>

@@ -33,6 +33,6 @@
 }
 
 .clean-card-button:hover {
-  color: #847a9c; /* Ajusta el color del icono al pasar el mouse */
-  transform: scale(1.5); /* Aumenta el tamaño del botón al pasar el mouse */
+  color: #847a9c; 
+  transform: scale(1.5);
 }

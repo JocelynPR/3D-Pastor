@@ -1,5 +1,3 @@
-/* Agrega estas líneas al final de tu archivo de estilos o en un archivo separado */
-
 .carrito-de-compras {
   padding: 1rem;
   margin: 1rem;
@@ -40,3 +38,35 @@
 #main-carrito-contenido {
   margin-bottom: 8rem;
 }
+
+.table-bordered th,
+.table-bordered td {
+  border: 1px solid #3b1f53; /* Puedes ajustar el color del borde según tus preferencias */
+}
+
+.table-bordered tbody + tbody {
+  border-top: 20px solid #3b1f53; /* Puedes ajustar el grosor y el color del borde entre filas según tus preferencias */
+}
+
+/**/
+
+.table-carrito {
+  width: 100%; /* Ajusta el ancho según sea necesario */
+  margin-top: 20px; /* Ajusta el margen superior según sea necesario */
+}
+
+.table-carrito th,
+.table-carrito td {
+  text-align: center; /* Centra el texto dentro de las celdas */
+  vertical-align: middle; /* Centra verticalmente el contenido en las celdas */
+}
+
+.table-carrito thead th {
+  vertical-align: top; /* Ajusta la alineación vertical del encabezado según sea necesario */
+}
+
+.table-carrito tbody td {
+  border-top: 1px solid #dee2e6; /* Añade un borde superior para separar las filas */
+}
+
+/**/
