@@ -16,43 +16,41 @@ import FiltroTarjetaProducto from "../../components/productos-contenido/FiltroTa
 
 export default function Products() {
   const [products, setProducts] = useState([]);
-  const sliderRef = useRef(null); // Definir la referencia aquí
-
+  
 
   useEffect(() => {
     setProducts(pokemonesData);
   }, []);
 
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    responsive: [
-      {
-        breakpoint: 800,
-        settings: {
-          slidesToShow: 1,
-        },
-      },
-    ],
-  };
+ 
   return (
     <>
-      <Slider ref={sliderRef} {...settings} className="full-screen-slider">
-        {/* Contenido de cada diapositiva */}
-        <div className="slide" onClick={() => sliderRef.current.slickNext()}>
-          <img src={imagen2} alt="Imagen del Carrusel" />
+     <div id="carouselExampleIndicators" class="carousel slide">
+        <div className="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div>
-        <div className="slide" onClick={() => sliderRef.current.slickNext()}>
-          <img src={imagen3} alt="Imagen del Carrusel" />
+        <div className="carousel-inner">
+          <div className="carousel-item active">
+            <img src={imagen2} className="d-block w-100" alt="..."/>
+          </div>
+          <div className="carousel-item">
+            <img src={imagen3} className="d-block w-100" alt="..."/>
+          </div>
+          <div className="carousel-item">
+            <img src={imagen4} className="d-block w-100" alt="..."/>
+          </div>
         </div>
-        <div className="slide" onClick={() => sliderRef.current.slickNext()}>
-          <img src={imagen4} alt="Imagen del Carrusel" />
-        </div>
-        {/* Agrega más diapositivas según sea necesario */}
-      </Slider>
+        <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span className="visually-hidden">Previous</span>
+        </button>
+        <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span className="carousel-control-next-icon" aria-hidden="true"></span>
+          <span className="visually-hidden">Next</span>
+        </button>
+      </div>
 
       <main id="main-productos-contenido">
         <section className="pt-5 pb-3 text-center container">

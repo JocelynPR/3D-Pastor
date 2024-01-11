@@ -13,7 +13,7 @@ import ProductsOtros from "./pages/productsOtros/ProductsOtros";
 import ProductRegistration from "./pages/productRegistration/productRegistration";
 import UserRegistration from "./pages/UserRegistration/UserRegistration";
 import LoginAdmin from "./pages/admin/LoginAdmin";
-import Sidebar from "./components/narvarLateral/sidebar";
+
 
 import LogIn from "./pages/logIn/LogIn";
 import Contacto from "./pages/contacto/Contacto";
@@ -29,7 +29,6 @@ function App() {
         {/*<CounterProductButton />*/}
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="Sidebar" element={<Sidebar />} />
           <Route path="productsOficial" element={<ProductsOficial />} />
           <Route path="productsAccesorios" element={<ProductsAccesorios />} />
           <Route path="productsJuguetes" element={<ProductsJuguetes />} />
