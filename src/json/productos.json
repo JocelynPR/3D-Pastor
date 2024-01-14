@@ -1,0 +1,660 @@
+[
+  {
+    "id": 1,
+    "title": "Sticker de Vinil Transparente de Wooloo",
+    "price": 15,
+    "category": "Otros",
+    "image": "20231205_160548.png"
+  },
+
+  {
+    "id": 2,
+    "title": "Sticker de Vinil Transparente de Charizard",
+    "price": 15,
+    "category": "Otros",
+    "image": "20231205_160556.png"
+  },
+
+  {
+    "id": 3,
+    "title": "Sticker de Vinil Holográfico de Gardevoir",
+    "price": 15,
+    "category": "Otros",
+    "image": "20231205_160604.png"
+  },
+
+  {
+    "id": 4,
+    "title": "Sticker de Vinil Transparente de Chandelure",
+    "price": 15,
+    "category": "Otros",
+    "image": "20231205_160611.png"
+  },
+
+  {
+    "id": 5,
+    "title": "Squishy Chillón de Charmander",
+    "price": 40,
+    "category": "Juguetes",
+    "image": "20231205_160932.png"
+  },
+
+  {
+    "id": 6,
+    "title": "Squishy Chillón de Snorlax",
+    "price": 40,
+    "category": "Juguetes",
+    "image": "20231205_160944.png"
+  },
+
+  {
+    "id": 7,
+    "title": "Sticker de Vinil Transparente de Detective Pikachu",
+    "price": 15,
+    "category": "Otros",
+    "image": "20231205_161023.png"
+  },
+
+  {
+    "id": 8,
+    "title": "Sticker de Vinil Transparente de Gengar",
+    "price": 15,
+    "category": "Otros",
+    "image": "20231205_161031.png"
+  },
+
+  {
+    "id": 9,
+    "title": "Pokémon Fluxx",
+    "price": 350,
+    "category": "Juegos de Mesa",
+    "image": "20231204_173606.png"
+  },
+
+  {
+    "id": 10,
+    "title": "Pokémon Coup",
+    "price": 250,
+    "category": "Juegos de Mesa",
+    "image": "20231204_173950.png"
+  },
+
+  {
+    "id": 11,
+    "title": "Pokélate",
+    "price": 100,
+    "category": "Postres",
+    "image": "20231205_094116.png"
+  },
+
+  {
+    "id": 12,
+    "title": "Pokélate Master Ball",
+    "price": 150,
+    "category": "Postres",
+    "image": "20231205_094117.png"
+  },
+
+  {
+    "id": 13,
+    "title": "Pokélate Love Ball",
+    "price": 150,
+    "category": "Postres",
+    "image": "20231205_094118.png"
+  },
+
+  {
+    "id": 14,
+    "title": "Peluche de Kyogre",
+    "price": 300,
+    "category": "Juguetes",
+    "image": "20231205_160259.png"
+  },
+
+  {
+    "id": 15,
+    "title": "Peluche de Psyduck",
+    "price": 300,
+    "category": "Juguetes",
+    "image": "20231205_160400.png"
+  },
+
+  
+
+  {
+    "id": 16,
+    "title": "Sticker de Vinil Transparente de Rowlet",
+    "price": 15,
+    "category": "Otros",
+    "image": "20231205_160619.png"
+  },
+
+  {
+    "id": 17,
+    "title": "Sticker de Vinil Transparente de 9° Aniversario",
+    "price": 15,
+    "category": "Otros",
+    "image": "20231205_160625.png"
+  },
+
+  {
+    "id": 18,
+    "title": "Sobre de 3 League Cards Series 3 - Starters de Hoenn",
+    "price": 20,
+    "category": "Otros",
+    "image": "20231205_160714.png"
+  },
+
+  {
+    "id": 19,
+    "title": "Sobre de 3 League Cards Series 2 - Pikachu Clones",
+    "price": 20,
+    "category": "Otros",
+    "image": "20231205_160753.png"
+  },
+
+  {
+    "id": 20,
+    "title": "Sobre de 3 League Cards Series 1 - Starters de Galar",
+    "price": 20,
+    "category": "Otros",
+    "image": "20231205_160822.png"
+  },
+
+  {
+    "id": 21,
+    "title": "Sobre de 3 League Cards Series 4 - Top 30 Pokémon de Kanto de 2020",
+    "price": 20,
+    "category": "Otros",
+    "image": "20231205_160906.png"
+  },
+
+  {
+    "id": 22,
+    "title": "Squishy Chillón de Bulbasaur",
+    "price": 40,
+    "category": "Juguetes",
+    "image": "20231205_161003.png"
+  },
+
+  {
+    "id": 23,
+    "title": "Llavero de Psyduck",
+    "price": 30,
+    "category": "Accesorios",
+    "image": "20231205_161054.png"
+  },
+
+  {
+    "id": 24,
+    "title": "Collar de Eevee Gigantamax",
+    "price": 45,
+    "category": "Accesorios",
+    "image": "20231205_161110.png"
+  },
+  
+  {
+    "id": 25,
+    "title": "Figura de Resina de Eevee (Impresión 3D)",
+    "price": 80,
+    "category": "Juguetes",
+    "image": "20231205_161126.png"
+  },
+
+  {
+    "id": 26,
+    "title": "Figura de Resina de Pokébola de Pikachu (Impresión 3D)",
+    "price": 80,
+    "category": "Juguetes",
+    "image": "20231205_161132.png"
+  },
+
+  {
+    "id": 27,
+    "title": "Llavero de Squirtle",
+    "price": 30,
+    "category": "Accesorios",
+    "image": "20231205_161148.png"
+  },
+
+  {
+    "id": 28,
+    "title": "Collar de Pikachu",
+    "price": 40,
+    "category": "Accesorios",
+    "image": "20231205_161209.png"
+  },
+
+  {
+    "id": 29,
+    "title": "Figura de Resina de Pokébola de Charmander (Impresión 3D)",
+    "price": 80,
+    "category": "Juguetes",
+    "image": "20231205_161217.png"
+  },
+
+  {
+    "id": 30,
+    "title": "Figura de Resina de Pokébola de Squirtle (Impresión 3D)",
+    "price": 80,
+    "category": "Juguetes",
+    "image": "20231205_161233.png"
+  },
+
+  {
+    "id": 31,
+    "title": "Llavero de Ditto",
+    "price": 30,
+    "category": "Accesorios",
+    "image": "20231205_161250.png"
+  },
+
+  {
+    "id": 32,
+    "title": "Charm de Bulbasaur",
+    "price": 10,
+    "category": "Juguetes",
+    "image": "20231205_161258.png"
+  },
+
+  {
+    "id": 33,
+    "title": "Charm de Psyduck",
+    "price": 10,
+    "category": "Juguetes",
+    "image": "20231205_161304.png"
+  },
+
+  {
+    "id": 34,
+    "title": "Figura de Resina de Squirtle (Impresión 3D)",
+    "price": 80,
+    "category": "Juguetes",
+    "image": "20231205_161315.png"
+  },
+
+  {
+    "id": 35,
+    "title": "Charm de Pikachu",
+    "price": 10,
+    "category": "Juguetes",
+    "image": "20231205_161324.png"
+  },
+
+  {
+    "id": 36,
+    "title": "Llavero de Pokébola",
+    "price": 30,
+    "category": "Accesorios",
+    "image": "20231205_161332.png"
+  },
+
+  {
+    "id": 37,
+    "title": "Llavero de Ho-Oh",
+    "price": 30,
+    "category": "Accesorios",
+    "image": "20231205_161354.png"
+  },
+
+  {
+    "id": 38,
+    "title": "Llavero de Pikachu",
+    "price": 30,
+    "category": "Accesorios",
+    "image": "20231205_161432.png"
+  },
+
+  {
+    "id": 39,
+    "title": "Llavero de Snorlax",
+    "price": 30,
+    "category": "Accesorios",
+    "image": "20231205_161449.png"
+  },
+
+  {
+    "id": 40,
+    "title": "Collar de Ditto",
+    "price": 40,
+    "category": "Accesorios",
+    "image": "20231205_161502.png"
+  },
+
+  {
+    "id": 41,
+    "title": "Figura de Resina de Pokébola de Eevee (Impresión 3D)",
+    "price": 80,
+    "category": "Juguetes",
+    "image": "20231205_161512.png"
+  },
+
+  {
+    "id": 42,
+    "title": "Llavero de Pikachu",
+    "price": 30,
+    "category": "Accesorios",
+    "image": "20231205_161523.png"
+  },
+
+  {
+    "id": 43,
+    "title": "Figura de Resina de Pokébola de Bulbasaur (Impresión 3D)",
+    "price": 80,
+    "category": "Juguetes",
+    "image": "20231205_161535.png"
+  },
+
+  {
+    "id": 44,
+    "title": "Figura que abraza tu cable cargador de celular de Vulpix",
+    "price": 45,
+    "category": "Accesorios",
+    "image": "20231205_161541.png"
+  },
+
+  {
+    "id": 45,
+    "title": "Llavero de Raikou",
+    "price": 30,
+    "category": "Accesorios",
+    "image": "20231205_161555.png"
+  },
+
+  {
+    "id": 46,
+    "title": "Llavero de Togepi",
+    "price": 30,
+    "category": "Accesorios",
+    "image": "20231205_161607.png"
+  },
+
+  {
+    "id": 47,
+    "title": "Llavero de Jigglypuff",
+    "price": 30,
+    "category": "Accesorios",
+    "image": "20231205_161630.png"
+  },
+
+  {
+    "id": 48,
+    "title": "Llavero de Jigglypuff",
+    "price": 30,
+    "category": "Accesorios",
+    "image": "20231205_161645.png"
+  },
+
+  {
+    "id": 49,
+    "title": "Llavero de Squirtle",
+    "price": 30,
+    "category": "Accesorios",
+    "image": "20231205_161659.png"
+  },
+
+  {
+    "id": 50,
+    "title": "Figura de Resina de Bulbasaur (Impresión 3D)",
+    "price": 80,
+    "category": "Juguetes",
+    "image": "20231205_161708.png"
+  },
+
+  {
+    "id": 51,
+    "title": "Llavero de Pikachu",
+    "price": 30,
+    "category": "Accesorios",
+    "image": "20231205_161733.png"
+  },
+
+  {
+    "id": 52,
+    "title": "Llavero de Pokébola Tejida a Mano",
+    "price": 50,
+    "category": "Accesorios",
+    "image": "20231205_161740.png"
+  },
+
+  {
+    "id": 53,
+    "title": "Llavero de Bulbasaur",
+    "price": 30,
+    "category": "Accesorios",
+    "image": "20231205_161752.png"
+  },
+
+  {
+    "id": 54,
+    "title": "Pluma de Pikachu",
+    "price": 35,
+    "category": "Otros",
+    "image": "20231205_161758.png"
+  },
+
+  {
+    "id": 55,
+    "title": "Collar de Pikachu",
+    "price": 80,
+    "category": "Accesorios",
+    "image": "20231205_161812.png"
+  },
+
+  {
+    "id": 56,
+    "title": "Llavero Cascabel de Great Ball",
+    "price": 30,
+    "category": "Accesorios",
+    "image": "20231205_161936.png"
+  },
+
+  {
+    "id": 57,
+    "title": "Figura de Resina de Charmander (Impresión 3D)",
+    "price": 80,
+    "category": "Juguetes",
+    "image": "20231205_161949.png"
+  },
+
+  {
+    "id": 58,
+    "title": "Figura que abraza tu cable cargador de celular de Meowth",
+    "price": 45,
+    "category": "Accesorios",
+    "image": "20231205_161955.png"
+  },
+
+  {
+    "id": 59,
+    "title": "Llavero de Entei",
+    "price": 30,
+    "category": "Accesorios",
+    "image": "20231205_162005.png"
+  },
+
+  {
+    "id": 60,
+    "title": "Gancho de Leafeon (Pégalo en la pared y dobla su colita para colgar cosas en ella)",
+    "price": 100,
+    "category": "Otros",
+    "image": "20231205_162014.png"
+  },
+
+  {
+    "id": 61,
+    "title": "Figura que abraza tu cable cargador de celular de Torchic",
+    "price": 45,
+    "category": "Accesorios",
+    "image": "20231205_162020.png"
+  },
+
+  {
+    "id": 62,
+    "title": "Llavero de Lapras Gigantamax",
+    "price": 45,
+    "category": "Accesorios",
+    "image": "20231205_162044.png"
+  },
+
+  {
+    "id": 63,
+    "title": "Llavero de Squirtle",
+    "price": 30,
+    "category": "Accesorios",
+    "image": "20231205_162052.png"
+  },
+
+  {
+    "id": 64,
+    "title": "Llavero de Slowpoke",
+    "price": 30,
+    "category": "Accesorios",
+    "image": "20231205_162058.png"
+  },
+
+  {
+    "id": 65,
+    "title": "Llavero de Bulbasaur",
+    "price": 30,
+    "category": "Accesorios",
+    "image": "20231205_162108.png"
+  },
+
+  {
+    "id": 66,
+    "title": "Llavero de Bulbasaur",
+    "price": 30,
+    "category": "Accesorios",
+    "image": "20231205_162115.png"
+  },
+
+  {
+    "id": 67,
+    "title": "Llavero de Eevee",
+    "price": 30,
+    "category": "Accesorios",
+    "image": "20231205_162125.png"
+  },
+
+  {
+    "id": 68,
+    "title": "Llavero de Charmander",
+    "price": 30,
+    "category": "Accesorios",
+    "image": "20231205_162131.png"
+  },
+
+  {
+    "id": 69,
+    "title": "Llavero de Charmander",
+    "price": 30,
+    "category": "Accesorios",
+    "image": "20231205_162205.png"
+  },
+
+  {
+    "id": 70,
+    "title": "Llavero de Charmander",
+    "price": 30,
+    "category": "Accesorios",
+    "image": "20231205_162213.png"
+  },
+
+  {
+    "id": 71,
+    "title": "Llavero de Meowth",
+    "price": 30,
+    "category": "Accesorios",
+    "image": "20231205_162221.png"
+  },
+
+  {
+    "id": 72,
+    "title": "Llavero de Bulbasaur",
+    "price": 30,
+    "category": "Accesorios",
+    "image": "20231205_162226.png"
+  },
+
+  {
+    "id": 73,
+    "title": "Llavero de Psyduck",
+    "price": 30,
+    "category": "Accesorios",
+    "image": "20231205_162231.png"
+  },
+
+  {
+    "id": 74,
+    "title": "Llavero de Squirtle",
+    "price": 30,
+    "category": "Accesorios",
+    "image": "20231205_162236.png"
+  },
+
+  {
+    "id": 75,
+    "title": "Figura que abraza tu cable cargador de celular de Piplup",
+    "price": 45,
+    "category": "Accesorios",
+    "image": "20231205_162242.png"
+  },
+
+  {
+    "id": 76,
+    "title": "Llavero de Charmander",
+    "price": 30,
+    "category": "Accesorios",
+    "image": "20231205_162251.png"
+  },
+
+  {
+    "id": 77,
+    "title": "Bolsa Pequeña de Eevee",
+    "price": 80,
+    "category": "Otros",
+    "image": "20231205_162335.png"
+  },
+
+  {
+    "id": 78,
+    "title": "Pulsera de Charmander",
+    "price": 80,
+    "category": "Accesorios",
+    "image": "20231205_162430.png"
+  },
+
+  {
+    "id": 79,
+    "title": "Paquete de Energías de Pokémon TCG / JCC",
+    "price": 50,
+    "category": "Producto Oficial",
+    "image": "20231205_162627.png"
+  },
+
+  {
+    "id": 80,
+    "title": "Micas para cartas de TCG / JCC de la Expansión 151",
+    "price": 200,
+    "category": "Producto Oficial",
+    "image": "20231205_162636.png"
+  },
+
+  {
+    "id": 81,
+    "title": "Dados de TCG / JCC de la Expansión 151",
+    "price": 100,
+    "category": "Producto Oficial",
+    "image": "20231205_162708.png"
+  },
+
+  {
+    "id": 82,
+    "title": "Marcadores de TCG / JCC de Veneno y Quemadura",
+    "price": 100,
+    "category": "Producto Oficial",
+    "image": "20231205_162727.png"
+  }
+
+]

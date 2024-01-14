@@ -1,0 +1,72 @@
+.carrito-de-compras {
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 8px;
+}
+
+.carrito-de-compras h2 {
+  color: var(--morado-oscuro);
+  font-family: "Kanit Regular";
+  margin-bottom: 1rem;
+}
+
+.carrito-de-compras div {
+  color: var(--morado-oscuro);
+  font-family: "Kanit Regular";
+}
+
+.carrito-de-compras p {
+  margin: 0.5rem 0;
+}
+
+.carrito-de-compras p:first-child {
+  margin-top: 0;
+}
+
+.carrito-de-compras p:last-child {
+  font-family: "Kanit Regular";
+}
+
+.carrito-de-compras p:nth-last-child(2) {
+  font-family: "Kanit Regular";
+}
+
+.total-carrito {
+  font-family: "Kanit Regular";
+}
+
+#main-carrito-contenido {
+  margin-bottom: 8rem;
+}
+
+.table-bordered th,
+.table-bordered td {
+  border: 1px solid #3b1f53; /* Puedes ajustar el color del borde según tus preferencias */
+}
+
+.table-bordered tbody + tbody {
+  border-top: 20px solid #3b1f53; /* Puedes ajustar el grosor y el color del borde entre filas según tus preferencias */
+}
+
+/**/
+
+.table-carrito {
+  width: 100%; /* Ajusta el ancho según sea necesario */
+  margin-top: 20px; /* Ajusta el margen superior según sea necesario */
+}
+
+.table-carrito th,
+.table-carrito td {
+  text-align: center; /* Centra el texto dentro de las celdas */
+  vertical-align: middle; /* Centra verticalmente el contenido en las celdas */
+}
+
+.table-carrito thead th {
+  vertical-align: top; /* Ajusta la alineación vertical del encabezado según sea necesario */
+}
+
+.table-carrito tbody td {
+  border-top: 1px solid #dee2e6; /* Añade un borde superior para separar las filas */
+}
+
+/**/

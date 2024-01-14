@@ -1,0 +1,89 @@
+@font-face {
+  font-family: "Kanit Regular";
+  src: url(../../fonts/Kanit/Kanit-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Kanit Light";
+  src: url(../../fonts/Kanit/Kanit-Light.ttf);
+}
+
+:root {
+  --morado-oscuro: #3b1f53;
+  --morado-clarito: #ede4ed;
+  --morado-medio: #b6a9c5;
+  --morado-grisaseo: #847a9c;
+  --blanco: #fefeff;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+footer {
+  background-color: var(--morado-grisaseo);
+  display: grid;
+  /* grid-template-rows: 1fr auto;
+  min-height: 100vh;  */
+}
+
+#pokemon-place-10-aniversario-footer-mobile {
+  margin-top: -1.22rem;
+  left: 0;
+  width: 5rem;
+}
+
+.logotipos-de-redes-footer-mobile {
+  width: 2rem;
+}
+
+.second-column-footer-mobile {
+  color: var(--morado-clarito);
+  font-family: "Kanit Regular";
+  padding: 0px;
+  margin-top: 1rem;
+  text-align: start;
+}
+
+#second-column-footer-pages-mobile {
+  padding-left: .6rem;
+}
+
+.footer-text-mobile {
+  font-size: .7rem;
+}
+
+.division-between-pages-mobile {
+  border-left-color: var(--morado-clarito);
+  border-left-width: .1rem;
+  border-left-style: solid;
+  padding-left: .7rem;
+  margin-left: .5rem;
+}
+
+.division-between-products-mobile {
+  border-left-color: var(--morado-clarito);
+  border-left-width: .1rem;
+  border-left-style: solid;
+  margin-top: .64rem;
+}
+
+.list-products-footer-mobile {
+  font-size: .7rem;
+  color: var(--morado-clarito);
+  text-align: start;
+  font-family: "Kanit Light";
+}
+
+#fourth-column-footer-mobile {
+  color: var(--morado-clarito);
+  font-family: "Kanit Light";
+  font-size: .7rem;
+  text-align: center;
+}
+
+.logo-container-footer-mobile {
+  margin-top: 1rem;
+  padding: .5rem;
+}
