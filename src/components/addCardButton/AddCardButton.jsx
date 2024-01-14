@@ -2,12 +2,15 @@ import React, { useEffect, useState } from "react";
 import "../../styles/addCardButton/AddCardButton.css";
 import { Link } from "react-router-dom";
 import pokemonesData from "../../json/productos.json";
+import CustomAlert from "../../pages/logIn/CustomAlert";
 
 const AddCardButton = ({ onCantidadChange, buttonIdAnadir }) => {
   const [products, setProducts] = useState([]);
   useEffect(() => {
     setProducts(pokemonesData);
   }, []);
+
+  
 
   const readLocalStorage = (localStorageKey) => {
     const data = JSON.parse(localStorage.getItem(localStorageKey));
@@ -36,7 +39,7 @@ const AddCardButton = ({ onCantidadChange, buttonIdAnadir }) => {
     localStorage.setItem("data", JSON.stringify(data));
   }
 
-  const [cantidadProductos, setCantidadProductos] = useState(1);
+  let [cantidadProductos, setCantidadProductos] = useState(1);
   const maxProductos = 9;
 
   const incrementarCantidad = () => {
@@ -53,12 +56,17 @@ const AddCardButton = ({ onCantidadChange, buttonIdAnadir }) => {
     }
   };
 
+  const[showAlert, setshowAlert] = useState(false);  
+  const closeAlert = () => setshowAlert(false);
+
   const handleCarAddClick = () => {
     anadirAlCarrito(buttonIdAnadir, products);
+    setCantidadProductos(cantidadProductos = 1);
+    setshowAlert(true);
   };
 
   return (
-    <div className="d-grid gap-2 col-2 mx-auto">
+    <div className="d-grid gap-2 col-2 mx-auto" >
       {/* Contenedor centrado horizontalmente */}
       <div className="add-card-container">
         <button
@@ -89,7 +97,7 @@ const AddCardButton = ({ onCantidadChange, buttonIdAnadir }) => {
         </div>
       </div>
       {/* Botón principal para añadir al carrito */}
-      <Link to="/Carrito">
+
         <button
           type="button"
           className="carrito-button carrito-add"
@@ -97,7 +105,7 @@ const AddCardButton = ({ onCantidadChange, buttonIdAnadir }) => {
         >
           Añadir
         </button>
-      </Link>
+        {showAlert && (<CustomAlert message={"Producto agregado"} onClose={closeAlert}/>)}
     </div>
   );
 };

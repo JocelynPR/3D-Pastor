@@ -45,7 +45,7 @@ const NavBarComputer = () => {
                 <div className="container">
                   <Link to="/LogIn" className="row row-cols-2 g-3">
                     <span id="log-in">Log In</span>
-                    <CartIcon src={person_logo} className="svg-cart-icon" id="personIcon" />
+                    <CartIcon src={person_logo} to="/LogIn" className="svg-cart-icon" id="personIcon" />
                   </Link>
                 </div>
                 <div id="cart-icon-container-navbar">
