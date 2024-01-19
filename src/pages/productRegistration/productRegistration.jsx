@@ -4,10 +4,10 @@ import "../../styles/productRegistration/productRegistration.css";
 function ProductRegistration() {
   const initialProductState = {
     name: "",
-    photo: "",
+    /* photo: "", */
     quantity: "",
     category: "",
-    description: "",
+    //description: "",
     price: "",
   };
 
@@ -33,34 +33,10 @@ function ProductRegistration() {
     }
   };
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
-
-    try {
-      // Realizar la solicitud POST usando fetch
-      const response = await fetch("http://localhost:8080/api/v1/products", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(product),
-      });
-
-      // Verificar si la solicitud fue exitosa (código 2xx)
-      if (response.ok) {
-        // Limpiar el formulario y mostrar la alerta
-        setProduct(initialProductState);
-        setShowAlert(true);
-      } else {
-        // Manejar errores en caso de que la solicitud no sea exitosa
-        const errorData = await response.json();
-        console.error("Error al crear el producto:", errorData);
-        // Puedes mostrar un mensaje de error o realizar otra acción
-      }
-    } catch (error) {
-      console.error("Error al realizar la solicitud:", error);
-      // Puedes mostrar un mensaje de error o realizar otra acción
-    }
+    console.log(JSON.stringify(product, null, 2));
+    setShowAlert(true);
   };
 
   const handleAlertClose = () => {
@@ -98,7 +74,7 @@ function ProductRegistration() {
         </label>
         <br />
 
-        <label>
+        {/*         <label>
           Imagen: <br />
           <input
             type="file"
@@ -113,7 +89,7 @@ function ProductRegistration() {
             alt="Product"
             style={{ maxWidth: "200px" }}
           />
-        )}
+        )} */}
         <br />
 
         <label>
@@ -138,12 +114,14 @@ function ProductRegistration() {
             className="form-control-contacto"
           >
             <option value="">Selecciona una categoría</option>
+            {/* <option value="Producto Oficial">Producto Oficial</option> */}
             <option value="Accesorios">Accesorios</option>
             <option value="Juguete">Juguetes</option>
             <option value="Postres">Postres</option>
+            <option value="Otros">Otros</option>
           </select>
         </label>
-        <br />
+        {/*         <br />
 
         <label>
           Descripción: <br />
@@ -155,7 +133,7 @@ function ProductRegistration() {
             className="form-control-contacto"
           />
         </label>
-        <br />
+        <br /> */}
 
         <label>
           Precio en MXN: <br />

@@ -45,25 +45,56 @@ function UserRegistration() {
       verificarYGuardarDatos(usuario);
     }
   };
-  const verificarYGuardarDatos = (nuevoUsuario) => {
+  const verificarYGuardarDatos = async (nuevoUsuario) => {
     const usuariosGuardados = localStorage.getItem("usuarios");
     let usuarios = usuariosGuardados ? JSON.parse(usuariosGuardados) : [];
 
     if (!usuarios.some((usuario) => usuario.email === nuevoUsuario.email)) {
-        usuarios.push(nuevoUsuario);
-        localStorage.setItem("usuarios", JSON.stringify(usuarios));
-        console.log("Nuevo usuario guardado:", nuevoUsuario);
-        setMensajeConfirmacion("Nuevo usuario guardado.");
+      try {
+        // Realizar la solicitud POST
+        const response = await fetch("http://localhost:8080/api/v1/users", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            fullName: nuevoUsuario.nombreCompleto,
+            email: nuevoUsuario.email,
+            phone: nuevoUsuario.numeroTelefono,
+            password: nuevoUsuario.contrasena,
+            // Puedes incluir otros campos según tu entidad
+          }),
+        });
 
-        // Limpia los campos después de guardar
-        limpiarCampos();
+        if (response.ok) {
+          // Usuario registrado con éxito en el servidor
+          const responseData = await response.json();
+          console.log("Nuevo usuario registrado en el servidor:", responseData);
+
+          // Guardar el nuevo usuario en el almacenamiento local
+          usuarios.push(nuevoUsuario);
+          localStorage.setItem("usuarios", JSON.stringify(usuarios));
+
+          setMensajeConfirmacion("Nuevo usuario registrado y guardado.");
+          // Limpia los campos después de guardar
+          limpiarCampos();
+        } else {
+          // Manejar errores de la respuesta del servidor
+          console.error("Error al registrar el usuario en el servidor");
+          setMensajeConfirmacion("Error al registrar el usuario en el servidor.");
+        }
+      } catch (error) {
+        console.error("Error al realizar la solicitud POST:", error);
+        setMensajeConfirmacion("Error al realizar la solicitud POST.");
+      }
     } else {
-        console.log("El usuario ya existe.");
-        setMensajeConfirmacion("El usuario ya está registrado.");
+      console.log("El usuario ya existe.");
+      setMensajeConfirmacion("El usuario ya está registrado.");
     }
-};
+  };
 
-const limpiarCampos = () => {
+
+  const limpiarCampos = () => {
     setNombre("");
     setTelefono("");
     setEmail("");
@@ -71,7 +102,7 @@ const limpiarCampos = () => {
     setContrasenaVerificar("");
     setMostrarContrasena(false);
     setMostrarContrasenaVerificar(false);
-};
+  };
 
   return (
     <div class="custom-background">
@@ -95,21 +126,21 @@ const limpiarCampos = () => {
             />
           </div>
           <div className="form-group">
-    <label>Número de teléfono</label>
-    <input
-        type="text"
-        className="form-control input-registro"
-        value={telefono}
-        onChange={(e) => {
-            // Permite solo números y limita la longitud a 10 dígitos
-            const valor = e.target.value;
-            if (valor === '' || (/^\d+$/.test(valor) && valor.length <= 10)) {
-                setTelefono(valor);
-            }
-        }}
-        required
-    />
-</div>
+            <label>Número de teléfono</label>
+            <input
+              type="text"
+              className="form-control input-registro"
+              value={telefono}
+              onChange={(e) => {
+                // Permite solo números y limita la longitud a 10 dígitos
+                const valor = e.target.value;
+                if (valor === '' || (/^\d+$/.test(valor) && valor.length <= 10)) {
+                  setTelefono(valor);
+                }
+              }}
+              required
+            />
+          </div>
           <div className="form-group">
             <label>Email</label>
             <input
