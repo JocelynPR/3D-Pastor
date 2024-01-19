@@ -2,15 +2,15 @@ import React, { useState } from "react";
 import "../../styles/productRegistration/productRegistration.css";
 
 function ProductRegistration() {
-const initialProductState = {
+  const initialProductState = {
     name: "",
     photo: "",
     quantity: "",
     category: "",
     description: "",
     price: "",
-    };
-    
+  };
+
   const [product, setProduct] = useState(initialProductState);
   const [showAlert, setShowAlert] = useState(false);
 
@@ -32,11 +32,35 @@ const initialProductState = {
       reader.readAsDataURL(file);
     }
   };
-  
-  const handleSubmit = (e) => {
+
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log(JSON.stringify(product, null, 2)); 
-    setShowAlert(true); 
+
+    try {
+      // Realizar la solicitud POST usando fetch
+      const response = await fetch("http://localhost:8080/api/v1/products", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(product),
+      });
+
+      // Verificar si la solicitud fue exitosa (código 2xx)
+      if (response.ok) {
+        // Limpiar el formulario y mostrar la alerta
+        setProduct(initialProductState);
+        setShowAlert(true);
+      } else {
+        // Manejar errores en caso de que la solicitud no sea exitosa
+        const errorData = await response.json();
+        console.error("Error al crear el producto:", errorData);
+        // Puedes mostrar un mensaje de error o realizar otra acción
+      }
+    } catch (error) {
+      console.error("Error al realizar la solicitud:", error);
+      // Puedes mostrar un mensaje de error o realizar otra acción
+    }
   };
 
   const handleAlertClose = () => {
