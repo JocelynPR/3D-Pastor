@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/3D-Pastor/static/css/main.e7e4e93b.css",
-    "main.js": "/3D-Pastor/static/js/main.940ce92d.js",
+    "main.js": "/3D-Pastor/static/js/main.ffa06009.js",
     "static/media/img2.png": "/3D-Pastor/static/media/img2.5b845c05f904854c3c31.png",
     "static/media/img4.png": "/3D-Pastor/static/media/img4.a8b306d87711ed97b8be.png",
     "static/media/imagen_6.jpg": "/3D-Pastor/static/media/imagen_6.cf3cb4d54ea68263a663.jpg",
@@ -94,7 +94,6 @@
     "static/media/Kanit-SemiBold.ttf": "/3D-Pastor/static/media/Kanit-SemiBold.cf86a473ecf932fb0053.ttf",
     "static/media/Kanit-Medium.ttf": "/3D-Pastor/static/media/Kanit-Medium.786fd6bb96ce0cf5c5b2.ttf",
     "static/media/Kanit-Regular.ttf": "/3D-Pastor/static/media/Kanit-Regular.f3bae13d78ced30b6ea3.ttf",
-    "static/media/img_Eq.img.png": "/3D-Pastor/static/media/img_Eq.img.484ba85c39bd7f0cd39b.png",
     "static/media/Kanit-Light.ttf": "/3D-Pastor/static/media/Kanit-Light.7b6b95563f4c5697d973.ttf",
     "static/media/20231205_162020.png": "/3D-Pastor/static/media/20231205_162020.30ead8a67da9fddf68b6.png",
     "static/media/20231205_161139.png": "/3D-Pastor/static/media/20231205_161139.a182d971083934ba1f53.png",
@@ -102,6 +101,7 @@
     "static/media/20231205_161541.png": "/3D-Pastor/static/media/20231205_161541.07fa713dc2024db7ca32.png",
     "static/media/logo_pikachu.png": "/3D-Pastor/static/media/logo_pikachu.1a445d0b033f1a2ccb58.png",
     "static/media/20231205_161958.png": "/3D-Pastor/static/media/20231205_161958.77165703b5b57bad547d.png",
+    "static/media/img_Eq.img.png": "/3D-Pastor/static/media/img_Eq.img.8fddb0892628dbd35fba.png",
     "static/media/20231205_161744.png": "/3D-Pastor/static/media/20231205_161744.848ce94763f76fc89528.png",
     "static/media/20231205_161512.png": "/3D-Pastor/static/media/20231205_161512.b6ffe4172c44e0e2c8d6.png",
     "static/media/20231205_162023.png": "/3D-Pastor/static/media/20231205_162023.b8f372b72e0a871439d4.png",
@@ -165,10 +165,10 @@
     "static/media/deleteIcon.svg": "/3D-Pastor/static/media/deleteIcon.642da2f9203fed7e99a03988591b154e.svg",
     "static/media/menu.svg": "/3D-Pastor/static/media/menu.442c7e13b8a9b05814f57cda657f91aa.svg",
     "main.e7e4e93b.css.map": "/3D-Pastor/static/css/main.e7e4e93b.css.map",
-    "main.940ce92d.js.map": "/3D-Pastor/static/js/main.940ce92d.js.map"
+    "main.ffa06009.js.map": "/3D-Pastor/static/js/main.ffa06009.js.map"
   },
   "entrypoints": [
     "static/css/main.e7e4e93b.css",
-    "static/js/main.940ce92d.js"
+    "static/js/main.ffa06009.js"
   ]
 }
