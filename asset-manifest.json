@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/3D-Pastor/static/css/main.e7e4e93b.css",
-    "main.js": "/3D-Pastor/static/js/main.ffa06009.js",
+    "main.js": "/3D-Pastor/static/js/main.61d80caf.js",
     "static/media/img2.png": "/3D-Pastor/static/media/img2.5b845c05f904854c3c31.png",
     "static/media/img4.png": "/3D-Pastor/static/media/img4.a8b306d87711ed97b8be.png",
     "static/media/imagen_6.jpg": "/3D-Pastor/static/media/imagen_6.cf3cb4d54ea68263a663.jpg",
@@ -165,10 +165,10 @@
     "static/media/deleteIcon.svg": "/3D-Pastor/static/media/deleteIcon.642da2f9203fed7e99a03988591b154e.svg",
     "static/media/menu.svg": "/3D-Pastor/static/media/menu.442c7e13b8a9b05814f57cda657f91aa.svg",
     "main.e7e4e93b.css.map": "/3D-Pastor/static/css/main.e7e4e93b.css.map",
-    "main.ffa06009.js.map": "/3D-Pastor/static/js/main.ffa06009.js.map"
+    "main.61d80caf.js.map": "/3D-Pastor/static/js/main.61d80caf.js.map"
   },
   "entrypoints": [
     "static/css/main.e7e4e93b.css",
-    "static/js/main.ffa06009.js"
+    "static/js/main.61d80caf.js"
   ]
 }
