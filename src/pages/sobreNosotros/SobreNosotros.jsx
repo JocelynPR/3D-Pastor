@@ -66,15 +66,6 @@ export default function SobreNosotros() {
                 rol={"Product Owner"}
               />
 
-              {/* ---Yaz--- */}
-              <TarjetaSobreNosotros
-                src={yaz}
-                alt={"Yaz"}
-                nombre={"Yazmín Valeria Morales Martínez"}
-                residencia={"CDMX"}
-                rol={"Desarrollo"}
-              />
-
               {/* ---Tony--- */}
               <TarjetaSobreNosotros
                 src={tony}
